@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/css_layout.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/jquery_functions.custom.js"></script>
+    <script src="js/jquery_functions.sys.js"></script>
+    <script src="js/jquery_functions.onload.js"></script>
+    <script src="js/jquery_calculators.js"></script>
+</head>
+
+<body>
+    <div class="info">
+    <div class="infoText2">
+<!--
+        <div class="contentHeader">
+            <h1 class="ff01 title">Калкулатор за Листова стомана</h1>
+        </div>
+-->
+        <div class="contentHeader calc">
+            <div class="icon"></div>
+            <h1 class="title">Calculator for Seamless steel pipes - circular</h1>
+        </div>
+
+        <div class="calculator fs14" data-calculator="calculator_2">
+    <p>Input your values in the fields below:</p>
+    <div class="input_parameters">
+        <div id="calcError" style="display: none;">
+            Thickness cannot be larger than half the diameter.
+        </div>
+        <table>
+            <tr><td>Diameter, <span class="accent">D</span>:</td><td><input data-param="d" data-min="0" data-float="true" type="text" class="field calc" value="8"></td><td>mm</td></tr>
+            <tr><td>Thickness, <span class="accent">t</span>:</td><td><input data-param="t" data-min="0" data-float="true" type="text" class="field calc" value="1.5"></td><td>mm</td></tr>
+            <tr><td>Length, <span class="accent">L</span>:</td><td><input data-param="l" data-float="true" data-float="true" data-min="1" type="text" class="field calc" value="1"></td><td>m</td></tr>
+
+            <tr><td colspan="3">&nbsp;</td></tr>
+            <tr><td colspan="3">
+                <div class="resultLabel">
+                    Result
+                </div>
+            </td></tr>
+            <tr><td>Weight per meter:</td><td align="center"><input class="field result" type="text" name="result_single" id="result_single" value="0" readonly></td><td>kg/m</td></tr>
+            <tr><td>Total weight:</td><td align="center"><input class="field result" type="text" name="result_total" id="result_total" value="0" readonly></td><td>kg</td></tr>
+        </table>
+    </div>
+    <div class="scheme">
+        <img src="img/ongthepduc-tron.png?h=206&cache">
+    </div>
+</div>
+        <p class="fs14">
+        Calculator for Seamless steel pipes - circular
+        </p>
+    </div>
+</body>
+
+</html>
