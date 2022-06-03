@@ -335,7 +335,7 @@ a:hover{
 	background-image: url('../images/icon_header_info.png');
 }
 .contentHeader.calc .icon{
-	background-image: url('img/icon_header_calc.png');
+	background-image: url('../img/icon_header_calc.png');
 }
 
 .contentHeader .title{
