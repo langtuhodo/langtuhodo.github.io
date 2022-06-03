@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	
+	 <meta charset="UTF-8"> 
+	<link rel="stylesheet" href="css/css_layout.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+    <script src="js/jquery_functions.custom.js"></script>
+    <script src="js/jquery_functions.sys.js"></script>
+    <script src="js/jquery_functions.onload.js"></script>
+    <script src="js/jquery_calculators.js"></script>
+
+</head>
+<body>
+
+<div class="infoText2">
+
+        <div class="contentHeader calc">
+            <div class="icon"></div>
+            <h1 class="title">Công thức tính trọng lượng thép tấm</h1>
+        </div>
+
+        <div class="calculator fs14" data-calculator="calculator_1">
+    <p>Nhập các giá trị của bạn vào các trường bên dưới:</p>
+    <div class="input_parameters">
+        <table>
+            <tbody><tr><td>Độ dày, <span class="accent">t</span>:</td><td><input data-param="t" data-min="0.5" data-float="true" type="text" class="field calc" value="1" data-np-checked="1"></td><td>mm</td></tr>
+            <tr><td>Bề rộng, <span class="accent">W</span>:</td><td><input data-param="w" data-min="1" type="text" class="field calc" value="1000" data-np-checked="1"></td><td>mm</td></tr>
+            <tr><td>Chiều dài, <span class="accent">L</span>:</td><td><input data-param="l" data-min="1" type="text" class="field calc" value="2000" data-np-checked="1"></td><td>mm</td></tr>
+            <tr><td>Số lượng:</td><td><input data-param="n" data-min="1" type="text" class="field calc" value="1" data-np-checked="1"></td><td></td></tr>
+
+            <tr><td colspan="3">&nbsp;</td></tr>
+            <tr><td colspan="3">
+                <div class="resultLabel">
+                    Kết quả
+                </div>
+            </td></tr>
+            <tr><td>Trọng lượng đơn:</td><td align="center"><input class="field result" type="text" name="result_single" id="result_single" value="0" readonly=""></td><td>kg</td></tr>
+            <tr><td>Tổng khối lượng:</td><td align="center"><input class="field result" type="text" name="result_total" id="result_total" value="0" readonly=""></td><td>kg</td></tr>
+        </tbody></table>
+    </div>
+    <div class="scheme">
+        <img src="https://langtuhodo.w3spaces.com/images/24D97292-E8D9-F31B-8A1A-B0CE2C77D62F.png?h=206&amp">
+    </div>
+</div>
+        <p class="fs14">
+        <font color="red">Lưu ý:</font> Bảng Công thức tính cho thép tấm trên để tham khảo. Vui lòng gọi Hotline 0903 332 176 để biết thêm thông tin.
+        </p>
+    </div>
+
+</body>
+</html>
