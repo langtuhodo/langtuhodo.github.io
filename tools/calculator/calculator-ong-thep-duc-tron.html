@@ -16,41 +16,89 @@
 
 <body>
     <div class="info">
-    <div class="infoText2">
-        <div class="contentHeader calc">
-            <div class="icon"></div>
-            <h1 class="title">Công cụ tham khảo tính trọng lượng ống thép đúc</h1>
+        <div class="infoText2">
+    <!--
+            <div class="contentHeader">
+                <h1 class="ff01 title">Калкулатор за Листова стомана</h1>
+            </div>
+    -->
+            <div class="contentHeader calc">
+                <div class="icon"></div>
+                <h1 class="title">Calculator for Seamless steel pipes - circular</h1>
+            </div>
+    
+            <div class="calculator fs14" data-calculator="calculator_2">
+        <p>Input your values in the fields below:</p>
+        <div class="input_parameters">
+            <div id="calcError" style="display: none;">
+                Thickness cannot be larger than half the diameter.
+            </div>
+            <table>
+                <tbody><tr><td>Diameter, <span class="accent">D</span>:</td><td><input data-param="d" data-min="0" data-float="true" type="text" class="field calc" value="8" data-np-checked="1"></td><td>mm</td></tr>
+                <tr><td>Thickness, <span class="accent">t</span>:</td><td><input data-param="t" data-min="0" data-float="true" type="text" class="field calc" value="1.5" data-np-checked="1"></td><td>mm</td></tr>
+                <tr><td>Length, <span class="accent">L</span>:</td><td><input data-param="l" data-float="true" data-min="1" type="text" class="field calc" value="1" data-np-checked="1"></td><td>m</td></tr>
+    
+                <tr><td colspan="3">&nbsp;</td></tr>
+                <tr><td colspan="3">
+                    <div class="resultLabel">
+                        Result
+                    </div>
+                </td></tr>
+                <tr><td>Weight per meter:</td><td align="center"><input class="field result" type="text" name="result_single" id="result_single" value="0" readonly=""></td><td>kg/m</td></tr>
+                <tr><td>Total weight:</td><td align="center"><input class="field result" type="text" name="result_total" id="result_total" value="0" readonly=""></td><td>kg</td></tr>
+            </tbody></table>
         </div>
-
-        <div class="calculator fs14" data-calculator="calculator_2">
-    <p>Nhập các giá trị của bạn vào các trường bên dưới:</p>
-    <div class="input_parameters">
-        <div id="calcError" style="display: none;">
-            Độ dày không được lớn hơn một nửa của đường kính.
+        <div class="scheme">
+            <img src="img/ongthepductron.png">
         </div>
-        <table>
-            <tr><td>Đường kính, <span class="accent">D</span>:</td><td><input data-param="d" data-min="0" data-float="true" type="text" class="field calc" value="8"></td><td>mm</td></tr>
-            <tr><td>Độ dày, <span class="accent">t</span>:</td><td><input data-param="t" data-min="0" data-float="true" type="text" class="field calc" value="1.5"></td><td>mm</td></tr>
-            <tr><td>Chiều dài, <span class="accent">L</span>:</td><td><input data-param="l" data-float="true" data-float="true" data-min="1" type="text" class="field calc" value="1"></td><td>m</td></tr>
-
-            <tr><td colspan="3">&nbsp;</td></tr>
-            <tr><td colspan="3">
-                <div class="resultLabel">
-                    Kết quả
-                </div>
-            </td></tr>
-            <tr><td>Trọng lượng mỗi mét:</td><td align="center"><input class="field result" type="text" name="result_single" id="result_single" value="0" readonly></td><td>kg/m</td></tr>
-            <tr><td>Tổng khối lượng:</td><td align="center"><input class="field result" type="text" name="result_total" id="result_total" value="0" readonly></td><td>kg</td></tr>
-        </table>
     </div>
-    <div class="scheme">
-        <img src="img/ongthepductron.png?h=206&cache" width="50%">
+            <p class="fs14">
+            Calculator for Seamless steel pipes - circular
+            </p>
+        </div>
+    
+        <div class="homeSideMenu calc">
+            <div class="contentHeader calc">
+                <h1 class="title">Calculators</h1>
+            </div>
+            <p></p>
+            
+                <a href="/Steel-sheets-and-plates.html" title="Steel sheets and plates" class="">Steel sheets and plates</a>
+            
+                <a href="/Seamless-steel-pipes-circular.html" title="Seamless steel pipes - circular" class="active">Seamless steel pipes - circular</a>
+            
+                <a href="/Hollow-structural-sections-circular.html" title="Hollow structural sections - circular" class="">Hollow structural sections - circular</a>
+            
+                <a href="/Hollow-structural-sections-square.html" title="Hollow structural sections - square" class="">Hollow structural sections - square</a>
+            
+                <a href="/Hollow-structural-sections-rectangular.html" title="Hollow structural sections - rectangular" class="">Hollow structural sections - rectangular</a>
+            
+                <a href="/Round-steel-bars.html" title="Round steel bars" class="">Round steel bars</a>
+            
+                <a href="/Square-steel-bars.html" title="Square steel bars" class="">Square steel bars</a>
+            
+                <a href="/Flat-bars.html" title="Flat bars" class="">Flat bars</a>
+            
+                <a href="/Equal-angles.html" title="Equal angles" class="">Equal angles</a>
+            
+                <a href="/Unequal-angles.html" title="Unequal angles" class="">Unequal angles</a>
+            
+                <a href="/Channels-GOST.html" title="Channels - GOST" class="">Channels - GOST</a>
+            
+                <a href="/Channels-UPN.html" title="Channels - UPN" class="">Channels - UPN</a>
+            
+                <a href="/Beams-IPN.html" title="Beams - IPN" class="">Beams - IPN</a>
+            
+                <a href="/Beams-IPE.html" title="Beams - IPE" class="">Beams - IPE</a>
+            
+                <a href="/Beams-HEA-(IPBL).html" title="Beams - HEA (IPBL)" class="">Beams - HEA (IPBL)</a>
+            
+                <a href="/Beams-HEB-(IPB).html" title="Beams - HEB (IPB)" class="">Beams - HEB (IPB)</a>
+            
+        </div>
+    
+        <div class="clear"></div>
     </div>
-</div>
-        <p class="fs14">
-        Công cụ tính trọng lượng ống thép đúc tham khảo.
-        </p>
-    </div></div>
 </body>
 
 </html>
