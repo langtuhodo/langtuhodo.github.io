@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>Metal Calculator | Conversions and Weights</title>
+    <meta name="description" content=" Steel offers a simple and easy to use metal weight calculator including weight and conversions. just supply your specs and you&#039;re ready to go." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Metal Calculator | Steel - Conversions and Weights" />
+    <meta property="og:description" content="Steel offers a simple and easy to use metal weight calculator including weight and conversions. just supply your specs and you&#039;re ready to go." />
+    <link rel='stylesheet' id='kronos-style-css' href='css/theme.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type='text/javascript' src='https://code.jquery.com/jquery-3.6.0.min.js' id='jquery-core-js'></script>
+    <link rel="icon" href="img/FAVICON-150x150.png" sizes="32x32" />
+    <link rel="icon" href="img/FAVICON-300x300.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="img/FAVICON-300x300.png" />
+    <meta name="msapplication-TileImage" content="img/FAVICON-300x300.png" />
+    
+</head>
+
+<body class="page-template-default page page-id-56 page-child parent-pageid-55 post-metal-calculator post_parent-resources">
+    
+    <div id="site-wrap">
+        
+        <div class="main">
+            <div class="container container-1200">
+                <div class="tab_group">
+                    <nav class="tabs_container calctabs">
+                        <a href="#tab-1" class="tabs" data-tabs-group="tab_group" data-tabs-active="true"><span>01</span> / Weight</a>
+                        <a href="#tab-2" class="tabs" data-tabs-group="tab_group"><span>02</span> / Conversion</a>
+                        <a href="#tab-3" class="tabs" data-tabs-group="tab_group"><span>03</span> / Miscellaneous</a>
+                    </nav>
+                    <!-- Tab 1 -->
+                    <div class="tab_content calctabs" id="tab-1">
+                        <form method="post" name="MedivicMetalWeight" id="MedivicMetalWeight">
+                            <div class="container twocol">
+                                <div class="col">
+                                    <h5>Select Your Metal Type:</h5>
+                                </div>
+                                <div class="col">
+                                    <select class="wide-select" onChange="ResetFields();" name="metalType" id="metal_type">
+                                        <option value="Carbon Steel">Carbon Steel</option>
+                                        <option value="Copper">Copper </option>
+                                        <option value="Brass">Brass </option>
+                                        <option value="T-304 Stainless">T-304 Stainless </option>
+                                        <option value="T-430 Stainless">T-430 Stainless </option>
+                                        <option value="Stainless 300 Series">Stainless 300 Series </option>
+                                        <option value="Stainless 400 Series">Stainless 400 Series </option>
+                                        <option value="Aluminum">Aluminum </option>
+                                        <option value="Aluminum 1100">Aluminum 1100 </option>
+                                        <option value="Aluminum 2011">Aluminum 2011 </option>
+                                        <option value="Aluminum 2014">Aluminum 2014 </option>
+                                        <option value="Aluminum 2017">Aluminum 2017 </option>
+                                        <option value="Aluminum 2024">Aluminum 2024 </option>
+                                        <option value="Aluminum 3003">Aluminum 3003 </option>
+                                        <option value="Aluminum 5005">Aluminum 5005 </option>
+                                        <option value="Aluminum 5052">Aluminum 5052 </option>
+                                        <option value="Aluminum 5056">Aluminum 5056 </option>
+                                        <option value="Aluminum 5083">Aluminum 5083 </option>
+                                        <option value="Aluminum 5086">Aluminum 5086 </option>
+                                        <option value="Aluminum 6061">Aluminum 6061 </option>
+                                        <option value="Aluminum 6063">Aluminum 6063 </option>
+                                        <option value="Aluminum 7075">Aluminum 7075 </option>
+                                        <option value="Aluminum 7178">Aluminum 7178 </option>
+                                        <option value="Beryllium">Beryllium </option>
+                                        <option value="Brass">Brass </option>
+                                        <option value="Cast Iron">Cast Iron </option>
+                                        <option value="Columbium">Columbium </option>
+                                        <option value="Copper">Copper </option>
+                                        <option value="Gold">Gold </option>
+                                        <option value="Lead">Lead </option>
+                                        <option value="Magnesium">Magnesium </option>
+                                        <option value="Molybdenum">Molybdenum </option>
+                                        <option value="Nickel 200">Nickel 200 </option>
+                                        <option value="Nickel 201">Nickel 201 </option>
+                                        <option value="Nickel 400">Nickel 400 </option>
+                                        <option value="Nickel 600">Nickel 600 </option>
+                                        <option value="Nickel 625">Nickel 625 </option>
+                                        <option value="Nickel 718">Nickel 718 </option>
+                                        <option value="Nickel X750">Nickel X750 </option>
+                                        <option value="Nickel 800">Nickel 800 </option>
+                                        <option value="Nickel 800H">Nickel 800H </option>
+                                        <option value="Nickel 825">Nickel 825 </option>
+                                        <option value="Nickel 904L">Nickel 904L </option>
+                                        <option value="Silver">Silver </option>
+                                        <option value="Tantalum">Tantalum </option>
+                                        <option value="Titanium">Titanium </option>
+                                        <option value="Tungsten">Tungsten </option>
+                                        <option value="Zinc">Zinc </option>
+                                        <option value="Zirconium">Zirconium </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="container twocol">
+                                <div class="col">
+                                    <h5>Select Your Metal Shape:</h5>
+                                </div>
+                                <div class="col">
+                                    <select class="wide-select" onChange="ChangeLabel();ClearFields();" id="shape" name="shape">
+                                        <option value="">-- Select Shape -- </option>
+                                        <option value="Round Bar">Round Bar</option>
+                                        <option value="Square or Flat Bar">Square or Flat Bar</option>
+                                        <option value="Sheet">Sheet</option>
+                                        <option value="Plate">Plate</option>
+                                        <option value="Circle">Circle</option>
+                                        <option value="Ring">Ring</option>
+                                        <option value="Hexagon Bar">Hexagon Bar</option>
+                                        <option value="Round Tubing">Round Tubing</option>
+                                        <option value="Square Tubing">Square Tubing</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="container twocol">
+                                <div class="col">
+                                    <h5>Number of Pieces:</h5>
+                                </div>
+                                <div class="col">
+                                    <div class="noPieces">
+                                        <input type="number" size="10" name="noPieces">
+                                    </div>
+                                </div>
+                            </div>
+                            <h5>Enter size information:</h5>
+                            <div class="container threecol">
+                                <div class="col"><input type="text" class="lbls" onBlur="ChangeLabel();" size="16" name="lbl1" readonly></div>
+                                <div class="col"><input type="number" name="value1"></div>
+                                <div class="col">
+                                    <select name="units1" class="wide-select">
+                                        <option value="in">in</option>
+                                        <option value="mm">mm</option>
+                                        <option value="m">m</option>
+                                        <option value="ft">ft</option>
+                                        <option value="yd">yd</option>
+                                        <option value="cm">cm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="container threecol">
+                                <div class="col"><input type="text" class="lbls" onBlur="ChangeLabel();" size="16" name="lbl2" readonly></div>
+                                <div class="col"><input type="number" name="value2"></div>
+                                <div class="col">
+                                    <select name="units2" class="wide-select">
+                                        <option value="in">in</option>
+                                        <option value="mm">mm</option>
+                                        <option value="m">m</option>
+                                        <option value="ft">ft</option>
+                                        <option value="yd">yd</option>
+                                        <option value="cm">cm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="container threecol">
+                                <div class="col"><input type="text" class="lbls" onBlur="ChangeLabel();" size="16" name="lbl3" readonly></div>
+                                <div class="col"><input type="number" name="value3"></div>
+                                <div class="col">
+                                    <select name="units3" class="wide-select">
+                                        <option value="in">in</option>
+                                        <option value="mm">mm</option>
+                                        <option value="m">m</option>
+                                        <option value="ft">ft</option>
+                                        <option value="yd">yd</option>
+                                        <option value="cm">cm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="pt30">
+                                <div class="container threecol" style="max-width:675px">
+                                    <div class="col text-right">
+                                        <input class="button dark ph50" type="submit" id="calculatebtn" value="Calculate" name="Submit">
+                                    </div>
+                                    <div class="col text-left">
+                                        <input class="button grey ph50" type="reset" onClick="ChangeLabel();ClearFields();ResetFields();return false;" value="Reset" name="reset">
+                                    </div>
+                                    <div class="col text-center">
+                                        <a class="arrow-button" href="#" target="pronto">Search Product</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>Calculated Weights</h5>
+                            <div class="container threecol">
+                                <div class="col">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                                <div class="col">
+                                    <label>Approx. weight in lbs*</label>
+                                    <input type="text" onBlur="ChangeLabel();" size="20" name="result" id="result" class="calcresultinput" maxlength="8" readonly>
+                                </div>
+                            </div>
+                            <div class="container threecol">
+                                <div class="col">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                                <div class="col">
+                                    <label>Approx. weight in kg*</label>
+                                    <input type="text" onBlur="ChangeLabel();" size="20" name="result2" id="result2" class="calcresultinput" maxlength="8" readonly>
+                                </div>
+                            </div>
+                            <div class="text-center pt30">
+                                <p class="text-center smalltext">*These weights should be used for estimation purposes only. Plate weight does not allow for kerf.</p>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Tab 2 -->
+                    <div class="tab_content calctabs" id="tab-2">
+                        <div class="swap accordion-heading" data-swap-target="#collapseOne" data-swap-group="conversions">
+                            Inches to Millimeter
+                        </div>
+                        <div id="collapseOne">
+                            <div class="accordion-inner">
+                                <form action="" name="convInchForm" id="convInchForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Inches =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value=".03937" name="var3" type="hidden"></td>
+                                                <td class="calcbody"><input name="button" onclick="convInch(this.form);" value="Calculate" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Millimeter =</td>
+                                                <td class="calcbody"><input name="weight" readonly type="number"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseTwo" data-swap-group="conversions">
+                            Millimeter to Inches
+                        </div>
+                        <div id="collapseTwo">
+                            <div class="accordion-inner">
+                                <form action="" name="convMilliForm" id="convMilliForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Millimeter =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value=".03937" name="var4" type="hidden"></td>
+                                                <td class="calcbody"><input name="button" onclick="convMilli(this.form);" value="Calculate" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Inches =</td>
+                                                <td class="calcbody"><input name="weight" readonly type="number"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseThree" data-swap-group="conversions">
+                            Pounds to Kilograms
+                        </div>
+                        <div id="collapseThree">
+                            <div class="accordion-inner">
+                                <form action="" name="poundstokilosForm" id="poundstokilosForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Pounds =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value=".4536" name="var5" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="poundstokilos(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Kilograms =</td>
+                                                <td class="calcbody"><input name="weight" readonly type="number"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseFour" data-swap-group="conversions">
+                            Kilograms to Pounds
+                        </div>
+                        <div id="collapseFour">
+                            <div class="accordion-inner">
+                                <form action="" name="kilostopoundsForm" id="kilostopoundsForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Kilograms =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value="2.2046" name="var6" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="kilostopounds(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Pounds =</td>
+                                                <td class="calcbody"><input name="weight" readonly type="number"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseFive" data-swap-group="conversions">
+                            Metric Tons to Pounds
+                        </div>
+                        <div id="collapseFive">
+                            <div class="accordion-inner">
+                                <form action="" name="MT_PoundsForm" id="MT_PoundsForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Metric Tons =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value="2204.6" name="var7" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="MT_Pounds(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Pounds =</td>
+                                                <td class="calcbody"><input name="weight" readonly type="number"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseSix" data-swap-group="conversions">
+                            Metric Tons to Tons
+                        </div>
+                        <div id="collapseSix">
+                            <div class="accordion-inner">
+                                <form action="" name="MT_TonsForm" id="MT_TonsForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Metric Tons =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value="1.1023" name="var8" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="MT_Tons(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Tons =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseSeven" data-swap-group="conversions">
+                            Fahrenheit to Celsius
+                        </div>
+                        <div id="collapseSeven">
+                            <div class="accordion-inner">
+                                <form action="" name="convFCForm" id="convFCForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Fahrenheit =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">&nbsp;</td>
+                                                <td class="calcbody"><input value="Calculate" onclick="convFC(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Celsius =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseEight" data-swap-group="conversions">
+                            Celsius to Fahrenheit
+                        </div>
+                        <div id="collapseEight">
+                            <div class="accordion-inner">
+                                <form action="" name="convCFForm" id="convCFForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Celsius =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">&nbsp;</td>
+                                                <td class="calcbody"><input value="Calculate" onclick="convCF(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">Fahrenheit =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseNine" data-swap-group="conversions">
+                            Ff/Lbs to Joules
+                        </div>
+                        <div id="collapseNine">
+                            <div class="accordion-inner">
+                                <form action="" name="ftJoulesForm" id="ftJoulesForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">ft/lbs =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value="1.3558" name="var9" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="ftJoules(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"> Joules =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseTen" data-swap-group="conversions">
+                            Joules to Ft/lbs
+                        </div>
+                        <div id="collapseTen">
+                            <div class="accordion-inner">
+                                <form action="" name="JoulesFtForm" id="JoulesFtForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">Joules =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value="1.3558" name="var10" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="JoulesFt(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">ft/lbs =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseEleven" data-swap-group="conversions">
+                            MPa to psi
+                        </div>
+                        <div id="collapseEleven">
+                            <div class="accordion-inner">
+                                <form action="" name="MPaPSIForm" id="MPaPSIForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">MPa =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value="145.0377" name="var11" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="MPaPSI(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">psi =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseTwelve" data-swap-group="conversions">
+                            MPa to ksi
+                        </div>
+                        <div id="collapseTwelve">
+                            <div class="accordion-inner">
+                                <form action="" name="MPaKSIForm" id="MPaKSIForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">MPa =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value=".1450377" name="var12" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="MPaKSI(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">ksi =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseThirteen" data-swap-group="conversions">
+                            psi to MPa
+                        </div>
+                        <div id="collapseThirteen">
+                            <div class="accordion-inner">
+                                <form action="" name="psi_MPaForm" id="psi_MPaForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">psi =</td>
+                                                <td class="calcbody" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value="145.0377" name="var13" type="hidden"></td>
+                                                <td class="calcbody"><input value="Calculate" onclick="psi_MPa(this.form);" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">MPa =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="swap accordion-heading" data-swap-target="#collapseFourteen" data-swap-group="conversions">
+                            ksi to MPa
+                        </div>
+                        <div id="collapseFourteen">
+                            <div class="accordion-inner">
+                                <form action="" name="ksi_MPaForm" id="ksi_MPaForm">
+                                    <table cellpadding="0" cellspacing="0" width="400">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="3" class="calc_left" width="25">&nbsp;</td>
+                                                <td class="calcbody" width="100">ksi =</td>
+                                                <td class="calcbody" align="left" width="247"><input name="length" type="number"></td>
+                                                <td rowspan="3" class="calc_rt" width="26">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody"><input value=".1450377" name="var14" type="hidden"></td>
+                                                <td class="calcbody"><input name="button" onclick="ksi_MPa(this.form);" value="Calculate" type="button"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="calcbody">MPa =</td>
+                                                <td class="calcbody"><input name="weight" readonly"readonly"="" type="text"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 3 -->
+                    <div class="tab_content calctabs" id="tab-3">
+                        <h5>Carbon Equivalency Formula</h5>
+                        <div class="for_tt17" align="center">
+                            <form action="" name="carbonForm" id="carbonForm">
+                                <table cellpadding="0" cellspacing="0" class="table borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td width="60">C =</td>
+                                            <td><input name="C" id="C" type="text"></td>
+                                            <td width="60" class="ph10">V =</td>
+                                            <td><input name="V" id="V" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="60">Mn =</td>
+                                            <td><input name="Mn" id="Mn" type="text"></td>
+                                            <td width="60" class="ph10">Cu =</td>
+                                            <td><input name="Cu" id="Cu" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="60">Cr =</td>
+                                            <td><input name="Cr" id="Cr" type="text"></td>
+                                            <td width="60" class="ph10">Ni =</td>
+                                            <td><input name="Ni" id="Ni" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="60">Mo =</td>
+                                            <td><input name="Mo" id="Mo" type="text"></td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&nbsp;</td>
+                                            <td><input name="button" onclick="carbon(this.form);" value="Calculate" type="button"></td>
+                                            <td colspan="2">Carbon Equiv =
+                                                <input name="weight" class="calcresultinput" readonly type="number"></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <hr>
+                        <h5>PcM Formula</h5>
+                        <div class="for_tt18" align="center">
+                            <form action="" name="PcMForm" id="PcMForm">
+                                <table cellpadding="0" cellspacing="0" width="620" class="borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td>C =</td>
+                                            <td><input name="C" id="C" type="text"></td>
+                                            <td class="ph10">Ni =</td>
+                                            <td><input name="Ni" id="Ni" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Si = </td>
+                                            <td><input name="Si" id="Si" type="text"></td>
+                                            <td class="ph10">Mo =</td>
+                                            <td><input name="Mo" id="Mo" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mn =</td>
+                                            <td><input name="Mn" id="Mn" type="text"></td>
+                                            <td class="ph10">V =</td>
+                                            <td><input name="V" id="V" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cu =</td>
+                                            <td><input name="Cu" id="Cu" type="text"></td>
+                                            <td class="ph10">B =</td>
+                                            <td><input name="B" id="B" type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cr =</td>
+                                            <td><input name="Cr" id="Cr" type="text"></td>
+                                            <td>&nbsp;</td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div align="center">
+                                                    <input name="button" onclick="PcM(this.form);" value="Calculate" type="button">
+                                                </div>
+                                            </td>
+                                            <td>PcM =</td>
+                                            <td><input class="calcresultinput" name="weight" readonly type="number"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript' src='https://www.onealsteel.com/wp-content/themes/kronos/assets/js/scripts.min.js?ver=1641569506' id='kronos-js-js'></script>
+        <script type='text/javascript' src='https://www.onealsteel.com/wp-content/themes/kronos/assets/js/calc.js?ver=1602780569' id='kronos-calcs-js-js'></script>
+        
+</body>
+
+</html>
