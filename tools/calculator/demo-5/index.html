@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Material Weight Calculator | Metal Weight Calculator | Industrial Metal Supply</title>
+    <meta name="Description" content="The metal weight calculator accurately determines the overall weight of a metal order by implementing the alloy, shape, piece quantity, and dimensions." />
+    <meta name="Keywords" content="" />
+    <meta name="robots" content="noodp" />
+    <meta name="slurp" content="noydir" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+   
+    <!-- Bootstrap - include this even if it's not a responsive cart -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+
+<body id="page_information">
+
+        
+        <div id="bodyWrapper" class="body-wrapper">
+            
+            <div id="headerWrapper" class="header-wrapper">
+                <div class="progress-container">
+                    <div class="progress-bar" id="blog-progress-bar"></div>
+                </div>
+               
+                
+                <div id="topNavHeaderBlock" class="header-block">
+                    <div class="top_nav_container">
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- REGION sub_header -->
+            <div id="mainContentWrapper">
+                <div id="mainContent" class="container">
+                    <!-- Nothing inside this div can stretch full width -->
+                    <div class="row body-row">
+                        <div id="bodyContent" class="body-content col-md-9 col-md-push-3">
+                            <div class="breadcrumbs noprint"><span class="hidden-xs"><a href="#" class="headerNavigation">Home</a> / <a href="#" class="headerNavigation">Main</a> / </span><a href="#" class="headerNavigation">Metal Calculators</a> / Metal Weight Calculator</div>
+                            <div id="facetedButtonPlaceholder"></div>
+                            <!-- REGION content_top -->
+                            <!-- BOF body -->
+                            <div class="page-header"><h1>Metal Weight Calculator</h1>
+                            </div>
+                            <div class="contentContainer">
+                                <div class="contentText" width="100%">It&rsquo;s essential to know how much your metal order weighs &ndash; whether you are picking it up at Will Call and need to load it in your vehicle or if it&rsquo;s being delivered to your location. Use our popular metal calculator to estimate the weight of a single metal piece or the weight of your entire order. Material weight calculators eliminate human mistakes while providing an easy and accessible way to determine exact weights by inputting material piece measurements.<br /><br /><strong>Please Note: </strong>These weights should be used for estimation purposes only.<br /><br />
+                                    <div id="calcform1" class="boxCalc">
+                                        <div class="pad">
+                                            <div class="colCalc">
+                                                <label for="product">Alloy: </label>
+                                                <select name="product" id="product">
+                                                    <option id="3002">Steel (default) </option>
+                                                    <option>Aluminum 1100 </option>
+                                                    <option>Aluminum 2011 </option>
+                                                    <option>Aluminum 2014 </option>
+                                                    <option>Aluminum 2017 </option>
+                                                    <option>Aluminum 2024 </option>
+                                                    <option id="5008">Aluminum 3003 </option>
+                                                    <option>Aluminum 5005 </option>
+                                                    <option id="5009">Aluminum 5052 </option>
+                                                    <option>Aluminum 5056 </option>
+                                                    <option>Aluminum 5083 </option>
+                                                    <option>Aluminum 5086 </option>
+                                                    <option id="5010">Aluminum 6061 </option>
+                                                    <option id="5011">Aluminum 6063 </option>
+                                                    <option>Aluminum 7050 </option>
+                                                    <option>Aluminum 7075 </option>
+                                                    <option>Aluminum 7178 </option>
+                                                    <option id="3003">Stainless 300 Series </option>
+                                                    <option>Stainless 400 Series </option>
+                                                    <option>Nickel 200 </option>
+                                                    <option>Nickel 400 </option>
+                                                    <option>Nickel R-405 </option>
+                                                    <option>Nickel K-500 </option>
+                                                    <option>Nickel 600 </option>
+                                                    <option>Nickel 625 </option>
+                                                    <option>Nickel 800H </option>
+                                                    <option>Nickel 800AT </option>
+                                                    <option>Nickel 825 </option>
+                                                    <option>Nickel 330 </option>
+                                                    <option>Nickel 20 </option>
+                                                    <option>Nickel C-276 </option>
+                                                    <option>Nickel 2545MD </option>
+                                                    <option>Magnesium </option>
+                                                    <option>Beryllium </option>
+                                                    <option>Titanium </option>
+                                                    <option>Zirconium </option>
+                                                    <option>Cast Iron </option>
+                                                    <option>Zinc </option>
+                                                    <option id="3004">Brass </option>
+                                                    <option>Columbium </option>
+                                                    <option id="3005">Copper </option>
+                                                    <option>Molybdenum </option>
+                                                    <option>Silver </option>
+                                                    <option>Lead </option>
+                                                    <option>Tantalum </option>
+                                                    <option>Tungsten </option>
+                                                    <option>Gold </option>
+                                                </select>
+                                                <div class="clearfix"></div>
+                                                <label for="ddlShape">Shape: </label>
+                                                <select onchange="ChangeLabel();ClearFields();" name="form" id="ddlShape" style="width:110px">
+                                                    <option>Round </option>
+                                                    <option>Square </option>
+                                                    <option>Hexagonal </option>
+                                                    <option>Octagonal </option>
+                                                    <option>Sheet </option>
+                                                    <option>Plate </option>
+                                                    <option>Flat </option>
+                                                    <option>Tubular </option>
+                                                    <option>Circular </option>
+                                                    <option>Ring </option>
+                                                </select>
+                                                <div class="clearfix"></div>
+                                                <label for="param4">Number of Pieces: </label>
+                                                <input type="text" name="param4" id="param4" style="width:50px; margin-bottom:10px" />
+                                                <div class="clearfix"></div>
+                                                <label id="lbl1" name="lbl1" for="param1" onblur="ChangeLabel();"></label>
+                                                <input type="text" name="param1" id="param1" class="inputSmall" />
+                                                <select name="units1" id="units1">
+                                                    <option>in </option>
+                                                    <option>ft </option>
+                                                    <option>yd </option>
+                                                    <option>mm </option>
+                                                    <option>cm </option>
+                                                    <option>m </option>
+                                                </select>
+                                                <div class="clearfix"></div>
+                                                <div id="lbl2_container">
+                                                    <label id="lbl2" name="lbl2" for="param2" onblur="ChangeLabel();"></label>
+                                                    <input type="text" size="10" name="param2" id="param2" class="inputSmall" />
+                                                    <select name="units2" id="units2">
+                                                        <option>in </option>
+                                                        <option>ft </option>
+                                                        <option>yd </option>
+                                                        <option>mm </option>
+                                                        <option>cm </option>
+                                                        <option>m </option>
+                                                    </select>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <label id="lbl3" name="lbl3" for="param3" onblur="ChangeLabel();"></label>
+                                                <input type="text" name="param3" id="param3" class="inputSmall" />
+                                                <select name="units3" id="units3">
+                                                    <option>in </option>
+                                                    <option>ft </option>
+                                                    <option>yd </option>
+                                                    <option>mm </option>
+                                                    <option>cm </option>
+                                                    <option>m </option>
+                                                </select>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="fltlft">
+                                                <h5 style="color:#990000">Calculated Weight (lbs): </h5>
+                                                <input type="text" onblur="ChangeLabel();" onfocus="if(navigator.appName == 'Netscape' &amp; parseInt(navigator.appVersion) == 3); else document.getElementById('calcform1').Submit.focus(); " size="16" name="result" maxlength="8" id="result" class="calcWeight" />
+                                                <br />
+                                                <br />
+                                                <!--<input type="submit" value="Calculate" name="Submit" onclick="CalculateWeight(); return false;" class="btnCalculate" />-->
+                                                <a onclick="CalculateWeight(); return false;" class="btn btn-orange">Calculate</a>
+                                                &nbsp;&nbsp;
+                                                <input type="reset" onclick="ChangeLabel();ClearFields();return false;" value="Reset" name="reset" class="btnReset" />
+                                                <br />
+                                                <br />
+                                                <!--<a href="Products/Metals" onclick="javascript:ga('send','event','Weight Calculator','Get a Quote', window.location.href);"><img src="images/pages/startquote.jpg" /></a>-->
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div id="calculator-cat-listing-wrapper" style="display: none">
+                                            <h4>View our Selection</h4>
+                                            <div id="calculator-cat-listing"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <br />
+                                    <div title='Metal Calculator' style='display: none' id='blog_form_dialog'>
+                                        <p>Sign up for IMS promotional updates!</p>
+                                        <form id="blog_form">
+                                            <label for="catalog_firstname">First Name <span style="color: #c00;">*</span></label><br />
+                                            <input type="text" name="firstname" id="catalog_firstname"><br />
+                                            <label for="catalog_lastname">Last Name <span style="color: #c00;">*</span></label><br />
+                                            <input type="text" name="lastname" id="catalog_lastname"><br />
+                                            <label for="catalog_email">Email <span style="color: #c00;">*</span></label><br />
+                                            <input type="text" name="email" id="catalog_email"><br />
+                                            <label for="catalog_company">Company </label><br />
+                                            <input type="text" name="company" id="catalog_company"><br /><br />
+                                            <a id="catalog_download_submit" class="btn btn-orange" onclick='blog_signup_validate()'>Use Calculator</a>
+                                        </form>
+                                        
+                                    </div>
+                                    
+                                    
+                                    <br />If you have questions regarding our metal weight calculator or want to learn more about our aluminum, steel, and stainless steel product options, contact us or stop by one of our&nbsp;six locations across California and Arizona today. IMS is your trusted source for high-quality metal products.<br />
+                                </div>
+                            </div>
+                            <!-- EOF body -->
+                        </div>
+                        <!-- BOF left_column -->
+                        <div id="columnLeft" class="col-md-3 col-md-pull-9">
+                            <div class="navBoxContainer left_nav_container">
+                                <div id="left_nav" class="menu">
+                                    <div class="nav left_nav">
+                                        <ul id="nav" class="nav_0">
+                                            <li class="nav_0 selected depth_0 first">
+                                                <a class="nav_0 selected depth_0 first" href="#" >Main</a>
+                                                <ul class="nav_0_1">
+                                                    <li class="nav_0_1 selected depth_1 first">
+                                                        <a class="nav_0_1 selected depth_1 first" href="#" ><i class="fa fa-caret-right" style="padding-top: 4px; vertical-align: top;"></i><div class="left-menu-name" style="display: inline-block; max-width: 205px;">Metal Calculators</div>
+<div class="clearfix"></div>
+</a>
+                                                        
+                                                    </li>
+                                                    <li class="nav_0_1  depth_1">
+                                                        <a class="nav_0_1  depth_1" href="#" ><i class="fa fa-caret-right" style="padding-top: 4px; vertical-align: top;"></i><div class="left-menu-name" style="display: inline-block; max-width: 205px;">Blog</div>
+<div class="clearfix"></div>
+</a>
+                                                    </li>
+                                                    <li class="nav_0_1  depth_1">
+                                                        <a class="nav_0_1  depth_1" href="#" ><i class="fa fa-caret-right" style="padding-top: 4px; vertical-align: top;"></i><div class="left-menu-name" style="display: inline-block; max-width: 205px;">Glossary</div>
+<div class="clearfix"></div>
+</a>
+                                                    </li>
+                                                    <li class="nav_0_1  depth_1">
+                                                        <a class="nav_0_1  depth_1" href="#" ><i class="fa fa-caret-right" style="padding-top: 4px; vertical-align: top;"></i><div class="left-menu-name" style="display: inline-block; max-width: 205px;">FAQs</div>
+<div class="clearfix"></div>
+</a>
+                                                        
+                                                    </li>
+                                                    <li class="nav_0_1  depth_1">
+                                                        <a class="nav_0_1  depth_1" href="#" ><i class="fa fa-caret-right" style="padding-top: 4px; vertical-align: top;"></i><div class="left-menu-name" style="display: inline-block; max-width: 205px;">Infographics</div>
+<div class="clearfix"></div>
+</a>
+                                                        
+                                                    </li>
+                                                    <li class="nav_0_1  depth_1">
+                                                        <a class="nav_0_1  depth_1" href="#" ><i class="fa fa-caret-right" style="padding-top: 4px; vertical-align: top;"></i><div class="left-menu-name" style="display: inline-block; max-width: 205px;">Product Literature</div>
+<div class="clearfix"></div>
+</a>
+                                                    </li>
+                                                    <li class="nav_0_1  depth_1 last">
+                                                        <a class="nav_0_1  depth_1 last" href="#" ><i class="fa fa-caret-right" style="padding-top: 4px; vertical-align: top;"></i><div class="left-menu-name" style="display: inline-block; max-width: 205px;">Market Updates</div>
+<div class="clearfix"></div>
+</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div style="clear: left;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-left-c2a">
+                                <div class="left-c2a-row"><a  id="btn1" href="#" class="btn btn-orange-reverse btn-block">Contact Us</a></div>
+                                <div class="left-c2a-row"><a href="#">
+<picture>
+<source srcset='calculators.webp' data-srcset='calculators.webp' type='image/webp'>
+	<img class="lazy img-responsive" style="max-width: 208pxpx;  max-height: 83pxpx;" src='' data-srcset='calculators.webp' alt="metal_calc" data-src='calculators.webp' width='208' height='83' style='aspect-ratio: 208px / 83px'>
+</picture>
+</a></div>
+                                
+                        </div>
+                    </div>
+                </div> <!-- end mainContent -->
+            </div> <!-- end mainContentWrapper -->
+            <div id="responsive_faceted_search_container"></div>
+            <div id="responsive-menu"></div>
+            
+<script src="calculator.js"></script>
+</body>
+
+</html>
