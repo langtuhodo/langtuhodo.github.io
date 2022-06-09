@@ -1,0 +1,234 @@
+<html>
+
+<head>
+    <title>Metal Weight Calculator - Round, Square, Rectange, Hexagon, Octagon, Sheet, Plate, Tubular, Ring, Pipe</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <META name="keywords" content="calculators, engineering calculators, electrical engineering calculators,  mechanical engineering calculators, physics calculators, optical engineering calculators, electronic calculators, civil engineering calculators, resistance, impedance, voltage, current, capacitance, Ohm's 
+law, color code, power, resistor, capacitor, speed, distance, time, chemical periodic table, refrigeration">
+    <META content="calculators,  engineering calculators...." name=description>
+</head>
+
+<body bgcolor="#CCCCCC" bottommargin="0" topmargin="0">
+    <table width="940" align="center" bgcolor="white">
+        <tr>
+            <td>
+                <table width="766" align="left">
+                    
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td height="12"></td>
+                    </tr>
+                  
+                    <tr>
+                        <td>
+                            <table width="649" cellpadding="4" align="center">
+                        <td width="635" align="center">
+                            <font size="3" face="verdana" color="darkblue"><strong><b>Metal Weight Calculator</b></strong></font>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr align="center" size="2" color="#FF0000">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td height="9"></td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <font size="2" face="verdana" color="black"><b>Enter value, select units and click on calculate. Result 
+                  will be displayed.</b> </font>
+                        </td>
+                    </tr>
+                </table>
+                <form name="form1" method="POST" onSubmit="CalculateWeight(); return false;">
+                    <table align="center">
+                        <tr>
+                            <td colspan="3">
+                                <font size="2" face="verdana" color="red"><strong><b>Enter your values:</b></strong></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="7"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font size="2" face="verdana" color="darkblue"><b style="margin-left:.5cm">Material: </b></font>
+                            </td>
+                            <td> <select name="product">
+                                    <option>Steel (default)
+                                    <option>Aluminum 1100
+                                    <option>Aluminum 2011
+                                    <option>Aluminum 2014
+                                    <option>Aluminum 2017
+                                    <option>Aluminum 2024
+                                    <option>Aluminum 3003
+                                    <option>Aluminum 5005
+                                    <option>Aluminum 5052
+                                    <option>Aluminum 5056
+                                    <option>Aluminum 5083
+                                    <option>Aluminum 5086
+                                    <option>Aluminum 6061
+                                    <option>Aluminum 6063
+                                    <option>Aluminum 7050
+                                    <option>Aluminum 7075
+                                    <option>Aluminum 7178
+                                    <option>Stainless 300 Series
+                                    <option>Stainless 400 Series
+                                    <option>Nickel 200
+                                    <option>Nickel 400
+                                    <option>Nickel R-405
+                                    <option>Nickel K-500
+                                    <option>Nickel 600
+                                    <option>Nickel 625
+                                    <option>Nickel 800H
+                                    <option>Nickel 800AT
+                                    <option>Nickel 825
+                                    <option>Nickel 330
+                                    <option>Nickel 20
+                                    <option>Nickel C-276
+                                    <option>Nickel 2545MD
+                                    <option>Magnesium
+                                    <option>Beryllium
+                                    <option>Titanium
+                                    <option>Zirconium
+                                    <option>Cast Iron
+                                    <option>Zinc
+                                    <option>Brass
+                                    <option>Columbium
+                                    <option>Copper
+                                    <option>Molybdenum
+                                    <option>Silver
+                                    <option>Lead
+                                    <option>Tantalum
+                                    <option>Tungsten
+                                    <option>Gold
+                                </select> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font size="2" face="verdana" color="darkblue"><b style="margin-left:.5cm">Shape:  </b></font>
+                            </td>
+                            <td> <select name="form" onChange="ChangeLabel();ClearFields();showimage();">
+                                    <option selected value="img/round.jpg">Round
+                                    <option value="img/sqr.jpg">Square
+                                    <option value="img/rect.jpg">Rectangle
+                                    <option value="img/hexagon.jpg">Hexagonal
+                                    <option value="img/octagon.jpg">Octagonal
+                                    <option value="img/sheet.jpg">Sheet
+                                    <option value="img/plate.jpg">Plate
+                                    <option value="img/tubular.jpg">Tubular
+                                    <option value="img/ring.jpg">Ring
+                                    <option value="img/tubular.jpg">Pipe
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="15"></td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="3"><img src="img/round.jpg" name="pictures"></td>
+                        </tr>
+                        <tr>
+                            <td height="15"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font size="2" face="verdana" color="darkblue"><b style="margin-left:.5cm">Quantity:   </b></font>
+                            </td>
+                            <td> <input type="text" name="param4" size="6" maxlength="10">
+                                </b></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" name="lbl1" size="12" onFocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].param1.focus(); " onBlur="ChangeLabel();"> :
+                            </td>
+                            <td colspan="2"><input type="text" name="param1" size="6" maxlength="10">
+                                <select name="units1">
+                                    <option>in
+                                    <option>ft
+                                    <option>yd
+                                    <option>mm
+                                    <option>cm
+                                    <option>m
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="lbl2" size="12" onFocus="if(!(navigator.appName == 'Netscape' &amp;&amp; parseInt(navigator.appVersion) == 3)){  if(document.forms[0].lbl2.value=='(no value)')  document.forms[0].param3.focus(); else document.forms[0].param2.focus();}"> :
+                            </td>
+                            <td colspan="2"> <input type="text" name="param2" size="6" maxlength="10">
+                                <select name="units2">
+                                    <option>in
+                                    <option>ft
+                                    <option>yd
+                                    <option>mm
+                                    <option>cm
+                                    <option>m
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="lbl3" size="12" onFocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].param3.focus(); " onBlur="ChangeLabel();"> :
+                            </td>
+                            <td colspan="2"> <input type="text" name="param3" size="6" maxlength="10">
+                                <select name="units3">
+                                    <option>in
+                                    <option>ft
+                                    <option>yd
+                                    <option>mm
+                                    <option>cm
+                                    <option>m
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="15"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><input type="submit" name="Submit" value="Calculate" style="margin-left:1cm">
+                                <input type="reset" name="reset" value="Clear" onClick="ChangeLabel();ClearFields();return false;" style="margin-left:1cm"></td>
+                        </tr>
+                        <tr>
+                            <td height="15"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <font size="2" face="verdana" color="red"><b>Results:</b></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <font size="2" face="verdana" color="darkblue"><b style="margin-left:.5cm">Calculated Weight: 
+                  <input type="text" maxlength="8" name="result" size="10" onFocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].Submit.focus(); " onBlur="ChangeLabel();">
+           Lbs</b></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <font size="2" face="verdana" color="darkblue"><b style="margin-left:.5cm">Calculated Weight: 
+                  <input type="text" maxlength="8" name="result2" size="10" onFocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].Submit.focus(); " onBlur="ChangeLabel();">
+           Kgs</b></font>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+            </td>
+        </tr>
+        
+        
+    </table>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>
