@@ -1,0 +1,430 @@
+/*!
+Pure v0.2.1
+Copyright 2013 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yui/pure/blob/master/LICENSE.md
+*/
+@import 'https://melindasteel.ro/themes/melindasteel/css/fonts.css';
+@import 'https://melindasteel.com/themes/melindasteel/css/fonts.css';
+@import 'https://melindasteel.hu/themes/melindasteel/css/fonts.css';
+@import 'https://melindasteel.ro/themes/melindasteel/css/font-awesome.css';
+@import 'https://melindasteel.com/themes/melindasteel/css/font-awesome.css';
+@import 'https://melindasteel.hu/themes/melindasteel/css/font-awesome.css';
+
+/* Mobile */
+@media screen and (max-width: 767px;){
+    #page{
+        max-width: 100%; 
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 989px){
+    #page{
+        max-width: 100%;
+    }
+    #buy_block.fixed #calculations{
+        width: 100%;
+    }
+    #sequence{
+        height: 450px !important;
+    }
+    /* Menu */
+    #minicsimplemenu .submenu.home{
+        position: absolute;
+        width: 40px;
+        left: 0;
+        text-align: center;
+        line-height: 60px;
+    }
+    #minicsimplemenu .submenu.home i{
+        text-indent: -2px;
+    }
+    #minicsimplemenu .submenu.termekek{
+        padding-left: 40px;
+    }
+    #index #minicsimplemenu .submenu.home{
+        display: none
+    }
+    #index #minicsimplemenu .submenu.termekek{
+        padding-left: 0;
+    }
+
+    /* PRODUCT PAGE */
+    /* Cutting modal window */
+
+    #product-title,
+    .social-icons{
+        width: 100% !important;
+    }
+    .social-icons{
+        margin-bottom: 0.78em;
+    }    
+    #short_description_block{
+        padding-left: 1em;
+    }
+    #cuttingPopup #cutting-list{
+        width: 100%;
+    }
+    #cuttingPopup .delivery-info{
+        width: 100% !important;
+        float: none;
+    }
+    #add_to_cart i{
+        position: absolute !important;
+        top: 50%;
+    }
+    /* Category filter */
+    #category #left_column{
+        position: absolute;
+        z-index: 2;
+        background-color: #fff;
+        max-height: 100%;
+        width: 40%;
+
+        -webkit-transform: translate3d(-100%,0,0);
+        -moz-transform: translate3d(-100%,0,0);
+        -ms-transform: translate3d(-100%,0,0);
+        -o-transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0);
+
+        -webkit-transition: translate3d 300ms ease-in-out;
+        -moz-transition: translate3d 300ms ease-in-out;
+        -ms-transition: translate3d 300ms ease-in-out;
+        -o-transition: translate3d 300ms ease-in-out;
+        transition: translate3d 300ms ease-in-out;
+
+    }
+    #category.filter-active #page{
+        overflow: hidden;
+    }
+    #category.filter-active #left_column{
+        -webkit-transform: translate3d(0%,0,0);
+        -moz-transform: translate3d(0%,0,0);
+        -ms-transform: translate3d(0%,0,0);
+        -o-transform: translate3d(0%,0,0);
+        transform: translate3d(0%,0,0);
+        overflow: scroll;
+    }
+    .layered_block_activator{
+        display: block;
+    }
+    #category.filter-active .layered_block_activator{
+        display: none;
+    }
+    #layered_form div div ul{
+        height: auto !important;
+    }
+    #category.filter-active #center_column{
+        -webkit-transform: translate3d(40%,0,0);
+        -moz-transform: translate3d(40%,0,0);
+        -ms-transform: translate3d(40%,0,0);
+        -o-transform: translate3d(40%,0,0);
+        transform: translate3d(40%,0,0);
+    }
+    /*#layered_block_left {
+        overflow-y: auto;
+        max-height: 100%;
+    }*/
+    #layered_block_left .layered_block_activator{
+        right: -40px;
+        top: 5px;
+    }
+}
+/* Tablet and Mobile */
+@media screen and (max-width: 989px){
+    /* PRODUCT LIST PAGE */
+    /* filter */
+    
+}
+/* Default Screen */
+@media screen and (min-width: 990px) {
+    #page{
+        max-width: 92%; 
+    }
+    /* Menu */
+    #minicsimplemenu .submenu.home{
+        position: absolute;
+        width: 40px;
+        left: -40px;
+        text-align: center;
+        line-height: 60px;
+    }
+    #minicsimplemenu .submenu.home a{
+        background: #5b6062;
+    }
+    #index #minicsimplemenu .submenu.home{
+        display: none
+    }
+    #index #minicsimplemenu .submenu.termekek{
+        padding-left: 0;
+    }
+    
+    #buy_block.fixed #calculations{
+        width: 92%;
+    }
+    .layered_block_activator{
+        display: none;
+    }
+    #category #left_column{
+        position: static !important;
+    }
+    #filter-closer{
+        display: none;
+    }
+
+}
+/* Large screen */
+@media screen and (min-width: 1240px){
+    #page{
+        max-width: 1170px; 
+    }
+    #buy_block.fixed #calculations{
+        width: 1170px;
+    }
+    #cuttingPopup .inner{
+        max-width: 1110px !important;
+    }
+    .services .img-holder{
+        margin-bottom: 2.8571em;
+    }
+}
+#page{
+    margin: 0 auto;
+}
+.pure-g {
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g {
+    word-spacing: -0.43em;
+}
+
+.pure-u {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.pure-u-1,
+.pure-u-1-2,
+.pure-u-1-3,
+.pure-u-2-3,
+.pure-u-1-4,
+.pure-u-3-4,
+.pure-u-1-5,
+.pure-u-2-5,
+.pure-u-3-5,
+.pure-u-4-5,
+.pure-u-1-6,
+.pure-u-5-6,
+.pure-u-1-8,
+.pure-u-3-8,
+.pure-u-5-8,
+.pure-u-7-8,
+.pure-u-1-12,
+.pure-u-5-12,
+.pure-u-7-12,
+.pure-u-11-12,
+.pure-u-1-24,
+.pure-u-5-24,
+.pure-u-7-24,
+.pure-u-11-24,
+.pure-u-13-24,
+.pure-u-17-24,
+.pure-u-19-24,
+.pure-u-23-24 {
+    display: inline-block;
+    *display: inline; /* IE < 8: fake inline-block */
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+.pure-u-1 {
+    width: 100%;
+}
+
+.pure-u-1-2 {
+    width: 50%;
+}
+
+.pure-u-1-3 {
+    width: 33.33333%;
+}
+
+.pure-u-2-3 {
+    width: 66.66666%;
+}
+
+.pure-u-1-4 {
+    width: 25%;
+}
+
+.pure-u-3-4 {
+    width: 75%;
+}
+
+.pure-u-1-5 {
+    width: 20%;
+}
+
+.pure-u-2-5 {
+    width: 40%;
+}
+
+.pure-u-3-5 {
+    width: 60%;
+}
+
+.pure-u-4-5 {
+    width: 80%;
+}
+
+.pure-u-1-6 {
+    width: 16.666%;
+}
+
+.pure-u-5-6 {
+    width: 83.33%;
+}
+
+.pure-u-1-8 {
+    width: 12.5%;
+}
+
+.pure-u-3-8 {
+    width: 37.5%;
+}
+
+.pure-u-5-8 {
+    width: 62.5%;
+}
+
+.pure-u-7-8 {
+    width: 87.5%;
+}
+
+.pure-u-1-12 {
+    width: 8.3333%;
+}
+
+.pure-u-5-12 {
+    width: 41.6666%;
+}
+
+.pure-u-7-12 {
+    width: 58.3333%;
+}
+
+.pure-u-11-12 {
+    width: 91.6666%;
+}
+
+.pure-u-1-24 {
+    width: 4.1666%;
+}
+
+.pure-u-5-24 {
+    width: 20.8333%;
+}
+
+.pure-u-7-24 {
+    width: 29.1666%;
+}
+
+.pure-u-11-24 {
+    width: 45.8333%;
+}
+
+.pure-u-13-24 {
+    width: 54.1666%;
+}
+
+.pure-u-17-24 {
+    width: 70.8333%;
+}
+
+.pure-u-19-24 {
+    width: 79.1666%;
+}
+
+.pure-u-23-24 {
+    width: 95.8333%;
+}
+
+/*csslint regex-selectors:false, unqualified-attributes:false*/
+
+.pure-g-r {
+    letter-spacing: -0.31em;
+    *letter-spacing: normal;
+    *word-spacing: -0.43em;
+}
+
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.pure-g-r {
+    word-spacing: -0.43em;
+}
+
+.pure-g-r img {
+    max-width: 100%;
+}
+
+@media (min-width: 980px) {
+    .pure-visible-phone {
+        display: none;
+    }
+    .pure-visible-tablet {
+        display: none;
+    }
+    .pure-hidden-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .pure-g-r > .pure-u,
+    .pure-g-r > [class *= "pure-u-"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .pure-g-r > .pure-u,
+    .pure-g-r > [class *= "pure-u-"] {
+        width: 100%;
+    }
+    .pure-hidden-phone {
+        display: none;
+    }
+    .pure-visible-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .pure-hidden-tablet {
+        display: none;
+    }
+    .pure-visible-desktop {
+        display: none;
+    }
+}

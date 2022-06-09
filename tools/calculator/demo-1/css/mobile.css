@@ -1,0 +1,571 @@
+/* img for retina devices */
+@media (-webkit-min-device-pixel-ratio: 2), (   min--moz-device-pixel-ratio: 2), (     -o-min-device-pixel-ratio: 2/1), (        min-device-pixel-ratio: 2), (                min-resolution: 192dpi), (                min-resolution: 2dppx) { 
+    .sidebar .apps .apple{
+        background: url(../img/appstore-button@2x.png) no-repeat;
+        background-size: auto 30px;
+    }
+    .sidebar .apps .google{
+        background: url(../img/googleplay-button@2x.png) no-repeat;
+        background-size: auto 30px;
+    }
+    input[type="checkbox"] + label,
+    input[type="radio"] + label{
+        background: url(../img/checkbox-rest@2x.png) no-repeat;
+        background-size: auto 16px;
+    }
+    input[type="checkbox"] ~ label:hover{
+        background: url(../img/checkbox-hover@2x.png) no-repeat;
+        background-size: auto 16px;
+    }
+    input[type='checkbox']:checked + label{
+        background: url(../img/checkbox-checked@2x.png) no-repeat;
+        background-size: auto 16px;
+    }
+    input[type="radio"] ~ label:hover{
+        background: url(../img/radio-hover@2x.png) no-repeat;
+        background-size: auto 16px;
+    }
+    input[type="radio"]:checked + label{
+        background: url(../img/radio-checked@2x.png) no-repeat;
+        background-size: auto 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* GLOBAL */
+    h1{
+        font-size: 2em;
+        line-height: 1.12;
+        margin: 1.666666666666667em 0 0.5555555555555556em 0;
+    }
+    h2{
+        font-size: 1.75em;
+        line-height: 1.12;
+        margin: 1.666666666666667em 0 0.5555555555555556em 0;
+        font-family: 'exobold';
+    }
+    h3{
+        font-size: 1.45em;
+        line-height: 1.12;
+        margin: 1.666666666666667em 0 0.5555555555555556em 0;
+        font-family: 'exobold';
+    }
+    thead th{
+        padding: 0 10px;
+    }
+    .padding-lr{
+        padding: 0;
+    }
+
+    /* HOME PAGE */
+
+    /* Slider */
+    #sequence {
+        max-height: 300px;
+        min-height: 300px;
+    }
+    #sequence .buttons{
+        display: none;
+    }
+    #sequence > .sequence-canvas li .text{
+        width: 65.2%;
+    }
+    #sequence > .sequence-canvas li .text .text-holder{
+        top: 0;
+        bottom: 0;
+    }
+    #sequence > .sequence-canvas li span.title{
+        font-size: 1.3em;
+        margin-top: 2em;
+    }
+    #sequence > .sequence-canvas li .text .text-holder p{
+        max-height: 10em;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        margin: 1.4286em 0;
+    }
+    #sequence > .sequence-canvas li .text .text-holder .title{
+        max-height: 2.22em;
+        text-overflow: clip;
+        overflow: hidden;
+        display: block;
+    }
+    #sequence > .sequence-canvas li img{
+        height: 100% !important;
+        width: 168% !important;
+    }
+    #sequence > .sequence-canvas li .text .text-holder .button {
+        margin: 0 1.4286em;
+    }
+
+
+
+
+	#page{
+		padding: 0 1em;
+	}
+    /* Header user */
+    #header_user{
+        display: none;
+    }
+    #header_logo {
+        background: #fff url(../img/melinda-steel-logo.png) no-repeat left center;
+        margin: 20px 30px;
+        background-size: auto 30px;
+        display: block;
+        height: 30px;
+    }
+    #header_logo img{
+        display: none;
+    }
+	#index .calculator{
+		margin-bottom: 1em;
+	}
+	.calculator .calculator-inner{
+		padding: 0 1.2em;
+	}
+
+	.weight-calculator .calculator-inner{
+        background: #eeefef url(../img/calculator-weight.png) no-repeat center;
+    }
+    .gutter-calculator .calculator-inner{
+        background: #eeefef url(../img/calculator-gutter.png) no-repeat center;
+    }
+    #index .services{
+    	border-bottom: 1px solid #dedfe0;
+    }
+	.services .services-inner img{
+		width: 100%;
+	}
+
+    /* News */
+    .homepage-news .article{
+        padding: 0;   
+    }
+    .homepage-news .article .post-date{
+        margin: 20px 0; 
+    }
+
+    /* PRODUCT PAGE */
+
+    /* Fajsuly */
+    #szamlalo .termekek h4{
+        text-decoration: underline;
+        cursor: pointer;
+        margin: 0;
+        padding: 1.66em 0 0.55em 0;
+    }
+    #szamlalo .termekek ul li{
+        padding: 0.5em 1em;
+        margin: 0 0 0.3em;
+        background-color: #eeefef;
+    }
+    #szamlalo.not-mobile .eredmeny {
+        margin-top: 250px !important;
+    }
+    #szamlalo .ertekek select{
+        width: 98%;
+        margin: 0 auto 1em;
+        height: 2.071em;
+        display: block;
+    }
+    #szamlalo .termekek ul li{
+        line-height: 2.14em !important;
+    }
+
+    /* Product img */
+     #product #image-block img{
+        width: 100%;
+        height: auto;
+     }
+    /* Tender message */
+    #product #tender-message{
+        background-color: #7c8081;
+        margin-bottom: 2.428em;
+    }
+
+    /*  */
+    #buy_block{
+        position: relative;
+    }
+    #buy_block.fixed{
+        position: fixed;
+        top: 100%;
+        margin-top: -92px;
+        z-index: 9;
+        left: 1em;
+        right: 1em;
+    }
+    #success-message{
+        position: absolute;
+        top: -50%;
+    }
+
+    /* Services product Betonacel, Csatorna */
+    .services-img-holder{
+        display: none;
+    }
+
+    /* Social shares */
+    .social-icons {
+        display: none;
+    }
+    /* Technical img and long description */
+    .long-description{
+        padding: 0 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+   /* Chemical tables */
+    #chemichal h4{
+        text-align: center;
+        margin: 2em 0 1em;
+    }
+    #chemichal table{
+        width: 100%;
+    }
+    td{
+        padding: 0;
+    }
+    table.al-first th:nth-child(1),
+    table.al-first th:nth-last-child(1),
+    table.al-first td:nth-last-child(1),
+    table.al-l-first th:nth-child(1),
+    table.al-l-first th:nth-last-child(1),
+    table.al-l-first td:nth-last-child(1){
+        display: none;
+    }
+    #chemichal table th {
+        line-height: 1.2;
+        min-height: 43px;
+        padding: 10px 0;
+        font-family: 'noto_sansbold';
+    }
+
+    /* Second Table */
+    table.al-second ,.al-second thead,.al-second tbody,.al-second th,.al-second td,.al-second tr{ 
+        display: block; 
+    }
+    .al-second thead tr,
+    .al-second tbody tr:first-child{ 
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .al-second td{ 
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    /*.al-second td:before{ 
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%; 
+        padding-right: 10px; 
+        white-space: nowrap;
+    }
+    .al-second td:nth-of-type(1):before { content: "Si"; }
+    .al-second td:nth-of-type(2):before { content: "Fe"; }
+    .al-second td:nth-of-type(3):before { content: "Cu"; }
+    .al-second td:nth-of-type(4):before { content: "Mn"; }
+    .al-second td:nth-of-type(5):before { content: "Cr"; }
+    .al-second td:nth-of-type(6):before { content: "Mg"; }
+    .al-second td:nth-of-type(7):before { content: "Zn"; }
+    .al-second td:nth-of-type(8):before { content: "Ti"; }*/
+
+
+
+    /* Calcualtion */
+    #calculations > div > span{
+        width: 20% !important;
+    }
+    #calculations input{
+        padding: 0 0.5em;
+    }
+    span#results,
+    span#cutting{
+        display: none;
+    }
+    /* Add to cart */
+    #add_to_cart{
+        width: 20% !important;
+    }
+    #add_to_cart input{
+        text-indent: -9999px;
+    }
+    #add_to_cart i{
+        margin-right: -35px !important;
+    }
+    /* Trends */
+    #show_trends a {
+        padding: 0 !important;
+        font-size: 1.2em !important;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+
+    /* PRODUCT LIST PAGE */
+    .breadcrumb {
+        padding: 10px 60px 0 0;
+    }
+    #category .product-decription > h3{
+        font-size: 1.085em;
+        font-family: 'exoextralight';
+        margin: 0 0 0.9em 0;
+    }
+
+    /* filter */
+    #product_list li.item{
+        margin-bottom: 4em;
+    }
+    #product_list .features{
+        margin: 0;
+        padding: 0;
+    }
+    #category #left_column{
+        position: absolute;
+        -webkit-transform: translate(0,-100%);
+        -moz-transform: translate(0,-100%);
+        -ms-transform: translate(0,-100%);
+        -o-transform: translate(0,-100%);
+        transform: translate(0,-100%); !important
+    }
+    #product_list .center_block .reference{
+        top: 0 !important;
+    }
+    .mobile-filter-active#category #left_column{
+        position: relative;
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+        transform: translate(0,0);
+        background: #eeefef;
+    }
+    .layered_block_activator i{
+        line-height: 40px;
+    }
+   /* .layered_block_activator .icon-remove{
+        display: none;
+    }
+    .mobile-filter-active .layered_block_activator .icon-filter{
+        display: none;
+    }
+    .mobile-filter-active .layered_block_activator .icon-remove{
+        display: block;
+    }*/
+    #layered_block_left .layered_block_activator{
+        right: 0px;
+        bottom: -50px;
+    }
+    #product_list h3 a{
+        font-size: 1.5em;
+    }
+    #product_list .center_block .product_img_link,
+    #view_full_size{
+        display: block;
+        height: 250px;
+        overflow: hidden;
+    }
+    #product_list .center_block .product_img_link img,
+    #view_full_size img{
+        -webkit-transform: translate(0, -25%);
+        -moz-transform: translate(0, -25%);
+        -ms-transform: translate(0, -25%);
+        -o-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+    }
+    /* Sucess message */
+    /*#success-message{
+        top: 200px;
+    }*/
+    /* listed product */
+    #product_list .center_block .reference{
+        top: 0;
+    }
+
+    /* Betonacel megmunkalas */
+    #idTab10 .customizableProductsFile, 
+    #idTab10 .customizableProductsUploaded {
+        float: none !important;
+        padding: 1em 0 !important;
+        position: relative;
+        text-align: center;
+    }
+    #idTab10 .button{
+        padding: 0 1.428em !important;
+        float: none !important;
+    }
+    /* Csatorna anyagszukseglet szamlalo */
+    .idTabs-custom li{
+        overflow: hidden;
+    }
+    #more_info_block .holder .step-1,
+    #more_info_block .holder .step-2,
+    #more_info_block .holder .step-3{
+        width: 33.333% !important;
+    }
+    #more_info_block .holder .step-1 li{
+        width: 50%;
+    }
+    #gutter-calculator .button-holder span{
+        padding: 0 1.428em!important; 
+    }
+    #gutter-calculator .fields-holder .accessory{
+        transform: translate(-50%, -50%); 
+        -webkit-transform: translate(-50%, -50%);
+    }
+    #gutter-calculator li.selected .step-button{
+        /*text-overflow: normal;*/
+        overflow: hidden;
+        /*white-space: nowrap;*/
+    }
+    .idTabs-custom li{
+        display: none;
+    }
+    .idTabs-custom li.selected{
+        display: block;
+    }
+    #idTab10 p{
+        margin-left: 14.24% !important;
+    }
+
+    /* Checkout Page */
+
+    #order-opc .select select{
+        height: 2.0714em;
+        margin-bottom: 1em;
+    }
+    #order-detail-content{
+        overflow-x: scroll;
+    }
+    .cart_navigation .button{
+        margin: 1em 0;
+    }
+    #login_form .login-button{
+        text-align: right;
+    }
+    #login_form .login-button a{
+        margin-right: 5px;
+    }
+    /* IDENTITY */
+    #identity .select select,
+    #authentication .select select{
+        width: 100%;
+        line-height: 2.071em;
+        height: 2.071em;
+        margin-bottom: 1em;
+    }
+    #authentication span.label {
+        width: 100%;
+    }
+
+    /* PASSWORD */
+    #password .submit{
+        width: 100%;
+        margin: 0 5px 0 0;
+    }
+    #password .submit input{
+        margin: 0 5px 0 0;
+    }
+
+    /* FOOTER */
+    .footer-menu{
+        display: none;
+    }
+    #footer .newsletter-holder{
+        min-height: 300px;
+    }
+    #footer .mc-field-group .input-holder{
+        margin-bottom: 1em;
+    }
+
+    /* ORDER OPC PAGE */
+    #order-opc .save-settings{
+        margin-left: 0;
+    }
+    #order-opc .error{
+        position: static;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+    #order-opc .select .label{
+        width: 100%;
+    }
+    #order-opc .select select{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #footer .newsletter-last .button {
+        transform: translate(-50%, 100%);
+    }
+
+    /* Inputs and labels */
+    label,
+    .label{
+        text-align: left;
+        text-indent: 0.5em;
+        margin-right: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* Cms */
+    #cms img.cms{
+        display: none;
+    }
+    #cms .cms-content{
+        width: 100%!important;
+        padding-left: 0!important;
+    }
+
+    /* CONTACT PAGE */
+    #contact #page{
+        padding: 0 0.5em;
+    }
+    #contact .holder {
+        display: table;
+        width: 100%;
+    }
+    #contact #google-map{
+        max-height: 70vh;
+        min-height: 40vh;
+        margin-top: 1em;
+    }
+    #contact #place-holder{
+        width: 50%;
+        left: 0;
+        top: 0;
+        position: relative;
+        display: table-header-group;
+    }
+    #contact #place-holder.active{
+        width: 100%;
+    }
+    #contact #place-holder .list{
+        width: 100%;
+    }
+    #contact #place-holder.active .list{
+        width: 40%;
+    }
+    #contact #place-holder .info{
+        width: 60%;
+    }
+}
+@media (max-width: 420px) {
+    #sequence > .sequence-canvas li img{
+        height: 246px;
+        width: auto;
+    }
+    .timisoara.place-4 .content{
+        height: 100%;
+        overflow: auto;
+    }
+}

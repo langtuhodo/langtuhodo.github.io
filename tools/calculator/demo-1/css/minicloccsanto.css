@@ -1,0 +1,90 @@
+/* CSS Code */
+
+/* Style for desktop and tablet */
+
+#loccsanto .inner{
+	background: #fff url(../img/map_bg.jpg) center center;
+    margin-top: 0;
+    padding: 2em 4em;
+    width: 50%;
+    margin-left: -25%;
+}
+#loccsanto p.popup-text{
+	text-align: center;
+	color: #215e78;
+	font-size: 1.285em;
+	font-family: 'exoregular';
+}
+#loccsanto h2{
+	/*text-transform: uppercase;*/
+	color: #215E78;
+	text-align: center;
+	margin: 2em 0;
+}
+#loccsanto .select-holder select{
+	margin: 0 auto;
+	display: block;
+}
+
+@media (min-width: 768px){
+	#loccsanto .select-holder{
+		margin: 0 auto;
+		width: 50%;
+		min-height: 240px;
+	}
+	.select2-container{
+		background: #fff;
+		padding: 0;
+	}
+	/*.select2-results-dept-0 > .select2-result-label{
+		font-family: 'noto_sansbold';
+	}*/
+	#loccsanto .center{
+		width: 50%;
+		margin: 0 auto;
+		text-align: right;
+	}	
+}
+@media (max-width: 1280px) {
+	#loccsanto .center{
+		width: 80%;
+		margin: 0 auto;
+		text-align: right;
+	}	
+}
+/* Style for mobile */
+
+@media (max-width: 767px){
+	#loccsanto .inner{
+		width: 100%;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		margin-left: 0;
+		min-height: 300px;
+		padding: 1em;
+	}
+	#loccsanto .center{
+		text-align: center;
+		margin-top: 3em;
+	}
+}
+@media (max-height: 767px) and (min-width: 768px){
+	#loccsanto .inner{
+		top: 20px;
+		padding: 1.5em;
+	}
+	#loccsanto h2{
+		margin: 1em 0;
+	}
+	#loccsanto .select-holder {
+		min-height: 200px;
+	}
+@media screen and (min-width: 768px) and (max-width: 989px) {
+	#loccsanto .inner{
+		width: 80%;
+		left: 20%;
+		margin-left: -10%;
+	}
+}

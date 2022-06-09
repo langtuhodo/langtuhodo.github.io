@@ -1,0 +1,216 @@
+/* CSS Code */
+#szamlalo h1{
+	margin: 1.66em 0 0.55em 0;
+	font-family: 'exoregular';
+}
+#szamlalo h1 span{
+	font-family: 'exobold';
+}
+#szamlalo .termekek{
+	padding-right: 1.769%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#szamlalo .termekek ul{
+	list-style: none;
+	padding: 0;
+}
+#szamlalo .termekek ul li{
+	font-size: 1em;
+	line-height: 1.12;
+	font-family: 'exoregular';
+	text-transform: uppercase;
+}
+#szamlalo .termekek ul li.selected{
+	font-family: 'exobold';
+}
+#szamlalo .termekek ul li.selected,
+#szamlalo .termekek ul li:hover{
+	color: #215e78;
+	cursor: pointer;
+}
+/* Socioal icons */
+.social-icons .fb-share-button {
+	vertical-align: top;
+	z-index: 3;
+}
+.social-icons > div{
+	margin-right: 20px!important;
+}
+/* Tipus */
+#szamlalo .tipus{
+	margin-bottom: 1em;
+}
+#szamlalo .tipus > *{
+	display: inline-block;
+	margin-left: 5px;
+}
+/* Rajzok */
+#szamlalo .rajzok{
+	position: relative;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 1.179%;
+}
+#szamlalo .rajzok img{
+	display: block;
+}
+#szamlalo.not-mobile .rajzok img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 90%;
+	z-index: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	-ms-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+
+	-webkit-backface-visibility: hidden;
+}
+#szamlalo.mobile .rajzok img{
+	display: none;
+}
+#szamlalo.not-mobile .rajzok img.selected{
+	z-index: 2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+#szamlalo.mobile .rajzok img.selected{
+	display: block;
+}
+/* Ertekek */
+#szamlalo .ertekek{
+	min-height: 150px;	
+	position: relative;
+}
+#szamlalo.not-mobile .ertekek > div.produs{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	min-height: 100px;
+	z-index: 1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s linear;
+	-moz-transition: opacity 0.2s linear;
+	-o-transition: opacity 0.2s linear;
+	-ms-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+
+	-webkit-backface-visibility: hidden;
+}
+#szamlalo.mobile .ertekek > div.produs{
+	display: none;
+}
+#szamlalo.not-mobile .ertekek .produs.selected{
+	z-index: 2;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+#szamlalo.mobile .ertekek .produs.selected{
+	display: block;
+}
+#szamlalo .ertekek > div.produs > div{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 5px;
+}
+/* Eredmeny */
+#szamlalo .eredmeny{
+	position: relative;
+	z-index: 2;
+	margin-top: 150px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 1em;
+	padding-left: 1.179%;
+}
+#szamlalo.mobile .eredmeny{
+	margin-top: 0;
+	padding-top: 0;
+}
+#szamlalo .eredmeny h5{
+	text-transform: uppercase;
+}
+#szamlalo .eredmeny > span{
+	font-size: 1.857142857em;
+	line-height: 1.5385;
+	margin: 2.30em 0 0.76em 0;
+	font-family: 'exoextralight';
+}
+/* Inputs */
+#szamlalo .input-holder{
+	display: inline-block;
+	margin: 0 0 1em 0;
+	width: 100%;
+}
+#szamlalo .select2-container{
+	margin-bottom: 1em;
+	padding: 0 5px;
+}
+#szamlalo .input-holder input{
+	padding: 0 2em;
+	font-family: 'noto_sansregular';
+}
+#szamlalo span.after,
+#szamlalo span.before{
+	position: absolute;
+	height: 2em;
+	line-height: 2em;
+	z-index: 3;	
+	color: rgba(91,96,98, .6);
+}
+#szamlalo span.before{
+	left: 1em;
+	top: 0.07em;
+	font-family: 'noto_sansbold';
+}
+#szamlalo span.after{
+	right: 1em;
+	top: 0.07em;
+	font-family: 'noto_sansregular';
+	color: #9da0a1;
+}
+#module-minicfajsulyszamlalo-display{
+	overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+	#szamlalo .rajzok{
+		height: 300px;
+	}
+	#szamlalo.not-mobile .rajzok img{
+		height: 100%;
+		width: auto !important;
+		left: 50% !important;
+		margin-left: -150px;
+	}
+	#szamlalo.mobile .rajzok img{
+		height: 100%;
+	}
+	#szamlalo.not-mobile .ertekek > div.produs{
+		height: 100%;
+	}
+	#szamlalo.not-mobile .ertekek > div.produs.selected{
+		z-index: 3;
+	}
+	#termeklista{
+		display: none;
+	}
+	#szamlalo.mobile .eredmeny{
+		margin-top: 1em;
+	}
+}

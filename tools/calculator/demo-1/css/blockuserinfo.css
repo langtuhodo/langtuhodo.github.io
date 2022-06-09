@@ -1,0 +1,17 @@
+#header_user{
+	float: right;
+}
+#header_user_info,
+.header_user_info{
+	color: #215e78;
+	font-family: 'exodemibold';
+	margin: 20px;
+}
+#header_user_info a,
+.header_user_info a{
+	color: #215e78;
+}
+#header_user_info .logout,
+.header_user_info .logout{
+	margin-left: 20px;
+}

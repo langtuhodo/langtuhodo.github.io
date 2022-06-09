@@ -1,0 +1,324 @@
+@media (min-width: 768px) {
+    /* HOME PAGE */
+    #page{
+        -webkit-box-shadow:  0px 0px 5px 3px rgba(0, 0, 0, .1);
+        box-shadow:  0px 0px 5px 3px rgba(0, 0, 0, .1);
+    }
+    /* header */
+    #header{
+        position: relative;
+        width: 100%;
+    }
+    /* header logo */
+    #header_logo{
+        position: relative;
+        top: 40px;
+        left: 20px;
+    }
+    .countries_ul li a{
+        padding: 10px;
+    }
+    /* activator for mobile menu */
+    .mobile-menu-holder{
+        display: none;
+    }
+    .calculator{
+        min-height: 220px;
+    }
+    .calculator .calculator-inner{
+        position: relative;
+        padding: 0 2.857em;
+        min-height: 220px;
+        background-color: #eeefef;
+        display: inline-block;
+    }
+    .weight-calculator .calculator-inner{
+        background: #eeefef url(../img/calculator-weight.png) no-repeat right -50px center;
+        margin-right: 10px;
+    }
+    .gutter-calculator .calculator-inner{
+        margin-left: 10px;
+        background: #eeefef url(../img/calculator-gutter.png) no-repeat right -50px center;
+    }
+    .calculator h4{
+        font-family: 'exobold';
+    }
+    .homepage-services{
+        padding: 0 10px;
+        min-height: 202px;
+    }
+	.services{
+        position: relative;
+    }
+    .services.active{}
+    .services .services-inner{
+        padding: 0 10px;
+        height: 200px;
+        overflow: hidden;
+        border: 1px solid transparent;
+    }
+    .services .services-inner h4{
+        padding: 0 0 0 1.428em;
+        height: 1.12em;
+        overflow: hidden;
+    }
+    .services .services-inner p{
+        padding: 0 1.428em;
+    }
+    .services .img-holder{
+        height: 180px;
+    }
+    .services.active .services-inner{
+        max-width: 100%;
+        height: auto;
+        overflow: visible;
+        border: 1px solid #999a9b;
+        -webkit-box-shadow:  0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+        box-shadow:  0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+        background-color: #fff;
+        position: absolute;
+        z-index: 2;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* GLOBAL */
+    /* breadcrumb */
+    .breadcrumb{
+        font-family: 'exodemibold';
+        margin: 2.142em 0 1.4285em 1.4285em;
+    }
+    #category .breadcrumb{
+        margin: 20px 0;
+    }
+    
+
+    /* Services Product Betonacel, Csatorna */
+    .services-img-holder{
+        width: 28.2%;
+        float: left;
+    }
+    .services-img-holder img{
+        width: 100%;
+        height: auto;
+    }
+    .services-breadcrumb{
+        float: left;
+        width: 71.8%;
+    }
+    .services-breadcrumb .breadcrumb{
+        margin-left: 50px;
+    }
+    #primary_block.services{
+        width: 71.8%;
+        float: left;
+    }
+    #product .services{
+        padding-left: 3.571em;
+    }
+    .services #product-title,
+    .services .social-icons{
+        width: 100%;
+        text-align: left;
+    }
+    .services #pb-right-column{
+        display: none;
+    }
+    #more_info_block{
+        clear: both;
+    }
+
+
+    /* PRODUCT PAGE */
+    /* idTab */
+    .idTabs{
+        padding: 0 20px;
+        height: 57px;
+        border-bottom: 3px solid #d1d2d3;
+    }
+    .idTabs-custom {
+        height: 57px;
+        border-bottom: 3px solid #d1d2d3;
+    }
+    .idTabs li,
+    .idTabs-custom li{
+        height: 60px;
+        border-right: 1px solid rgba(255,255,255,.6);
+        border-left: 1px solid rgba(0,0,0,.1);
+        line-height: 4.0714em;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+    }
+    .idTabs li:first-child,
+    .idTabs-custom li:first-child{
+        border-left: 0;
+    }
+    .idTabs li:last-child,
+    .idTabs-custom li:last-child{
+        border-right: 0;
+    }
+    #marimi-disponibile,
+    #chemichal table{
+        width: 100%;
+    }
+    #chemichal table th,
+    #chemichal table thead td{
+        font-family: 'noto_sansbold';
+        line-height: 1.2;
+        padding: 0.6em 0.2em;
+        height: 20px;
+    }
+    #chemichal .fe-s-first td,
+    #chemichal .fe-s-second td{
+        padding: 0 10px;
+    }
+    .dataTables_scrollBody{
+        max-height: 500px !important;
+        max-height: 75vh !important;
+    }
+    /* Tender message */
+    #product #tender-message{
+        background-color: #7c8081;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        margin-left: -20px;
+        margin-bottom: 2.428em;
+    }
+
+    /* Success messages on attach */
+    #success-message{
+        position: fixed;
+        top: 10px;
+
+    }
+    /* Calculation */
+    #calculations > div{
+        padding: 0 16px; 
+    }
+
+    /* Fajsulyszamlalo */
+    #szamlalo .termekek ul li{
+        padding: 0.75em 0;
+    }
+    /* Add to cart */
+    #add_to_cart i{
+        left: 0.642em;
+        margin-top: -7px;
+    }
+
+    /* Fix the filter at scroll */
+    #buy_block.fixed{
+        position: relative;
+    }
+    #buy_block #calculations{
+        -webkit-transition: bottom 300ms ease-in-out;
+        -moz-transition: bottom 300ms ease-in-out;
+        -ms-transition: bottom 300ms ease-in-out;
+        -o-transition: bottom 300ms ease-in-out;
+        transition: bottom 300ms ease-in-out;
+    }
+    #buy_block.fixed #calculations{
+        position: fixed;
+        background-color: #fff;
+        height: 102px;
+        bottom: 0!important;
+        z-index: 9;
+    }
+
+    /* PRODUCT LIST PAGE */
+    
+    #category .product-decription > h3 {
+        font-family: 'exodemibold' !important;
+    }
+
+    #product_list .center_block a{
+        display: block;
+        margin: 40px 10px 0 0;
+    }
+    #product_list .features{
+        padding: 0 10px 0 20px;
+        margin: 0 1.4286em;
+    }
+    /* listed product */
+    #product_list .center_block .reference{
+        top: 50px;
+    }
+    #category .resumecat,
+    #search .nbresult,
+    .content_sortPagiBar{
+        width: 49.6%;
+        display: inline-block;
+    }
+    #category .select label{
+        margin: 0 15px;
+    }
+
+    #category #center_column{
+        padding: 0 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* IDENTITY */
+
+    #identity .submit{
+        width: 80%;
+        margin-left: 15px;
+        text-align: right;
+    }
+
+    /* AUTHENTICATION */
+    #authentication #center_column{
+        padding: 0 20px;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+    }
+    #authentication .submit{
+        width: 53.33%;
+        margin-left: 20px;
+    }
+    #create-account_form .submit{
+        width: 70%;
+        margin-left: 20px;
+    }
+    #login_form .submit{
+        width: 30%;
+        margin-left: 10px;
+    }
+    #authentication .checkbox{
+        margin-left: 20%;
+    }
+
+    /* ADDRESS */
+    #address #add_address .submit2{
+        width: 53.33%;
+    }
+    
+    /* Search results */
+    #search #columns{
+        padding: 0 20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #search .breadcrumb{
+        margin: 20px 0;
+    }
+
+    /* CHECKOUT PAGE */
+    #login_form_content .submit{
+        padding-right: 10%;
+    }
+    #opc_new_account .submit.login{
+        width: 63.333%;
+    }
+    #opc_new_account .opc-required{
+        text-align: right;
+    }
+}

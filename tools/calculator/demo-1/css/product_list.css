@@ -1,0 +1,156 @@
+/* Product filter */
+#layered_block_left ul li{
+	padding-left: 1.428em;
+}
+#layered_block_left ul li label{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+#layered_block_left ul li label:hover{
+	text-decoration: underline;
+}
+/* Product list */
+#product_list{
+	margin: 0;
+	padding: 0;
+}
+
+#product_list li.item{
+	list-style: none;
+	position: relative;
+	border-bottom: 2px solid #e6e7e8;
+}
+#product_list .center_block{
+	position: relative;
+}
+#product_list .center_block a img{
+	width: 100%;
+	height: auto;
+}
+#product_list #more-icon-holder{
+	bottom: -2px;
+}
+#product_list .center_block .reference{
+	position: absolute;
+	left: 0;
+	top: 40px;
+	background-color: #5b6062;
+	color: #fff;
+	padding: 0.1428em 0.3571em;
+	font-size: 1em;
+}
+#product_list .center_block .reference:before{
+	position: absolute;
+	content: " ";
+	left: -7px;
+	bottom: -16px;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #5b6062;
+
+	transform: rotate(-45deg);
+	transform-origin: 0% 0%;
+	-ms-transform: rotate(-45deg);
+	-ms-transform-origin: 0% 0%;
+	-webkit-transform: rotate(-45deg);
+	-webkit-transform-origin: 0% 0%;
+}
+#product_list h3{
+	font-size: 1.285em;
+	font-family: "exodemibold";
+	color: #737373;
+}
+#product_list li:hover .product-decription > h3 a{
+	color: #165671;
+}
+#product_list .features li{
+	list-style: none;
+}
+#product_list .features li p{
+	margin: 0;
+}
+#product_list .product-decription{
+	padding: 0 10px 10px;
+}
+#product_list .product-decription .pure-u-1-2 h3,
+#product_list .product-decription .pure-u-1-2 h3 a,
+#product_list .product-decription .pure-u-1-2 h4,
+#product_list .product-decription .pure-u-1-2 h4 a{
+	line-height: 20px;
+	margin: 0;
+	font-size: 1em;
+	font-family: 'exobold' !important;
+}
+#product_list .product-decription .pure-u-1-2 h3:after,
+#product_list .product-decription .pure-u-1-2 h4:after{
+	content: ":";
+}
+#product_list .product-decription .pure-u-1-2 p{
+	margin: 0;
+}
+#ul_layered_category_0 label a{
+	display: block !important;
+	height: 2.1428em;
+	overflow: hidden;
+}
+/* Custom checkbox for product list page */
+#category input[type="checkbox"],
+#category input[type="radio"]{
+    opacity: 0;
+    position: absolute;
+    left: -2000px;
+    width: 20px;
+}
+#category input[type="checkbox"] + label,
+#category input[type="radio"] + label{
+    margin: 0;
+    clear: none;
+    cursor: pointer;
+    background-image: none;
+    padding: 0;
+
+    -webkit-transition: text-indent 100ms ease-in-out, background 400ms ease-in-out;
+    -moz-transition: text-indent 100ms ease-in-out, background 400ms ease-in-out;
+    -ms-transition: text-indent 100ms ease-in-out, background 400ms ease-in-out;
+    -o-transition: text-indent 100ms ease-in-out, background 400ms ease-in-out;
+    transition: text-indent 100ms ease-in-out, background 400ms ease-in-out;
+}
+#category input[type="checkbox"] ~ label:hover{
+    text-indent: 24px;
+    background: url(../img/checkbox-hover.png) no-repeat left 6px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#category input[type="checkbox"]:checked + label{
+    text-indent: 24px;
+    background: url(../img/checkbox-checked.png) no-repeat left 6px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#category input[type="radio"] ~ label:hover{
+    text-indent: 24px;
+    background: url(../img/radio-hover.png) no-repeat left 6px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#category input[type="radio"]:checked + label{
+    text-indent: 24px;
+    background: url(../img/radio-checked.png) no-repeat left 6px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}

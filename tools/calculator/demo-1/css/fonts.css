@@ -1,0 +1,305 @@
+/* Exo Bold & Italic */
+@font-face {
+    font-family: 'exobold';
+    src: url('fonts/exo/exo2-bold-webfont.eot');
+    src: url('fonts/exo/exo2-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-bold-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-bold-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-bold-webfont.svg#exobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exobolditalic';
+    src: url('fonts/exo/exo2-bolditalic-webfont.eot');
+    src: url('fonts/exo/exo2-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-bolditalic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-bolditalic-webfont.svg#exobolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Exo Extra Bold & Italic */
+@font-face {
+    font-family: 'exoextrabold';
+    src: url('fonts/exo/exo2-extrabold-webfont.eot');
+    src: url('fonts/exo/exo2-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-extrabold-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-extrabold-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-extrabold-webfont.svg#exoextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exoextrabolditalic';
+    src: url('fonts/exo/exo2-extrabolditalic-webfont.eot');
+    src: url('fonts/exo/exo2-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-extrabolditalic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-extrabolditalic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-extrabolditalic-webfont.svg#exoextrabolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Exo Extra Light & Italic */
+@font-face {
+    font-family: 'exoextralight';
+    src: url('fonts/exo/exo2-extralight-webfont.eot');
+    src: url('fonts/exo/exo2-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-extralight-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-extralight-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-extralight-webfont.svg#exoextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exoextralightitalic';
+    src: url('fonts/exo/exo2-extralightitalic-webfont.eot');
+    src: url('fonts/exo/exo2-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-extralightitalic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-extralightitalic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-extralightitalic-webfont.svg#exoextralightitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Exo Thin & Italic */
+@font-face {
+    font-family: 'exothin';
+    src: url('fonts/exo/exo2-thin-webfont.eot');
+    src: url('fonts/exo/exo2-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-thin-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-thin-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-thin-webfont.svg#exothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exothinitalic';
+    src: url('fonts/exo/exo2-thinitalic-webfont.eot');
+    src: url('fonts/exo/exo2-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-thinitalic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-thinitalic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-thinitalic-webfont.svg#exothinitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Exo Regular & Italic */
+@font-face {
+    font-family: 'exoregular';
+    src: url('fonts/exo/exo2-light-webfont.eot');
+    src: url('fonts/exo/exo2-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-light-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-light-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-light-webfont.svg#exoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exoitalic';
+    src: url('fonts/exo/exo2-italic-webfont.eot');
+    src: url('fonts/exo/exo2-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-italic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-italic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-italic-webfont.svg#exoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Exo Light & Italic */
+@font-face {
+    font-family: 'exolight';
+    src: url('fonts/exo/exo2-light-webfont.eot');
+    src: url('fonts/exo/exo2-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-light-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-light-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-light-webfont.svg#exolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exolightitalic';
+    src: url('fonts/exo/exo2-lightitalic-webfont.eot');
+    src: url('fonts/exo/exo2-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-lightitalic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-lightitalic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-lightitalic-webfont.svg#exolightitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Exo Medium & Italic */
+@font-face {
+    font-family: 'exomedium';
+    src: url('fonts/exo/exo2-medium-webfont.eot');
+    src: url('fonts/exo/exo2-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-medium-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-medium-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-medium-webfont.svg#exomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exomediumitalic';
+    src: url('fonts/exo/exo2-italic-webfont.eot');
+    src: url('fonts/exo/exo2-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-italic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-italic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-italic-webfont.svg#exomediumitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Exo Demibold & Italic */
+@font-face {
+    font-family: 'exodemibold';
+    src: url('fonts/exo/exo2-bold-webfont.eot');
+    src: url('fonts/exo/exo2-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-bold-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-bold-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-bold-webfont.svg#exodemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'exodemibolditalic';
+    src: url('fonts/exo/exo2-bolditalic-webfont.eot');
+    src: url('fonts/exo/exo2-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/exo/exo2-bolditalic-webfont.woff') format('woff'),
+         url('fonts/exo/exo2-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/exo/exo2-bolditalic-webfont.svg#exodemibolditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Noto-Sans Regular & Italic */
+@font-face {
+    font-family: 'noto_sansitalic';
+    src: url('fonts/noto-sans/notosans-italic-webfont.eot');
+    src: url('fonts/noto-sans/notosans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noto-sans/notosans-italic-webfont.woff') format('woff'),
+         url('fonts/noto-sans/notosans-italic-webfont.ttf') format('truetype'),
+         url('fonts/noto-sans/notosans-italic-webfont.svg#noto_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'noto_sansregular';
+    src: url('fonts/noto-sans/notosans-regular-webfont.eot');
+    src: url('fonts/noto-sans/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noto-sans/notosans-regular-webfont.woff') format('woff'),
+         url('fonts/noto-sans/notosans-regular-webfont.ttf') format('truetype'),
+         url('fonts/noto-sans/notosans-regular-webfont.svg#noto_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Noto-Sans Bold & Italic */
+@font-face {
+    font-family: 'noto_sansbold';
+    src: url('fonts/noto-sans/notosans-bold-webfont.eot');
+    src: url('fonts/noto-sans/notosans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noto-sans/notosans-bold-webfont.woff') format('woff'),
+         url('fonts/noto-sans/notosans-bold-webfont.ttf') format('truetype'),
+         url('fonts/noto-sans/notosans-bold-webfont.svg#noto_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'noto_sansbold_italic';
+    src: url('fonts/noto-sans/notosans-bolditalic-webfont.eot');
+    src: url('fonts/noto-sans/notosans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noto-sans/notosans-bolditalic-webfont.woff') format('woff'),
+         url('fonts/noto-sans/notosans-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/noto-sans/notosans-bolditalic-webfont.svg#noto_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'noto_sansbold';
+        src: url('fonts/noto-sans/notosans-bold-webfont.svg#noto_sansbold') format('svg');
+    }
+    @font-face {
+        font-family: 'noto_sansbold_italic';
+        src: url('fonts/noto-sans/notosans-bolditalic-webfont.svg#noto_sansbold_italic') format('svg');
+    }
+    /* Exo Bold & Italic */
+    @font-face {
+        font-family: 'exobold';
+        src: url('fonts/exo/exo2-bold-webfont.svg#exobold') format('svg');
+    }
+    @font-face {
+        font-family: 'exobolditalic';
+        src: url('fonts/exo/exo2-bolditalic-webfont.svg#exobolditalic') format('svg');
+    }
+    /* Exo Extra Bold & Italic */
+    @font-face {
+        font-family: 'exoextrabold';
+        src: url('fonts/exo/exo2-extrabold-webfont.svg#exoextrabold') format('svg');
+    }
+    @font-face {
+        font-family: 'exoextrabolditalic';
+        src: url('fonts/exo/exo2-extrabolditalic-webfont.svg#exoextrabolditalic') format('svg');
+    }
+    /* Exo Extra Light & Italic */
+    @font-face {
+        font-family: 'exoextralight';
+        src: url('fonts/exo/exo2-extralight-webfont.svg#exoextralight') format('svg');
+    }
+    @font-face {
+        font-family: 'exoextralightitalic';
+        src: url('fonts/exo/exo2-extralightitalic-webfont.svg#exoextralightitalic') format('svg');
+    }
+    /* Exo Thin & Italic */
+    @font-face {
+        font-family: 'exothin';
+        src: url('fonts/exo/exo2-thin-webfont.svg#exothin') format('svg');
+    }
+    @font-face {
+        font-family: 'exothinitalic';
+        src: url('fonts/exo/exo2-thinitalic-webfont.svg#exothinitalic') format('svg');
+    }
+    /* Exo Regular & Italic */
+    @font-face {
+        font-family: 'exoregular';
+        src: url('fonts/exo/exo2-light-webfont.svg#exoregular') format('svg');
+    }
+    @font-face {
+        font-family: 'exoitalic';
+        src: url('fonts/exo/exo2-italic-webfont.svg#exoitalic') format('svg');
+    }
+    /* Exo Light & Italic */
+    @font-face {
+        font-family: 'exolight';
+        src: url('fonts/exo/exo2-light-webfont.svg#exolight') format('svg');
+    }
+    @font-face {
+        font-family: 'exolightitalic';
+        src: url('fonts/exo/exo2-lightitalic-webfont.svg#exolightitalic') format('svg');
+    }
+    /* Exo Medium & Italic */
+    @font-face {
+        font-family: 'exomedium';
+        src: url('fonts/exo/exo2-medium-webfont.svg#exomedium') format('svg');
+    }
+    @font-face {
+        font-family: 'exomediumitalic';
+        src: url('fonts/exo/exo2-mediumitalic-webfont.svg#exomediumitalic') format('svg');
+    }
+    /* Exo Demibold & Italic */
+    @font-face {
+        font-family: 'exodemibold';
+        src: url('fonts/exo/exo2-bold-webfont.svg#exodemibold') format('svg');
+    }
+    @font-face {
+        font-family: 'exodemibolditalic';
+        src: url('fonts/exo/exo2-bolditalic-webfont.svg#exodemibolditalic') format('svg');
+    }
+
+    /* Noto-Sans Regular & Italic */
+    @font-face {
+        font-family: 'noto_sansitalic';
+        src: url('fonts/noto-sans/notosans-italic-webfont.svg#noto_sansitalic') format('svg');
+    }
+    @font-face {
+        font-family: 'noto_sansregular';
+        src: url('fonts/noto-sans/notosans-regular-webfont.svg#noto_sansregular') format('svg');
+    } 
+
+}
