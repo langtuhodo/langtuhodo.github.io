@@ -47,18 +47,13 @@ function getCalculation(form) {
             break;
     }
 
+    
     if (Shape_Type == 'Flats') {
         document.getElementById("Dim3_Div").style.display = "block";
         document.getElementById('Dim1_Label').innerHTML = 'Thickness';
         document.getElementById('Dim2_Label').innerHTML = 'Length';
         document.getElementById('Dim3_Label').innerHTML = 'Width';
         Results = Dim1 * Dim2 * Dim3 * 0.2835;
-    }
-    if (Shape_Type == 'Square Bars') {
-        document.getElementById("Dim3_Div").style.display = "none";
-        document.getElementById('Dim1_Label').innerHTML = 'Width';
-        document.getElementById('Dim2_Label').innerHTML = 'Length of Bar';
-        Results = (Dim1 * Dim1) * Dim2 * 0.2835;
     }
     if (Shape_Type == 'Round Bars') {
         document.getElementById("Dim3_Div").style.display = "none";
@@ -71,6 +66,12 @@ function getCalculation(form) {
         document.getElementById('Dim1_Label').innerHTML = 'Width';
         document.getElementById('Dim2_Label').innerHTML = 'Length of Bar';
         Results = (Dim1 / 2) * (Dim1 / 2) * 2 * Math.sqrt(3) * Dim2 * 0.2835;
+    }
+    if (Shape_Type == 'Square Bars') {
+        document.getElementById("Dim3_Div").style.display = "none";
+        document.getElementById('Dim1_Label').innerHTML = 'Width';
+        document.getElementById('Dim2_Label').innerHTML = 'Length of Bar';
+        Results = (Dim1 * Dim1) * Dim2 * 0.2835;
     }
 
     if (form.Units_Results.value == 'kg') {

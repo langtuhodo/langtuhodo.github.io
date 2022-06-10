@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    
+    <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://www.leecosteel.com/pub/static/version1651061555/frontend/TopSpot/design/en_US/css/all.min.css" />
+    <script type="text/javascript" src="https://www.leecosteel.com/pub/static/version1651061555/frontend/TopSpot/design/en_US/js/main.js"></script>
+    <script type="text/javascript" src="https://www.leecosteel.com/pub/static/version1651061555/frontend/TopSpot/design/en_US/js/calculator.js"></script>
+</head>
+
+<body>
+    <div id="main-content" class="page-main container-fluid orange">
+        <div class="page messages">
+            <div data-placeholder="messages"></div>
+        </div>
+        <div class="category-view">
+            <div class="category-description">
+                <h1>Calculators</h1>
+                <h5>Use Leeco’s<sup>®</sup> material weight calculators to estimate the weight of your steel plate order.</h5>
+            </div>
+            <div class="category-cms">
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column main">
+                <input name="form_key" type="hidden" value="ECnoE3frGbo5iJ3e">
+                <div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+                </div>
+                <div class="calculators">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#home" data-toggle="tab">Calculators Weight</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane active">
+                            <form id="MetricMetalWeight" method="post" name="MetricMetalWeight" onsubmit="MetalWeight(); return false;">
+                                <table border="0" cellspacing="0" cellpadding="0" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td class="calcbody" colspan="3" align="left">
+                                                <strong>Select Your Metal:</strong>
+                                            </td>
+                                            <td class="calcbody" colspan="3" align="right">
+                                                <span class="selectWrap">
+                                    <select class="wide-select" name="metalType" onchange="ResetFields();">
+                                        <option>Carbon Steel</option>
+                                        <option>Copper</option>
+                                        <option>Brass</option>
+                                        <option>T-304 Stainless</option>
+                                        <option>T-430 Stainless</option>
+                                        <option>Stainless 300 Series</option>
+                                        <option>Stainless 400 Series</option>
+                                        <option>Aluminum</option>
+                                        <option>Aluminum 1100</option>
+                                        <option>Aluminum 2011</option>
+                                        <option>Aluminum 2014</option>
+                                        <option>Aluminum 2017</option>
+                                        <option>Aluminum 2024</option>
+                                        <option>Aluminum 3003</option>
+                                        <option>Aluminum 5005</option>
+                                        <option>Aluminum 5052</option>
+                                        <option>Aluminum 5056</option>
+                                        <option>Aluminum 5083</option>
+                                        <option>Aluminum 5086</option>
+                                        <option>Aluminum 6061</option>
+                                        <option>Aluminum 6063</option>
+                                        <option>Aluminum 7075</option>
+                                        <option>Aluminum 7178</option>
+                                        <option>Beryllium</option>
+                                        <option>Brass</option>
+                                        <option>Cast Iron</option>
+                                        <option>Columbium</option>
+                                        <option>Copper</option>
+                                        <option>Gold</option>
+                                        <option>Lead</option>
+                                        <option>Magnesium</option>
+                                        <option>Molybdenum</option>
+                                        <option>Nickel 200</option>
+                                        <option>Nickel 201</option>
+                                        <option>Nickel 400</option>
+                                        <option>Nickel 600</option>
+                                        <option>Nickel 625</option>
+                                        <option>Nickel 718</option>
+                                        <option>Nickel X750</option>
+                                        <option>Nickel 800</option>
+                                        <option>Nickel 800H</option>
+                                        <option>Nickel 825</option>
+                                        <option>Nickel 904L</option>
+                                        <option>Silver</option>
+                                        <option>Tantalum</option>
+                                        <option>Titanium</option>
+                                        <option>Tungsten</option>
+                                        <option>Zinc</option>
+                                        <option>Zirconium</option>
+                                    </select>
+                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" colspan="3" align="left">
+                                                <strong>Select a Shape:</strong>
+                                            </td>
+                                            <td class="calcbody" colspan="3" align="right">
+                                                <span class="selectWrap">
+                                    <select id="shape" class="wide-select" name="shape" onchange="ChangeLabel();ClearFields();">
+                                        <option></option>
+                                        <option>Round Bar</option>
+                                        <option>Square or Flat Bar</option>
+                                        <option>Sheet</option>
+                                        <option>Plate</option>
+                                        <option>Circle</option>
+                                        <option>Ring</option>
+                                        <option>Hexagon Bar</option>
+                                        <option>Round Tubing</option>
+                                        <option>Square Tubing</option>
+                                    </select>
+                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" colspan="3" align="left"><strong>Number of Pieces:</strong></td>
+                                            <td class="calcbody" colspan="3" align="right"><input type="text" name="noPieces" size="10" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" colspan="5" align="left"><strong>Enter size information:</strong></td>
+                                        </tr>
+                                        <tr class="mobile-table">
+                                            <td class="calc_left"> </td>
+                                            <td class="calcbody" colspan="3" align="right">
+                                                <input class="lbls" onfocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].param1.focus(); " onblur="ChangeLabel();" type="text" name="lbl1" readonly="readonly" size="16">
+                                            </td>
+                                            <td class="calcbody" align="right" width="150"><input type="text" name="value1" size="16"></td>
+                                            <td class="calcbody" align="right" width="79">
+                                                <span class="selectWrap">
+                                    <select name="units1">
+                                        <option>in</option>    
+                                        <option>mm</option>
+                                        <option>m</option>
+                                        <option>ft</option>
+                                        <option>yd</option>
+                                        <option>cm</option>
+                                    </select>
+                                </span>
+                                            </td>
+                                            <td class="calc_rt"> </td>
+                                        </tr>
+                                        <tr class="mobile-table">
+                                            <td class="calc_left"> </td>
+                                            <td class="calcbody" colspan="3" align="right">
+                                                <input class="lbls" onfocus="if(!(navigator.appName == 'Netscape' &amp;&amp; parseInt(navigator.appVersion) == 3)){ if(document.forms[0].lbl2.value=='') document.forms[0].param3.focus(); else document.forms[0].param2.focus();}" type="text" name="lbl2" readonly="readonly" size="16">
+                                            </td>
+                                            <td class="calcbody" align="right">
+                                                <input type="text" name="value2" size="16">
+                                            </td>
+                                            <td class="calcbody" align="right">
+                                                <span class="selectWrap">
+                                    <select name="units2">
+                                        <option>in</option>    
+                                        <option>mm</option>
+                                        <option>m</option>
+                                        <option>ft</option>
+                                        <option>yd</option>
+                                        <option>cm</option>
+                                    </select>
+                                </span>
+                                            </td>
+                                            <td class="calc_rt"> </td>
+                                        </tr>
+                                        <tr class="mobile-table">
+                                            <td class="calc_left"> </td>
+                                            <td class="calcbody" colspan="3" align="right">
+                                                <input class="lbls" onfocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].param3.focus(); " onblur="ChangeLabel();" type="text" name="lbl3" readonly="readonly" size="16">
+                                            </td>
+                                            <td class="calcbody" align="right"><input type="text" name="value3" size="16"></td>
+                                            <td class="calcbody" align="right">
+                                                <span class="selectWrap">
+                                    <select name="units3">
+                                        <option>in</option>    
+                                        <option>mm</option>
+                                        <option>m</option>
+                                        <option>ft</option>
+                                        <option>yd</option>
+                                        <option>cm</option>
+                                    </select>
+                                </span>
+                                            </td>
+                                            <td class="calc_rt"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" colspan="5" align="left">
+                                                <strong>Calculated Weights</strong>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" align="right"> </td>
+                                            <td class="calcbody" align="right">
+                                                <input onfocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].Submit.focus(); " onblur="ChangeLabel();" type="text" name="result2" readonly="readonly" size="20" maxlength="8">
+                                            </td>
+                                            <td class="calcbody" colspan="3" align="left">Approx. weight in kg*</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" align="right"> </td>
+                                            <td class="calcbody" align="right"><input onfocus="if(navigator.appName == 'Netscape'&amp;&amp; parseInt(navigator.appVersion) == 3); else document.forms[0].Submit.focus(); " onblur="ChangeLabel();" type="text" name="result" readonly="readonly" size="20" maxlength="8"></td>
+                                            <td class="calcbody" colspan="3" align="left">Approx. weight in lbs*</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" align="left"> </td>
+                                            <td class="calcbody" align="left" nowrap="nowrap">
+                                                <input style="margin-right:10px;" type="submit" class="btn action primary" name="Submit" value="Calculate">
+                                                <span class="orange">
+                                    <input onclick="ChangeLabel();ClearFields();ResetFields();return false;" type="reset" class="btn action primary" name="reset" value="Reset">
+                                </span>
+                                            </td>
+                                            <td class="calcbody" colspan="3" align="left"> </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calcbody" align="left"> </td>
+                                            <td class="disclaimer" colspan="4" align="left">*These weights should be used for estimation purposes only. Plate weight does not allow for kerf.</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="calc_btmleft" height="70"> </td>
+                                            <td class="calc_btm" colspan="5"> </td>
+                                            <td class="calc_btmrt"> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

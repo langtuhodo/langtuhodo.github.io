@@ -1,0 +1,1276 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="js/functions.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+            <div class="container">
+
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+
+                        <span class="sr-only">Toggle navigation</span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <a class="navbar-brand" href="#">Metal Weight Calculator</a>
+
+                </div>
+
+
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a href="#">Home</a></li>
+                        
+                        <li><a href="#">Conversion Download</a></li>
+
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+
+        </nav>
+
+        <div class="container">
+
+            <form name="weightcalc" method="POST" onsubmit="return false;" >
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-4">
+
+                        <h3>Metal Weight Calculator</h3>
+
+                        <table class="table metal-weight-calculator">
+
+                            <tr>
+                              <td class="bold-text">Material:</td><td>
+
+                                    <select name="material" class="form-control select-box" onChange="populateAlloy(document.weightcalc, document.weightcalc.material.options[document.weightcalc.material.selectedIndex].value)">
+
+                                        <option selected value=''>Select Material&nbsp;&nbsp;&nbsp;
+
+                                        <option value='alloysteel'>Alloy Steel
+
+                                        <option value='aluminum'>Aluminum
+
+                                        <option value='brass'>Brass
+
+                                        <option value='bronze'>Bronze
+
+                                        <option value='copper'>Copper
+
+                                        <option value='copperalloy'>Copper Alloys
+
+                                        <option value='magnesium'>Magnesium
+
+                                        <option value='nickel'>Nickel
+
+                                        <option value='plastic'>Plastic
+
+                                        <option value='stainless'>Stainless
+
+                                        <option value='steel'>Steel
+
+                                        <option value='titanium'>Titanium
+
+                                        <option value='zinc'>Zinc
+
+                                    </select></td></tr>
+
+                            <tr><td class="bold-text gray">Alloy:</td><td class="gray">
+
+                                    <select name="alloy" class="form-control select-box white">
+
+                                        <option value=''>Select Material&nbsp;&nbsp;&nbsp;
+
+                                    </select>
+
+                                </td></tr>
+
+                            <tr><td class="bold-text">Shape:</td><td>
+
+                                    <select name="matshape" onChange="ChangeLabel();
+
+                    showimage();" class="form-control select-box white">
+
+                                        <option value="round">Round (Default)
+
+                                        <option value="coil">Coil
+
+                                        <option value="flat">Flat
+
+                                        <option value="hex">Hexagonal
+
+                                        <option value="pipe">Pipe
+
+                                        <option value="plate">Plate
+
+                                        <option value="rectangle">Rectangle
+
+                                        <option value="rectangle tube">Rectangle Tube
+
+                                        <option value="ring">Ring
+
+                                        <option value="round">Round
+
+                                        <option value="sheet">Sheet
+
+                                        <option value="square">Square
+
+                                        <option value="square tube">Square Tube
+
+                                        <option value="tube">Tube
+
+                                    </select><img width="150" height="150" name="pictures" src="img/round.jpg">
+
+                                </td></tr>
+
+                            <tr><td class="bold-text gray">Number of Pieces:</td><td class="gray"><input type="text" name="pieces" class="form-control text-box" value="1" /></td></tr>
+
+                        </table>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+
+                        <h4 class="middle-title">Enter size information:</h4>
+
+                        <table class="table metal-weight-calculator">
+
+                            <tr><td><input type="text" name="dim1label" size="18" onFocus="if (navigator.appName == 'Netscape' && parseInt(navigator.appVersion) == 3)
+
+                        ;
+
+                    else
+
+                        document.weightcalc.dim1.focus();" onBlur="ChangeLabel();" class="form-control second-text-box">
+
+                                </td>
+
+                                <td><input type="text" name="dim1" class="form-control third-text-box"></td><td><select name="unitsdim1" class="form-control inch-box"><option>Inch</option></select></td></tr>
+
+                            <tr><td class="gray"><input type="text" name="dim2label" size="18" onFocus="if (!(navigator.appName == 'Netscape' && parseInt(navigator.appVersion) == 3)) {
+
+                        if (document.weightcalc.dim2label.value == '')
+
+                            document.weightcalc.dim2.focus();
+
+                        else
+
+                            document.weightcalc.dim2.focus();
+
+                    }" class="form-control second-text-box">
+
+                                </td>
+
+                                <td class="gray"><input type="text" name="dim2" class="form-control third-text-box"></td><td class="gray"><select name="unitsdim2" class="form-control inch-box"><option>Inch</option></select></td></tr>
+
+                            <tr><td><input type="text" name="dim3label" size="18" onFocus="if (navigator.appName == 'Netscape' && parseInt(navigator.appVersion) == 3)
+
+                        ;
+
+                    else
+
+                        document.weightcalc.dim3.focus();" onBlur="ChangeLabel();" class="form-control second-text-box"></td>
+
+                                <td><input type="text" name="dim3" class="form-control third-text-box"></td>
+
+                                <td><select name="unitsdim3" class="form-control inch-box"><option>Inch</option></select></td></tr>
+
+
+
+                            <tr><td class="gray"><input type="text" name="dim4label" size="18" onFocus="if (navigator.appName == 'Netscape' && parseInt(navigator.appVersion) == 3)
+
+                        ;
+
+                    else
+
+                        document.weightcalc.dim4.focus();" onBlur="ChangeLabel();" class="form-control second-text-box"></td>
+
+                                <td class="gray"><input type="text" name="dim4" class="form-control third-text-box"></td>
+
+                                <td class="gray"><select name="unitsdim4" class="form-control inch-box"><option>Inch</option></select></td></tr>
+
+                        </table>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+
+                        <h3 class="hidden-xs">&nbsp;</h3>
+
+                        <table class="table metal-weight-calculator no-border">
+
+                            <tr class="hidden-xs"><td colspan="2">&nbsp;</td></tr>
+
+                            <tr><td colspan="2" class="gray"> <input type="submit" name="Submit" value="Calculate" onclick="CalculateWeight();" >&nbsp;&nbsp;
+
+                                    <input type="reset" name="reset" value="Reset" onClick="ChangeLabel();
+
+                    ClearFields();
+
+                    return false;"></td></tr>
+
+                            <tr><td><b>Piece Weight</b> (Ibs): </td>
+
+                                <td><input type="text" maxlength="8" name="pcweight" value="0" size="16" onFocus="if (navigator.appName == 'Netscape' && parseInt(navigator.appVersion) == 3)
+
+                        ;
+
+                    else
+
+                        document.weightcalc.Submit.focus();" onBlur="ChangeLabel();" class="form-control fourth-text-box">
+
+                                </td></tr>
+
+                            <tr><td class="gray"><b>Total Weight</b> (Ibs): </td><td class="gray">
+
+                                    <input type="text" maxlength="8" name="totalweight" value="0" size="16" onFocus="if (navigator.appName == 'Netscape' && parseInt(navigator.appVersion) == 3)
+
+                        ;
+
+                    else
+
+                        document.weightcalc.Submit.focus();" onBlur="ChangeLabel();" class="form-control fourth-text-box"></td></tr>
+
+                        </table>
+
+                    </div></div>
+
+            </form>
+
+
+
+            <div class="row">
+
+                <div class="col-xs-12 col-md-9">
+                <h1>How to use</h1>
+
+                    <p class="page-desc">The metal weight calculator is very easy to use on your desktop computer, your smartphone or iphone.</p><p>The densities used to calculate metal weights based on dimesion are taken from reliable sources such as MatWeb and Metal Suppliers Online. </p>
+                    <p>They have been crosschecked against densities reported by producing mills. If there has been a slight discrepancy between values, they have been averaged to come up with the most accurate measure possible. This may be the most extensive and reliable metal weight calculation tool on the web. However, plus and minus tolerances will slightly alter weight of finished metals.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid footer">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-4">
+
+                        <address>
+
+                            <strong>Free Metal Weight Calculator</strong><br>
+
+                            <br>
+
+                            
+
+                        </address>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+
+                        <center style="margin-bottom: 20px;">
+
+                           <!-- <span id="siteseal"><script type="text/javascript" src="https://seal.starfieldtech.com/getSeal?sealID=z37glokAScmehADRtJJrwCoo49jPIzNaaa5fExNtN8VdU9cl5ZtPl"></script></span> -->
+
+                        </center>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+
+                        <input type="text" class="form-control pull-right" placeholder="Sign Up to receive free downlaods" />
+
+                        <br/>
+
+                        <div class="social-container pull-left">
+
+                            <a class="social facebook"></a>
+
+                            <a class="social twitter"></a>
+
+                            <a class="social youtube"></a>
+
+                            <a class="social googleplus"></a>
+
+                            <a class="social linkedin"></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <a href="#">Gage Conversion Chart Us</a>
+                    <a href="#">Gage Conversion Chart Us</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <script type="text/javascript">
+
+                var alloysteelArray = new Array("('Select alloy','',true,true)",
+
+                        "('4130','0.282')",
+
+                        "('4135','0.282')",
+
+                        "('4140','0.282')",
+
+                        "('4330','0.283')",
+
+                        "('4340','0.284')",
+
+                        "('9310','0.284')");
+
+                var aluminumArray = new Array("('Select alloy','',true,true)",
+
+                        "('1100','0.098')",
+
+                        "('2011','0.102')",
+
+                        "('2024','0.101')",
+
+                        "('2219','0.103')",
+
+                        "('3003','0.099')",
+
+                        "('5052','0.097')",
+
+                        "('5083','0.096')",
+
+                        "('5086','0.096')",
+
+                        "('6013','0.098')",
+
+                        "('6061','0.098')",
+
+                        "('6063','0.097')",
+
+                        "('6262','0.098')",
+
+                        "('7050','0.102')",
+
+                        "('7075','0.101')",
+
+                        "('7150','0.102')",
+
+                        "('Alca Max','0.1')",
+
+                        "('Alca Plus','0.101')",
+
+                        "('MIC-6','0.101')",
+
+                        "('QC-7','0.101')");
+
+                var brassArray = new Array("('Select alloy','',true,true)",
+
+                        "('240 - Low Brass','0.313')",
+
+                        "('260 - Cartridge Brass','0.308')",
+
+                        "('353 - Leaded Brass','0.306')",
+
+                        "('360 - Brass','0.307')",
+
+                        "('365 - Brass','0.304')",
+
+                        "('380 - Brass','0.306')",
+
+                        "('385 - Brass','0.306')",
+
+                        "('464 - Brass','0.304')");
+
+                var bronzeArray = new Array("('Select alloy','',true,true)",
+
+                        "('18 - Aluminum Bronze','0.269')",
+
+                        "('21 - Aluminum Bronze','0.26')",
+
+                        "('314 - Commercial Bronze','0.306')",
+
+                        "('425 - Am Bronze','0.316')",
+
+                        "('485 - Naval Bronze','0.305')",
+
+                        "('510 - Phos Bronze','0.32')",
+
+                        "('524 - Phos Bronze','0.317')",
+
+                        "('532 - Phos Bronze','0.323')",
+
+                        "('534 - Phos Bronze','0.322')",
+
+                        "('544 - Phos Bronze','0.32')",
+
+                        "('613 - Al Bronze','0.287')",
+
+                        "('614 - Al Bronze','0.285')",
+
+                        "('623 - Al Bronze','0.276')",
+
+                        "('624 - Al Bronze','0.269')",
+
+                        "('625 - Al Bronze','0.26')",
+
+                        "('630 - Ni-Al Bronze','0.274')",
+
+                        "('642 - Al-Si Bronze','0.278')",
+
+                        "('863 - Manganese Bronze','0.278')",
+
+                        "('932 - Bearing Bronze','0.322')",
+
+                        "('954 - Al Bronze','0.269')",
+
+                        "('SAE841 - Powdered Bronze','0.236')",
+
+                        "('SAE843 - Powdered Bronze','0.216')",
+
+                        "('Oil-Lite - Bronze','0.236')");
+
+                var copperArray = new Array("('Select alloy','',true,true)",
+
+                        "('101','0.323')",
+
+                        "('102','0.323')",
+
+                        "('103','0.323')",
+
+                        "('110','0.322')",
+
+                        "('122','0.323')",
+
+                        "('145','0.323')");
+
+                var copperalloyArray = new Array("('Select alloy','',true,true)",
+
+                        "('145 - Tellurium Copper','0.323')",
+
+                        "('194 - Iron Copper','0.322')",
+
+                        "('195 - Iron Copper','0.322')",
+
+                        "('172 - Beryllium Copper','0.298')",
+
+                        "('182 - Class 2','0.321')",
+
+                        "('655 - Copper-Silicon','0.308')",
+
+                        "('706 - Copper-Nickel','0.323')",
+
+                        "('715 - Nickel Silver','0.323')",
+
+                        "('725 - Nickel Silver','0.321')",
+
+                        "('735 - Nickel Silver','0.319')",
+
+                        "('752 - Nickel Silver','0.316')",
+
+                        "('762 - Nickel Silver','0.31')",
+
+                        "('770 - Nickel Silver','0.314')",
+
+                        "('1751 - Class 3','0.317')",
+
+                        "('1758 - Copper-Nickel','0.323')",
+
+                        "('Moldmax - Be/Cu','0.302')",
+
+                        "('Protherm - Be/Cu','0.319')");
+
+                var magnesiumArray = new Array("('Select alloy','',true,true)",
+
+                        "('AZ31B','0.064')");
+
+                var nickelArray = new Array("('Select alloy','',true,true)",
+
+                        "('201','0.321')",
+
+                        "('400','0.319')",
+
+                        "('210','0.32')",
+
+                        "('220','0.318')",
+
+                        "('230','0.316')");
+
+                var plasticArray = new Array("('Select alloy','',true,true)",
+
+                        "('ABS','0.0394')",
+
+                        "('Acetal','0.0514')",
+
+                        "('Acrylic','0.0434')",
+
+                        "('Acrylic','0.0375')",
+
+                        "('Benelex','0.0496')",
+
+                        "('Biton','0.0673')",
+
+                        "('Buna-N','0.0507')",
+
+                        "('Butyl','0.0427')",
+
+                        "('CAB','0.0431')",
+
+                        "('Cellulose Acetate','0.047')",
+
+                        "('CPVC','0.0565')",
+
+                        "('Delrin','0.0514')",
+
+                        "('Delrin AF','0.0557')",
+
+                        "('Duraboard','0.0181')",
+
+                        "('E-CTFE','0.0608')",
+
+                        "('EPDM','0.0427')",
+
+                        "('Ertacetel H','0.0514')",
+
+                        "('Ertalyte','0.0503')",
+
+                        "('FEP Teflon','0.0778')",
+
+                        "('Fiber Sheet','0.0503')",
+
+                        "('Flourosilicone','0.0507')",
+
+                        "('Glastherm HT','0.0615')",
+
+                        "('Glastherm S','0.0615')",
+
+                        "('GPO-1','0.0717')",
+
+                        "('GPO-2','0.0651')",
+
+                        "('GPO-3','0.0659')",
+
+                        "('Gum Rubber','0.0333')",
+
+                        "('Halar','0.0608')",
+
+                        "('Haysite EHC-P','0.0724')",
+
+                        "('Haysite HST-11-P','0.0586')",
+
+                        "('Hypalan','0.0427')",
+
+                        "('ICE','0.0326')",
+
+                        "('Kapton','0.0514')",
+
+                        "('Kydex','0.0489')",
+
+                        "('Kynar','0.0633')",
+
+                        "('Lead','0.4104')",
+
+                        "('Lexan','0.0434')",
+
+                        "('Marinete P','0.0326')",
+
+                        "('Mylar','0.0503')",
+
+                        "('Natural Rubber','0.0333')",
+
+                        "('Neoprene','0.047')",
+
+                        "('Nitrile','0.0362')",
+
+                        "('Noryl','0.0384')",
+
+                        "('Nylatron GS','0.042')",
+
+                        "('Nylon 6/6','0.0413')",
+
+                        "('Peek','0.0478')",
+
+                        "('PET','0.0503')",
+
+                        "('PETG','0.046')",
+
+                        "('Phenolic CE','0.0413')",
+
+                        "('Phenolic G-10','0.0659')",
+
+                        "('Phenolic G-11','0.0659')",
+
+                        "('Phenolic G-3','0.0651')",
+
+                        "('Phenolic G-5','0.0706')",
+
+                        "('Phenolic G-7','0.067')",
+
+                        "('Phenolic G-9','0.0688')",
+
+                        "('Phenolic LE','0.0413')",
+
+                        "('Phenolic N-1','0.0427')",
+
+                        "('Phenolic XX','0.0485')",
+
+                        "('Phenyleneoxide','0.0384')",
+
+                        "('Polyamide','0.0413')",
+
+                        "('Polyamide-Imide','0.0514')",
+
+                        "('Polybenzimidazote','0.047')",
+
+                        "('Polycarbonate','0.0434')",
+
+                        "('Polyethelene LD','0.0344')",
+
+                        "('Polyetherimide','0.046')",
+
+                        "('Polymethylpentene','0.03')",
+
+                        "('Polymides Grafite','0.0561')",
+
+                        "('PolyPro Copolymer','0.0326')",
+
+                        "('Polypro HomoPolymer','0.0329')",
+
+                        "('Polystyrene','0.038')",
+
+                        "('Polysulfone','0.0449')",
+
+                        "('PPO','0.0384')",
+
+                        "('PVC Type I','0.051')",
+
+                        "('PVC Type II','0.0489')",
+
+                        "('Red Sheet','0.0626')",
+
+                        "('SBR','0.034')",
+
+                        "('SG-200','0.0615')",
+
+                        "('Silicone','0.0507')",
+
+                        "('Silver','0.38')",
+
+                        "('Styrene','0.038')",
+
+                        "('Teflon (PTFE)','0.0814')",
+
+                        "('Torlon','0.0514')",
+
+                        "('TPX','0.03')",
+
+                        "('Transite','0.0507')",
+
+                        "('Transite','0.0615')",
+
+                        "('UHMW','0.0344')",
+
+                        "('Ultem','0.046')",
+
+                        "('Urethane','0.047')",
+
+                        "('Vespel','0.0518')",
+
+                        "('Vinyl','0.047')",
+
+                        "('Vulcanized Fiber','0.0503')",
+
+                        "('X Link Styrene','0.038')");
+
+                var stainlessArray = new Array("('Select alloy','',true,true)",
+
+                        "('301','0.287')",
+
+                        "('302','0.287')",
+
+                        "('303','0.287')",
+
+                        "('304','0.287')",
+
+                        "('305','0.287')",
+
+                        "('316','0.286')",
+
+                        "('321','0.285')",
+
+                        "('409','0.278')",
+
+                        "('410','0.278')",
+
+                        "('420','0.28')",
+
+                        "('430','0.278')",
+
+                        "('15-5','0.287')",
+
+                        "('17-4','0.29')",
+
+                        "('13-8','0.279')");
+
+                var steelArray = new Array("('Select alloy','',true,true)",
+
+                        "('1010','0.283')",
+
+                        "('1012','0.283')",
+
+                        "('1015','0.283')",
+
+                        "('1018','0.283')",
+
+                        "('1541','0.283')",
+
+                        "('4140','0.283')",
+
+                        "('A-36','0.283')");
+
+                var titaniumArray = new Array("('Select alloy','',true,true)",
+
+                        "('6Al-4V','0.163')",
+
+                        "('Grade 2','0.163')",
+
+                        "('Grade 4','0.163')",
+
+                        "('Grade 5','0.163')");
+
+                var toolsteelArray = new Array("('Select alloy','',true,true)",
+
+                        "('S-7','0.283')");
+
+                var zincArray = new Array("('Select alloy','',true,true)",
+
+                        "('190','0.259')",
+
+                        "('310','0.258')",
+
+                        "('320','0.258')",
+
+                        "('500','0.259')",
+
+                        "('700','0.259')",
+
+                        "('720','0.259')",
+
+                        "('750','0.259')");
+
+
+
+                function populateAlloy(inForm, selected) {
+
+                    var selectedArray = eval(selected + "Array");
+
+                    while (selectedArray.length < inForm.alloy.options.length) {
+
+                        inForm.alloy.options[(inForm.alloy.options.length - 1)] = null;
+
+                    }
+
+                    for (var i = 0; i < selectedArray.length; i++) {
+
+                        eval("inForm.alloy.options[i]=" + "new Option" + selectedArray[i]);
+
+                    }
+
+                    if (inForm.material.options[0].value == '') {
+
+                        inForm.material.options[0] = null;
+
+
+
+                    }
+
+                }
+
+
+
+                var focusflag = false;
+
+                var RoundOff = 5;
+
+
+
+                function ConvertToInch(value, type) {
+
+                    if (type == "ft")
+
+                        value = value * 12;
+
+                    if (type == "yd")
+
+                        value = value * 36;
+
+                    if (type == "cm")
+
+                        value = value / 2.54;
+
+                    if (type == "m")
+
+                        value = (value * 100) / 2.54;
+
+                    if (type == "mm")
+
+                        value = (value / 10) / 2.54;
+
+                    return value;
+
+                }
+
+
+
+                function CalculateWeight() {
+
+                       
+
+                        
+
+                    var Param = new Array(5);
+
+                    var Units = new Array(4);
+
+                    var Convert;
+
+                    var FormType;
+
+                    var Result;
+
+                    var Good;
+
+                    var myShape;
+
+                    var myPieces;
+
+                    var myDensity;
+
+                    var myWeight;
+
+                    var myPcWeight;
+
+                    var totalWeight;
+
+                    var dim1;
+
+                    var dim2;
+
+                    var dim3;
+
+                    var dim4;
+
+
+
+                    myDensity = document.weightcalc.alloy.value;
+
+                    dim1 = ConvertToInch(document.weightcalc.dim1.value, document.weightcalc.unitsdim1.value);
+
+                    dim2 = ConvertToInch(document.weightcalc.dim2.value, document.weightcalc.unitsdim2.value);
+
+                    dim3 = ConvertToInch(document.weightcalc.dim3.value, document.weightcalc.unitsdim3.value);
+
+                    dim4 = ConvertToInch(document.weightcalc.dim4.value, document.weightcalc.unitsdim4.value);
+
+                    myPieces = document.weightcalc.pieces.value;
+
+                    myShape = document.weightcalc.matshape.value;
+
+                    document.weightcalc.pcweight.rsize = "4";
+
+                    document.weightcalc.totalweight.rsize = "4";
+
+
+
+                    if (myShape == "round") {
+
+                        myWeight = new String(dim1 * dim1 * 9.42 * myDensity * (dim2 / 12));
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "square") {
+
+                        myWeight = new String(dim1 * dim1 * myDensity * dim2);
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "hex") {
+
+                        myWeight = new String(dim1 * dim1 * myDensity * 10.4 * (dim2 / 12));
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+
+
+                    if (myShape == "flat") {
+
+                        myWeight = new String(dim1 * dim2 * myDensity * dim3);
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "sheet") {
+
+                        myWeight = new String(dim1 * dim2 * myDensity * dim3);
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "rectangle") {
+
+                        myWeight = new String(dim1 * dim2 * myDensity * dim3);
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "plate") {
+
+                        myWeight = new String(dim1 * dim2 * myDensity * dim3);
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "tube" || myShape == "pipe") {
+
+                        myWeight = new String((dim1 - dim2) * dim2 * myDensity * 37.7 * (dim3 / 12));
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "ring") {
+
+                        myWeight = new String((dim2 - ((dim2 - dim3) / 2)) * ((dim2 - dim3) / 2) * myDensity * 37.7 * (dim1 / 12));
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "rectangle tube") {
+
+                        myWeight = new String(((dim1 * dim2 * 12 * myDensity) - ((dim1 - (dim3 * 2)) * (dim2 - (dim3 * 2)) * 12 * myDensity)) * (dim4 / 12));
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    if (myShape == "square tube") {
+
+                        myWeight = new String(37.7 * myDensity * dim2 * (dim1 - dim2) * 1.27 * (dim3 / 12));
+
+                        document.weightcalc.pcweight.value = myWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    }
+
+                    myPcWeight = document.weightcalc.pcweight.value;
+
+                    totalWeight = new String(myPcWeight * myPieces);
+
+                    totalWeight = totalWeight.substring(0, myWeight.indexOf(".") + RoundOff);
+
+                    document.weightcalc.totalweight.value = totalWeight;
+
+                }
+
+
+
+                function showimage() {
+
+                    var myShape;
+
+                    var myPicture;
+
+
+
+                    myShape = document.weightcalc.matshape.options[document.weightcalc.matshape.selectedIndex].value;
+
+
+
+                    if (myShape == "round") {
+
+                        myPicture = "img/round.jpg";
+
+                    }
+
+                    if (myShape == "flat" || myShape == "plate" || myShape == "coil" || myShape == "rectangle" || myShape == "sheet") {
+
+                        myPicture = "img/rectangle.jpg";
+
+                    }
+
+                    if (myShape == "rectangle tube") {
+
+                        myPicture = "img/rectube.jpg";
+
+                    }
+
+                    if (myShape == "hex") {
+
+                        myPicture = "img/hexagon.jpg";
+
+                    }
+
+                    if (myShape == "square") {
+
+                        myPicture = "img/square.jpg";
+
+                    }
+
+                    if (myShape == "square tube") {
+
+                        myPicture = "img/sqtube.jpg";
+
+                    }
+
+                    if (myShape == "tube") {
+
+                        myPicture = "img/tube.jpg";
+
+                    }
+
+                    if (myShape == "ring") {
+
+                        myPicture = "img/tube.jpg";
+
+                    }
+
+                    if (myShape == "pipe") {
+
+                        myPicture = "img/tube.jpg";
+
+                    }
+
+                    document.images.pictures.src = myPicture;
+
+                    {
+
+                        if (!document.images)
+
+                            return
+
+                    }
+
+                }
+
+
+
+                function ClearFields() {
+
+                    document.weightcalc.dim1.value = "";
+
+                    document.weightcalc.dim2.value = "";
+
+                    document.weightcalc.dim3.value = "";
+
+                    document.weightcalc.dim4.value = "";
+
+                    document.weightcalc.pcweight.value = "";
+
+                    document.weightcalc.totalweight.value = "";
+
+                }
+
+                function ChangeLabel() {
+
+                    var myShape;
+
+                    myShape = document.weightcalc.matshape.value;
+
+
+
+                    if (myShape == "round") {
+
+                        document.weightcalc.dim1label.value = "Diameter:";
+
+                        document.weightcalc.dim2label.value = "Length:";
+
+                        document.weightcalc.dim3label.value = "";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "square") {
+
+                        document.weightcalc.dim1label.value = "Width:";
+
+                        document.weightcalc.dim2label.value = "Length:";
+
+                        document.weightcalc.dim3label.value = "";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "hex") {
+
+                        document.weightcalc.dim1label.value = "Diameter:";
+
+                        document.weightcalc.dim2label.value = "Length:";
+
+                        document.weightcalc.dim3label.value = "";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "flat" || myShape == "sheet" || myShape == "coil" || myShape == "plate" || myShape == "rectangle") {
+
+                        document.weightcalc.dim1label.value = "Gauge:";
+
+                        document.weightcalc.dim2label.value = "Width:";
+
+                        document.weightcalc.dim3label.value = "Length:";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "tube" || myShape == "pipe") {
+
+                        document.weightcalc.dim1label.value = "Outer Diameter:";
+
+                        document.weightcalc.dim2label.value = "Wall:";
+
+                        document.weightcalc.dim3label.value = "Length:";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "circular") {
+
+                        document.weightcalc.dim1label.value = "Diameter:";
+
+                        document.weightcalc.dim2label.value = "Thickness:";
+
+                        document.weightcalc.dim3label.value = "";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "ring") {
+
+                        document.weightcalc.dim1label.value = "Thickness:";
+
+                        document.weightcalc.dim2label.value = "Outer Diameter:";
+
+                        document.weightcalc.dim3label.value = "Inner Diameter:";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "square tube") {
+
+                        document.weightcalc.dim1label.value = "Outer Diameter (A):";
+
+                        document.weightcalc.dim2label.value = "Wall (B):";
+
+                        document.weightcalc.dim3label.value = "Length:";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                    if (myShape == "rectangle tube") {
+
+                        document.weightcalc.dim1label.value = "Height (A):";
+
+                        document.weightcalc.dim2label.value = "Width (B):";
+
+                        document.weightcalc.dim3label.value = "Wall (C):";
+
+                        document.weightcalc.dim4label.value = "Length:";
+
+                    }
+
+                    if (myShape == "angle" || myShape == "channel" || myShape == "tee" || myShape == "zee") {
+
+                        document.weightcalc.dim1label.value = "";
+
+                        document.weightcalc.dim2label.value = "";
+
+                        document.weightcalc.dim3label.value = "";
+
+                        document.weightcalc.dim4label.value = "";
+
+                    }
+
+                }
+
+                ChangeLabel();
+
+                ClearFields();
+
+        </script>
+
+    </body>
+
+</html>
