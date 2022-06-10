@@ -1,0 +1,274 @@
+
+<!doctype html>
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Steel Bar Weight Calculator - Weight Per Foot Calculations | Eaton Steel Bar Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our weight per foot calculator to help us at Eaton Steel Bar Company provide the best steel for your application. Contact us today if you need more information!">    
+    <meta name="author" content="Eaton Steel Bar Company">
+    <link rel="stylesheet" type="text/css" href="bootstrap-custom.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hoverIntent.minified.js"></script>
+    <script type="text/javascript" src="jRespond.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+    <script type="text/javascript" src="jquery.mixitup.js"></script>
+    <script type="text/javascript" src="jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="scripts.js?v=03.03.2020a"></script>
+
+</head>
+
+<body id="page-195" class="col-one ">
+
+<div id="content-wrap">
+     
+    <div class="banner-bar-wrapper">
+                <div class="overlay-all"></div>
+    <div class="banner-bar">
+        <div class="banner-image-bar">
+            <div class="banner-image">
+            </div>
+
+        </div>
+        <div class="banner-content">
+            <h1>Steel Bar Weight Calculator</h1>
+            
+            <ul class="B_crumbBox"><li class="B_firstCrumb"><a class="B_homeCrumb" rel="Home" href="#">Home</a></li>
+ <li class="sep">&raquo;</li> <li class="B_currentCrumb" >Weight Per Foot Calculator</li>
+</ul>
+        </div>
+    </div> <!-- end banner-bar -->
+</div>
+
+
+
+  
+    <div id="content">
+    
+        <div id="main-content">
+               <div id="content-content">
+
+<style>
+    .calculator {
+        border-bottom: 2px solid #023669;
+        margin-bottom: 20px;
+    }
+    .calculator h4 {
+        font-size: 16px;
+    }
+    #content form.calculator button {
+        margin: 0;
+    }
+    .calculator .btn-orange {
+        padding: 13px 0;
+        width: 170px;
+    }
+    .calculator h4 {
+        font-weight: normal;
+        color: #023669;
+        padding: 13px 0;
+    }
+    .calculator .clear-calculator {
+        margin-left:16px;
+        cursor:pointer;
+        top: 2px;
+        position: relative;
+    }
+</style>
+
+<h3><img src="roundbar.png" alt="round bar weight calculator"> Rounds</h3>
+<form class="calculator" id="roundsCalculator">
+    <div class="row clearfix">
+        <div class="form-group col-md-12 col-lg-4">
+            <label for="roundSize" class="control-label">Diameter (in inches)</label> 
+            <input id="roundSize" name="size" type="number" step="0.001" placeholder="Diameter (in inches)" value="2.375" class="form-control placeholder"> 
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label for="roundLengthFt" class="control-label">Length (in feet)</label> 
+                    <input id="roundLengthFt" name="roundLengthFt" type="number" pattern="\d*" step="1" placeholder="Length (in feet)" value="0" class="form-control placeholder"> 
+                </div>
+                <div class="col-xs-6">
+                    <label for="roundLengthIn" class="control-label">Length (in inches)</label> 
+                    <input id="roundLengthIn" name="roundLengthIn" type="number" step="0.01" placeholder="Length (in inches)" value="1.04" class="form-control placeholder"> 
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+            <label for="roundNumber" class="control-label">Number of Pieces/Bars</label> 
+            <input id="roundNumber" name="roundNumber" type="number" step="1" placeholder="Number of Pieces/Bars" value="1" class="form-control placeholder"> 
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="form-group col-md-3">
+            <button type="submit" class="btn btn-submit btn-primary">Calculate</button>
+        </div>
+        <div class="form-group col-md-3 col-lg-2">
+            <h4>Total Weight: <span id="roundsCalculatedWeight"></span></h4>
+        </div>
+        <div class="col-md-4 rfq-reset">
+            <a href="request-a-quote.html" class="btn btn-orange btn-rfq ">Request a Quote</a>
+            <a class="clear-calculator" onclick="resetRound()">Reset</a>
+        </div>
+        <div class="form-group col-md-1 col-lg-4">
+        </div>
+    </div>
+</form>
+
+<h3><img src="hexbar.png" alt="hex bar weight calculator"> Hexes</h3>
+<form class="calculator" id="hexCalculator">
+    <div class="row clearfix">
+        <div class="form-group col-md-12 col-lg-4">
+            <label for="hexSize" class="control-label">Diameter (in inches)</label> 
+            <input id="hexSize" name="size" type="number" step="0.001" placeholder="Diameter (in inches)" value="2.375" class="form-control placeholder"> 
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label for="hexLengthFt" class="control-label">Length (in feet)</label> 
+                    <input id="hexLengthFt" name="roundLengthFt" type="number" step="1" placeholder="Length (in feet)" value="0" class="form-control placeholder"> 
+                </div>
+                <div class="col-xs-6">
+                    <label for="hexLengthIn" class="control-label">Length (in inches)</label> 
+                    <input id="hexLengthIn" name="roundLengthIn" type="number" step="0.01" placeholder="Length (in inches)" value="1.04" class="form-control placeholder"> 
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+            <label for="hexNumber" class="control-label">Number of Pieces/Bars</label> 
+            <input id="hexNumber" name="roundNumber" type="number" step="1" placeholder="Number of Pieces/Bars" value="1" class="form-control placeholder"> 
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="form-group col-md-3">
+            <button type="submit" class="btn btn-submit btn-primary">Calculate</button>
+        </div>
+        <div class="form-group col-md-3 col-lg-2">
+            <h4>Total Weight: <span id="hexCalculatedWeight"></span></h4>
+        </div>
+        <div class="col-md-4 rfq-reset">
+            <a href="request-a-quote.html" class="btn btn-orange btn-rfq ">Request a Quote</a>
+            <a class="clear-calculator" onclick="resetHex()">Reset</a>
+        </div>
+    </div>
+</form>
+
+<h3><img src="squarebar.png" alt="square bar weight calculator"> Squares</h3>
+<form class="calculator" id="squareCalculator">
+    <div class="row clearfix">
+        <div class="form-group col-md-12 col-lg-4">
+            <label for="squareSize" class="control-label">Diameter (in inches)</label> 
+            <input id="squareSize" name="size" type="number" step="0.001" placeholder="Diameter (in inches)" value="2.375" class="form-control placeholder"> 
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+            <div class="row">
+                <div class="col-xs-6">
+                    <label for="squareLengthFt" class="control-label">Length (in feet)</label> 
+                    <input id="squareLengthFt" name="squareLengthFt" type="number" step="1" placeholder="Length (in feet)" value="0" class="form-control placeholder"> 
+                </div>
+                <div class="col-xs-6">
+                    <label for="squareLengthIn" class="control-label">Length (in inches)</label> 
+                    <input id="squareLengthIn" name="squareLengthIn" type="number" step="0.01" placeholder="Length (in inches)" value="1.04" class="form-control placeholder"> 
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-12 col-lg-4">
+            <label for="squareNumber" class="control-label">Number of Pieces/Bars</label> 
+            <input id="squareNumber" name="squareNumber" type="number" step="1" placeholder="Number of Pieces/Bars" value="1" class="form-control placeholder"> 
+        </div>
+    </div>
+    <div class="row clearfix">
+        <div class="form-group col-md-3">
+            <button type="submit" class="btn btn-submit btn-primary">Calculate</button>
+        </div>
+        <div class="form-group col-md-3 col-lg-2">
+            <h4>Total Weight: <span id="squareCalculatedWeight"></span></h4>
+        </div>
+        <div class="col-md-4 rfq-reset">
+            <a href="request-a-quote.html" class="btn btn-orange btn-rfq ">Request a Quote</a>
+            <a class="clear-calculator" onclick="resetSquare()">Reset</a>
+        </div>
+    </div>
+</form>
+</div>
+
+        </div><!-- /main-content -->
+    
+    </div>
+    
+</div><!-- /content-wrap -->
+<!-- Footer -->
+<footer id="footer">
+    
+    <div id="footer-main" class="clearfix">
+        <div class="container-fluid">
+            <div class="foot-block-social clearfix">
+                
+                <hr>
+                <div id="footer-social">
+                <ul class="list-inline">
+                    <li><a href="#" target="_blank" class="facebook" aria-label="Facebook Link"></a></li>
+                    <li><a href="#" target="_blank" class="twitter" aria-label="Twitter Link"></a></li>
+                    <li><a href="#" target="_blank" class="vimeo" aria-label="Vimeo Link"></a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="foot-block-group">
+                <div class="foot-block" id="block-1">
+                    <p class="header">Commercial</p>
+                    <ul>
+                    <li><a href="catalog.html" >Catalog</a></li>
+<li><a href="#" >Web Specials</a></li>
+<li><a href="#" >Surcharge</a></li>
+<li><a href="#" >Quality / Certifications</a></li>
+<li><a href="#" >Terms & Conditions</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="foot-block" id="block-2">
+                    <p class="header">Industries</p>
+                    <ul>
+                    <li><a href="#" >Automotive</a></li>
+<li><a href="#" >Construction</a></li>
+<li><a href="#" >Oil/Gas/Energy</a></li>
+<li><a href="#" >Military</a></li>
+                    </ul>
+                </div>
+                <div class="foot-block" id="block-3">
+                    <p class="header">About</p>
+                    <ul>
+                    <li><a href="history.html" >History</a></li>
+<li><a href="#" >Affiliates</a></li>
+<li><a href="#" >Family of Companies</a></li>
+<li><a href="#" >Careers</a></li>
+<li><a href="#" >News</a></li>
+                    </ul>
+                </div>
+                <div class="foot-block" id="block-4">
+                    <p class="header">Contact</p>
+                    <p>10221 Capital St.</p>
+                    <p>Oak Park, MI 48237</p>
+                    <p><em>Toll-Free: </em><span class="tel hidden-xs hidden-sm">800-527-3851</span>
+<a class="tel visible-xs-inline visible-sm-inline" href="tel:8005273851">800-527-3851</a></p>
+                    <p><em>Local: </em><span class="tel hidden-xs hidden-sm">248-398-3434</span>
+<a class="tel visible-xs-inline visible-sm-inline" href="tel:2483983434">248-398-3434</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="shadow-top"></div>
+    </div>
+    <div id="footer-bottom-bar" class="clearfix">
+        <div class="container-fluid">
+            <span id="copyright">&copy; 2022  Eaton Steel Bar Company</span>
+            <ul class="foot-nav"><li class="first"><a href="privacy-policy.html" title="Privacy Policy" >Privacy Policy</a></li><li class="last"><a href="sitemap.html" title="Sitemap" >Sitemap</a></li></ul>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<script src="calculator"></script>
+
+</body>
+</html>
