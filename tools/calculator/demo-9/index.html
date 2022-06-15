@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-gb" prefix="og: http://ogp.me/ns#" class="calculator-page">
+
+<head>
+    <title>Metal Weight Calculator by BS Stainless</title>
+    <link rel="stylesheet" href="https://www.bsstainless.com/main.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script>window.app={documentReady:[],windowLoad:[],extensions:{}};(function(){var pxRatio=window.devicePixelRatio||1,search;if(pxRatio!="1"){search=location.search.replace(/pxRatio=[^&]*&?/g,'').replace(/(^\?|&)$/,'');location.replace(location.protocol+'//'+location.hostname+location.pathname+search+(search?'&':'?')+'pxRatio='+pxRatio+location.hash);}})();</script>
+		
+ 
+</head>
+
+<body>
+    <div id="app">
+        
+        <main>
+            <article class="wrap">
+                <div class="row">
+                    
+                    <div class="col-sm-9">
+                        
+                        <h1>Bảng tính trọng lượng thép</h1>
+                        <p>Tại đây, bạn có thể tìm thấy một cách tiện dụng để gia công trọng lượng thép ở nhiều dạng khác nhau như tấm, dây, phẳng, lục giác, hình ống và hơn thế nữa. Điều quan trọng cần lưu ý là chúng dựa trên các tính toán lý thuyết và do đó chỉ hoạt động như một hướng dẫn không phải là một khuyến nghị.</p>
+                        <form class="form-horizontal" onsubmit="CalculateWeight(); return false;" autocomplete="off">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Hợp kim</label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <select class="form-control" id="product">
+                                        <option selected="selected" value="1">Thép (mặc định)</option>
+                                        <option value=".3462">Aluminum 1100</option>
+                                        <option value=".3604">Aluminum 2011</option>
+                                        <option value=".3568">Aluminum 2014</option>
+                                        <option value=".3568">Aluminum 2017</option>
+                                        <option value=".3533">Aluminum 2024</option>
+                                        <option value=".3498">Aluminum 3003</option>
+                                        <option value=".3462">Aluminum 5005</option>
+                                        <option value=".3427">Aluminum 5052</option>
+                                        <option value=".3356">Aluminum 5056</option>
+                                        <option value=".3392">Aluminum 5083</option>
+                                        <option value=".3392">Aluminum 5086</option>
+                                        <option value=".3462">Aluminum 6061</option>
+                                        <option value=".3462">Aluminum 6063</option>
+                                        <option value=".3568">Aluminum 7050</option>
+                                        <option value=".3568">Aluminum 7075</option>
+                                        <option value=".3604">Aluminum 7178</option>
+                                        <option value="1.030">Stainless 300 Series</option>
+                                        <option value="1.025">Stainless 400 Series</option>
+                                        <option value="1.132">Nickel 200</option>
+                                        <option value="1.125">Nickel 400</option>
+                                        <option value="1.121">Nickel R-405</option>
+                                        <option value="1.075">Nickel K-500</option>
+                                        <option value="1.072">Nickel 600</option>
+                                        <option value="1.075">Nickel 625</option>
+                                        <option value="1.012">Nickel 800H</option>
+                                        <option value="1.012">Nickel 800AT</option>
+                                        <option value="1.037">Nickel 825</option>
+                                        <option value="1.012">Nickel 330</option>
+                                        <option value="1.030">Nickel 20</option>
+                                        <option value="1.132">Nickel C-276</option>
+                                        <option value="1.012">Nickel 2545MD</option>
+                                        <option value=".229">Magnesium</option>
+                                        <option value=".236">Beryllium</option>
+                                        <option value=".575">Titanium</option>
+                                        <option value=".812">Zirconium</option>
+                                        <option value=".911">Cast Iron</option>
+                                        <option value=".911">Zinc</option>
+                                        <option value="1.084">Brass</option>
+                                        <option value="1.095">Columbium</option>
+                                        <option value="1.144">Copper</option>
+                                        <option value="1.303">Molybdenum</option>
+                                        <option value="1.339">Silver</option>
+                                        <option value="1.448">Lead</option>
+                                        <option value="2.120">Tantalum</option>
+                                        <option value="2.462">Tungsten</option>
+                                        <option value="2.466">Gold</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Hình dạng</label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <select class="form-control" id="form" onchange="ChangeLabel(); ClearFields();">
+                                         <option>---Vui lòng chọn---</option>
+                                        <option>Vòng</option>
+                                        <option>Vuông</option>
+                                        <!--<option>Lục giá</option>
+                                        <option>Bát giác</option>
+                                        <option>Sheet</option>
+                                        <option>Plate</option>-->
+                                        <option>Phẳng</option>
+                                        <!--<option>Hình ống</option>-->
+                                        <option>Tròn</option>
+                                        <!--<option>Ring</option>-->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label class="control-label">Số lượng các mảnh</label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <!--<div class="row">-->
+                                    <!--<div class="col-sm-6">-->
+                                    <input type="number" min="0" step="1" class="form-control" id="param4" />
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label class="control-label" id="lbl1"></label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <input type="number" min="0" step="0.1" class="form-control" id="param1" />
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <select class="form-control" id="units1">
+                                                <option>in</option>
+                                                <option>ft</option>
+                                                <option>yd</option>
+                                                <option selected="selected">mm</option>
+                                                <option>cm</option>
+                                                <option>m</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hidden" id="sizes2">
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <label class="control-label" id="lbl2"></label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <input type="number" min="0" step="0.1" class="form-control" id="param2" />
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <select class="form-control" id="units2">
+                                                    <option>in</option>
+                                                    <option>ft</option>
+                                                    <option>yd</option>
+                                                    <option selected="selected">mm</option>
+                                                    <option>cm</option>
+                                                    <option>m</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label class="control-label" id="lbl3"></label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <input type="number" min="0" step="0.1" class="form-control" id="param3" />
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <select class="form-control" id="units3">
+                                                <option>in</option>
+                                                <option>ft</option>
+                                                <option>yd</option>
+                                                <option>mm</option>
+                                                <option>cm</option>
+                                                <option selected="selected">m</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="form-group">
+                                <div class="col-xs-6 col-sm-4">
+                                    <div class="form-control-static"><strong>Trọng lượng tính toán</strong></div>
+                                </div>
+                                <div class="col-xs-6 col-sm-8">
+                                    <div class="form-control-static"><strong><span id="result"></span> Kgs</strong></div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="form-group">
+                                <div class="col-sm-8 col-sm-offset-4">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <input type="submit" value="Calculate" class="btn btn-primary btn-block" id="Submit" />
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <input type="reset" value="Reset" class="btn btn-default btn-block" id="reset" onclick="ChangeLabel(); ClearFields(); return false;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <script>
+                        var focusflag = false;
+                        var RoundOff = 5;
+
+                        function UnitConvertI(value, type) {
+                            if (type == "cm")
+                                value = value / 2.54;
+                            if (type == "m")
+                                value = (value * 100) / 2.54;
+                            if (type == "mm")
+                                value = (value / 10) / 2.54;
+                            if (type == "ft")
+                                value = value * 12;
+                            if (type == "yd")
+                                value = value * 36;
+                            return value;
+                        }
+
+                        function UnitConvertF(value, type) {
+                            if (type == "cm")
+                                value = (value / 2.54) / 12;
+                            if (type == "m")
+                                value = ((value * 100) / 2.54) / 12;
+                            if (type == "mm")
+                                value = ((value / 10) / 2.54) / 12;
+                            if (type == "in")
+                                value = value / 12;
+                            if (type == "yd")
+                                value = value * 3;
+                            return value;
+                        }
+
+                        function CheckNum(value, label) {
+                            var String1 = new String(value);
+                            var String2 = new String("");
+                            var String3 = new String("");
+                            var String4 = new String("");
+                            var temp;
+                            var i = 0;
+                            var count = 0;
+                            for (i = 0; i < String1.length; i++) {
+                                String2 = new String(parseFloat(String1.charAt(i)));
+                                if (String1.charAt(i) == ".")
+                                    count++;
+                                if ((String2.length != 1 && String1.charAt(i) != '.') || count > 1) { alert("You entered an illegal value for the " + label); return false; }
+                            }
+                            return true;
+                        }
+
+                        function CheckParam(Param1, Param2, Param3, Param4) {
+                            var Form = document.getElementById('form').options[document.getElementById('form').selectedIndex].text;
+                            var valid1 = 0,
+                                valid2 = 0,
+                                valid3 = 0,
+                                valid4 = 0;
+                            var counter = 0;
+                            if (Form == "Vòng" || Form == "Vuông" || Form == "Hexagonal" || Form == "Octagonal") {
+                                if (Param1 == "" || Param3 == "" || Param4 == "") { alert("You must fill in values for the Diameter and the Length"); return false; }
+                                valid1 = CheckNum(Param1, "Diameter");
+                                valid3 = CheckNum(Param3, "Length");
+                                valid4 = CheckNum(Param4, "Number of Pieces");
+                                if (valid1 != true || valid3 != true || valid4 != true)
+                                    return false;
+                            }
+                            if (Form == "Phẳng" || Form == "Sheet" || Form == "Plate") {
+                                if (Param1 == "" || Param3 == "" || Param4 == "" || Param2 == "") { alert("You must fill in values for the Thickness and the Width and the Length"); return false; }
+                                valid1 = CheckNum(Param1, "Thickness");
+                                valid2 = CheckNum(Param2, "Width");
+                                valid3 = CheckNum(Param3, "Length");
+                                valid4 = CheckNum(Param4, "Number of Pieces");
+                                if (valid1 != true || valid3 != true || valid4 != true || valid2 != true)
+                                    return false;
+                            }
+                            if (Form == "Tubular") {
+                                if (Param1 == "" || Param3 == "" || Param4 == "" || Param2 == "") { alert("You must fill in values for the Outer Diametera and the Wall and the Length"); return false; }
+                                valid1 = CheckNum(Param1, "Outer Diameter");
+                                valid2 = CheckNum(Param2, "Wall");
+                                valid3 = CheckNum(Param3, "Length");
+                                valid4 = CheckNum(Param4, "Number of Pieces");
+                                if (valid1 != true || valid2 != true || valid3 != true || valid4 != true)
+                                    return false;
+                            }
+                            if (Form == "Tròn") {
+                                if (Param1 == "" || Param3 == "" || Param4 == "") { alert("You must fill in values for the Diameter and the Thickness"); return false; }
+                                valid1 = CheckNum(Param1, "Diameter");
+                                valid3 = CheckNum(Param3, "Thickness");
+                                valid4 = CheckNum(Param4, "Number of Piecesv");
+                                if (valid1 != true || valid3 != true || valid4 != true)
+                                    return false;
+                            }
+                            if (Form == "Ring") {
+                                if (Param1 == "" || Param2 == "" || Param3 == "" || Param4 == "") { alert("You must fill in values for the Outer Diameter and the Inner Diameter and the Thickness"); return false; }
+                                valid1 = CheckNum(Param1, "Outer Diameter");
+                                valid2 = CheckNum(Param2, "Inner Diameter");
+                                valid3 = CheckNum(Param3, "Thickness");
+                                valid4 = CheckNum(Param4, "Number of Pieces");
+                                if (valid1 != true || valid2 != true || valid3 != true || valid4 != true)
+                                    return false;
+                            }
+                            return true;
+                        }
+
+                        function CalculateWeight() {
+                            var Param = new Array(5);
+                            var Units = new Array(4);
+                            var Convert;
+                            var FormType;
+                            var Result;
+                            var Good;
+                            Param[0] = document.getElementById('param1').value;
+                            Param[1] = document.getElementById('param2').value;
+                            Param[2] = document.getElementById('param3').value;
+                            Param[3] = document.getElementById('param4').value;
+                            Good = CheckParam(Param[0], Param[1], Param[2], Param[3]);
+                            if (!Good)
+                                return;
+                            Units[0] = document.getElementById('units1').options[document.getElementById('units1').selectedIndex].text;
+                            Units[1] = document.getElementById('units2').options[document.getElementById('units2').selectedIndex].text;
+                            Units[2] = document.getElementById('units3').options[document.getElementById('units3').selectedIndex].text;
+                            Param[0] = UnitConvertI(Param[0], Units[0]);
+                            Param[1] = UnitConvertI(Param[1], Units[1]);
+                            Param[2] = UnitConvertF(Param[2], Units[2]);
+                            FormType = document.getElementById('form').options[document.getElementById('form').selectedIndex].text;
+                            Convert = document.getElementById('product').value;
+                            document.getElementById('result').rsize = "4";
+                            if (FormType == "Vòng") { Result = new String(2.6729 / 2.2046 * Param[0] * Param[0] * Convert * Param[2] * Param[3]);
+                                document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            if (FormType == "Vuông") { Result = new String(3.4032 / 2.2046 * Param[0] * Param[0] * Convert * Param[2] * Param[3]);
+                                document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            if (FormType == "Hexagonal") { Result = new String(2.9473 / 2.2046 * Param[0] * Param[0] * Convert * Param[2] * Param[3]);
+                                document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            if (FormType == "Octagonal") { Result = new String(2.8193 / 2.2046 * Param[0] * Param[0] * Convert * Param[2] * Param[3]);
+                                document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            if (FormType == "Phẳng" || FormType == "Sheet" || FormType == "Plate") { Result = new String(3.4032 / 2.2046 * Param[0] * Convert * Param[1] * Param[2] * Param[3]);
+                                document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            if (FormType == "Tubular") {
+                                Result = 10.68 / 2.2046 * (Param[0] - Param[1]) * Convert * Param[1] * Param[2] * Param[3];
+                                if (Result < 0) { alert("The Width of the Tube Wall cannot exceed the Outer Diameter"); } else { Result = new String(Result);
+                                    document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            }
+                            if (FormType == "Tròn") { Param[2] = UnitConvertI(Param[2], "ft");
+                                Result = new String(.22274 / 2.2046 * Param[0] * Convert * Param[0] * Param[2] * Param[3]);
+                                document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            if (FormType == "Ring") {
+                                Param[2] = UnitConvertI(Param[2], "ft");
+                                Result = (.22274 / 2.2046 * Param[2] * ((Param[0] * Param[0]) - (Param[1] * Param[1])) * Convert * Param[3]);
+                                if (Result < 0) { alert("The Inner Diameter cannot exceed the Outer Diameter"); } else { Result = new String(Result);
+                                    document.getElementById('result').innerHTML = Result.substring(0, Result.indexOf(".") + RoundOff); }
+                            }
+                        }
+
+                        function ClearFields() { document.getElementById('param1').value = "";
+                            document.getElementById('param2').value = "";
+                            document.getElementById('param3').value = "";
+                            document.getElementById('param4').value = "1";
+                            document.getElementById('result').innerHTML = ""; }
+
+                        function ChangeLabel() {
+                            var formType;
+                            formType = document.getElementById('form').options[document.getElementById('form').selectedIndex].text;
+                            if (formType == "Vòng") { document.getElementById('lbl1').innerHTML = "Diameter";
+                                document.getElementById('lbl2').innerHTML = "";
+                                document.getElementById('lbl3').innerHTML = "Length";
+                                document.getElementById('sizes2').className = 'hidden'; }
+                            if (formType == "Vuông") { document.getElementById('lbl1').innerHTML = "Diameter";
+                                document.getElementById('lbl2').innerHTML = "";
+                                document.getElementById('lbl3').innerHTML = "Length";
+                                document.getElementById('sizes2').className = 'hidden'; }
+                            if (formType == "Hexagonal") { document.getElementById('lbl1').innerHTML = "Diameter";
+                                document.getElementById('lbl2').innerHTML = "";
+                                document.getElementById('lbl3').innerHTML = "Length";
+                                document.getElementById('sizes2').className = 'hidden'; }
+                            if (formType == "Octagonal") { document.getElementById('lbl1').innerHTML = "Diameter";
+                                document.getElementById('lbl2').innerHTML = "";
+                                document.getElementById('lbl3').innerHTML = "Length";
+                                document.getElementById('sizes2').className = 'hidden'; }
+                            if (formType == "Phẳng" || formType == "Sheet" || formType == "Plate") { document.getElementById('lbl1').innerHTML = "Thickness";
+                                document.getElementById('lbl2').innerHTML = "Width";
+                                document.getElementById('lbl3').innerHTML = "Length";
+                                document.getElementById('sizes2').className = ''; }
+                            if (formType == "Tubular") { document.getElementById('lbl1').innerHTML = "Outer Diameter";
+                                document.getElementById('lbl2').innerHTML = "Wall";
+                                document.getElementById('lbl3').innerHTML = "Length";
+                                document.getElementById('sizes2').className = ''; }
+                            if (formType == "Tròn") { document.getElementById('lbl1').innerHTML = "Diameter";
+                                document.getElementById('lbl2').innerHTML = "";
+                                document.getElementById('lbl3').innerHTML = "Thickness";
+                                document.getElementById('sizes2').className = 'hidden'; }
+                            if (formType == "Ring") { document.getElementById('lbl1').innerHTML = "Outer Diameter";
+                                document.getElementById('lbl2').innerHTML = "Inner Diameter";
+                                document.getElementById('lbl3').innerHTML = "Thickness";
+                                document.getElementById('sizes2').className = ''; }
+                        }
+                        app.documentReady.push(function() { ChangeLabel();
+                            ClearFields(); });
+                        </script>
+                    </div>
+                </div>
+            </article>
+        </main>
+        
+    </div>
+    
+</body>
+
+</html>
