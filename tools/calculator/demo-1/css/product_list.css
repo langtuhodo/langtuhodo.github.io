@@ -120,7 +120,7 @@
 }
 #category input[type="checkbox"] ~ label:hover{
     text-indent: 24px;
-    background: url(../img/checkbox-hover.png) no-repeat left 6px;
+    background: url(img/checkbox-hover.png) no-repeat left 6px;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -129,7 +129,7 @@
 }
 #category input[type="checkbox"]:checked + label{
     text-indent: 24px;
-    background: url(../img/checkbox-checked.png) no-repeat left 6px;
+    background: url(img/checkbox-checked.png) no-repeat left 6px;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -138,7 +138,7 @@
 }
 #category input[type="radio"] ~ label:hover{
     text-indent: 24px;
-    background: url(../img/radio-hover.png) no-repeat left 6px;
+    background: url(img/radio-hover.png) no-repeat left 6px;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -147,7 +147,7 @@
 }
 #category input[type="radio"]:checked + label{
     text-indent: 24px;
-    background: url(../img/radio-checked.png) no-repeat left 6px;
+    background: url(img/radio-checked.png) no-repeat left 6px;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;

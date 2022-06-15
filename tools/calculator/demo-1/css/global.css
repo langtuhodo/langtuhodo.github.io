@@ -1313,28 +1313,28 @@ html:not(.lt-ie9) input[type="radio"] + label{
     clear: none;
     padding: 5px 0 4px 24px;
     cursor: pointer;
-    background: url(../img/checkbox-rest.png) no-repeat left center;
+    background: url(img/checkbox-rest.png) no-repeat left center;
 }
 html:not(.lt-ie9) input[type="checkbox"] ~ label:hover,
 html:not(.lt-ie9) input[type="checkbox"]:focus ~ label{
-    background: url(../img/checkbox-hover.png) no-repeat left center;
+    background: url(img/checkbox-hover.png) no-repeat left center;
 }
 html:not(.lt-ie9) input[type='checkbox']:checked + label{
-    background: url(../img/checkbox-checked.png) no-repeat left center;
+    background: url(img/checkbox-checked.png) no-repeat left center;
 }
 html:not(.lt-ie9) input[type='checkbox']:disabled + label{
-    background: url(../img/checkbox-rest.png) no-repeat left center;
+    background: url(img/checkbox-rest.png) no-repeat left center;
     opacity: 0.5;
 }
 html:not(.lt-ie9) input[type="radio"] ~ label:hover,
 html:not(.lt-ie9) input[type="radio"]:focus ~ label{
-    background: url(../img/radio-hover.png) no-repeat left center;
+    background: url(img/radio-hover.png) no-repeat left center;
 }
 html:not(.lt-ie9) input[type='radio']:checked + label{
-    background: url(../img/radio-checked.png) no-repeat left center;
+    background: url(img/radio-checked.png) no-repeat left center;
 }
 html:not(.lt-ie9) input[type='radio']:disabled + label{
-    background: url(../img/checkbox-rest.png) no-repeat left center;
+    background: url(img/checkbox-rest.png) no-repeat left center;
     opacity: 0.5;
 }
 
