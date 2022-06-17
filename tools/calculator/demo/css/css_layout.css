@@ -208,7 +208,7 @@ a:hover{
 	
 }
 
-.contentHeader.info{
+.contentHeader.info-cal{
 	padding: 0;;
 }
 
@@ -222,7 +222,7 @@ a:hover{
 	background-position: center center;
 }
 
-.contentHeader.info .icon{
+.contentHeader.info-cal .icon{
 	background-image: url('../images/icon_header_info.png');
 }
 .contentHeader.calc .icon{
@@ -320,7 +320,7 @@ input.niceLink.active:hover{
 	background-position: center center;
 	border-radius: 50%;
 }
-.niceLink.info{
+.niceLink.info-cal{
 	padding: 0 10px 0 28px;
 }
 
@@ -334,7 +334,7 @@ input.niceLink.active:hover{
 .niceLink.contact:before{
 	background-image: url('../images/icon_header_phone.png');
 }
-.niceLink.info:before{
+.niceLink.info-cal:before{
 	background-image: url('../images/icon_header_info.png');
 }
 .niceLink.layers:before{
@@ -374,7 +374,7 @@ input.niceLink.active:hover{
 .homeLeft .niceLink{
 }
 
-.footer{
+.footer-cal{
 	background: #f7fafc;
 }
 
@@ -689,35 +689,35 @@ input.niceLink.active:hover{
 	text-align: center;
 }
 
-.rightSide .content > p{
+.rightSide .content-cal > p{
 	margin: 0;
 }
 
 
-.rightSide .content{
+.rightSide .content-cal{
 	font-size: 14px;
 	text-align: justify;
 	margin: 20px 0 0;
 	padding-bottom: 20px;
 }
 
-.rightSide .content table{
+.rightSide .content-cal table{
 	border-collapse: collapse;
 	background: #fff;
 	margin: 0 auto;
 	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-.rightSide .content table tr{
+.rightSide .content-cal table tr{
 	background-color: #F1F2F2;
 }
 
-.rightSide .content table tr:nth-child(odd){
+.rightSide .content-cal table tr:nth-child(odd){
 	background-color: #DDDEDF;
 }
 
 
-.rightSide .content table td{
+.rightSide .content-cal table td{
 	border: 1px solid #fff;
 	padding: 5px;
 	font-size: 11px;
@@ -725,13 +725,13 @@ input.niceLink.active:hover{
 	
 }
 
-.rightSide .content table td.header{
+.rightSide .content-cal table td.header{
 	background: #627CB0;
 	color: #fff;
 	text-align: center;
 }
 
-.rightSide .content table td p{
+.rightSide .content-cal table td p{
 	margin: 0;
 }
 .rightSide .specs{
@@ -893,11 +893,11 @@ textarea.field{
     text-align: right;
 }
 
-.info{
+.info-cal{
 	padding: 10px;
 }
 
-.info .homeSideMenu{
+.info-cal .homeSideMenu{
 	padding: 0 0 0 3px;
 	float: left;
 	width: 20%;
@@ -906,7 +906,7 @@ textarea.field{
 	box-sizing: border-box;
 	background: #fff;
 }
-.info .homeSideMenu.calc {
+.info-cal .homeSideMenu.calc {
     padding: 0 0 0 3px;
     float: left;
     width: 35%;
@@ -915,7 +915,7 @@ textarea.field{
     box-sizing: border-box;
     background: #fff;
 }
-.info .infoText{
+.info-cal .infoText{
 	margin: 0;
 	padding: 0 0 0 2%;
 	text-align: justify;
@@ -926,7 +926,7 @@ textarea.field{
 	box-sizing: border-box;
 	border-left: 1px solid #DEDEDE;
 }
-.info .infoText2{
+.info-cal .infoText2{
 	margin: 0;
 	padding: 0 0 0 2%;
 	text-align: justify;
@@ -944,7 +944,7 @@ textarea.field{
 	color: #0067B1;
 }
 
-.info h1{
+.info-cal h1{
 	font-size: 20px;
 }
 
@@ -1289,6 +1289,18 @@ textarea.field{
 .storageInfo table{
     width: 100%;
 }
-.floatR{
-	text-align: center;
+
+.floatL { float:left; }
+.floatR { float:right; }
+.clear {	clear:both; }
+
+.bold { font-weight: bold; }
+.uc { text-transform:uppercase; }
+.lc { text-transform:lowercase; }
+.nowrap { white-space:nowrap; }
+.required {
+	color:#ff0000;
+	font-size:11px;
 }
+.fs14 { font-size:14px; }
+.fs14-note { font-size:12px; }
