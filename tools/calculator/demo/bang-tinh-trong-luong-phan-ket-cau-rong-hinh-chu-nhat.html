@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tools by Langtuhodo</title>
+    <link rel="stylesheet" href="css/css_layout.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/jquery_functions.custom.js"></script>
+    <script src="js/jquery_functions.sys.js"></script>
+    <script src="js/jquery_functions.onload.js"></script>
+    <script src="js/jquery_calculators.js"></script>
+</head>
+
+<body>
+    <div class="site">
+        <div class="content-cal">
+            <div class="path">
+                <a href="#" class="" title="Calculators">Calculators</a>&nbsp;&nbsp;&nbsp;
+                <a href="#" class="active" title="Bảng tính trọng lượng ống thép đúc">Phần cấu trúc rỗng - hình chữ nhật</a>&nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="info-cal">
+                <div class="infoText2">
+                    <!--
+        <div class="contentHeader">
+            <h1 class="ff01 title">Калкулатор за Листова стомана</h1>
+        </div>
+-->
+                    <div class="contentHeader calc">
+                        <div class="icon"></div>
+                        <h1 class="title">Phần cấu trúc rỗng - hình chữ nhật</h1>
+                    </div>
+                    <div class="calculator fs14" data-calculator="calculator_5">
+                        <p>Nhập các giá trị của bạn vào các trường bên dưới:</p>
+                        <div class="input_parameters">
+                            <div id="calcError" style="display: none;">
+                                Độ dày không được lớn hơn một nửa cạnh.
+                            </div>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Cạnh, <span class="accent">A</span>:</td>
+                                        <td><input data-param="a" data-min="0" type="text" class="field calc" value="30"></td>
+                                        <td>mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cạnh, <span class="accent">B</span>:</td>
+                                        <td><input data-param="b" data-min="0" type="text" class="field calc" value="20"></td>
+                                        <td>mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Độ dày, <span class="accent">t</span>:</td>
+                                        <td><input data-param="t" data-min="0" data-float="true" type="text" class="field calc" value="1.5"></td>
+                                        <td>mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chiều dài, <span class="accent">L</span>:</td>
+                                        <td><input data-param="l" data-float="true" data-min="1" type="text" class="field calc" value="1"></td>
+                                        <td>m</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <div class="resultLabel">
+                                                Kết quả
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Khối lượng mỗi mét:</td>
+                                        <td align="center"><input class="field result" type="text" name="result_single" id="result_single" value="0" readonly=""></td>
+                                        <td>kg/m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tổng trọng lượng:</td>
+                                        <td align="center"><input class="field result" type="text" name="result_total" id="result_total" value="0" readonly=""></td>
+                                        <td>kg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="scheme">
+                            <img src="img/hinhchunhat.png">
+    </div>
+                        </div>
+                        <p class="fs14">
+                            Calculator for Hollow structural sections - rectangular
+                        </p>
+                    </div>
+                    <div class="homeSideMenu calc">
+                        <div class="contentHeader calc">
+                            <h1 class="title">Calculators</h1>
+                        </div>
+                        <p></p>
+                        <a href="bang-tinh-trong-luong-thep-tam.html" title="Bảng tính trọng lượng thép tấm" class="">Thép tấm</a>
+                        <a href="bang-tinh-trong-luong-ong-thep-duc.html" title="Bảng tính trọng lượng ống thép đúc" class="">Ống thép đúc</a>
+                        <a href="#" title="Bảng tính trọng lượng phần kết cấu rỗng - hình tròn" class="">Phần cấu trúc rỗng - hình tròn</a>
+                        <a href="#" title="Bảng tính trọng lượng phần cấu trúc rỗng - hình vuông" class="">Phần cấu trúc rỗng - hình vuông</a>
+                        <a href="#" title="Bảng tính trọng lượng phần cấu trúc rỗng - hình chữ nhật" class="active">Phần cấu trúc rỗng - hình chữ nhật</a>
+                        <a href="#" title="Round steel bars" class="">Round steel bars</a>
+                        <a href="#" title="Square steel bars" class="">Square steel bars</a>
+                        <a href="#" title="Flat bars" class="">Flat bars</a>
+                        <a href="#" title="Equal angles" class="">Equal angles</a>
+                        <a href="#" title="Unequal angles" class="">Unequal angles</a>
+                        <a href="#" title="Channels - GOST" class="">Channels - GOST</a>
+                        <a href="#" title="Channels - UPN" class="">Channels - UPN</a>
+                        <a href="#" title="Beams - IPN" class="">Beams - IPN</a>
+                        <a href="#" title="Beams - IPE" class="">Beams - IPE</a>
+                        <a href="#" title="Beams - HEA (IPBL)" class="">Beams - HEA (IPBL)</a>
+                        <a href="#" title="Beams - HEB (IPB)" class="">Beams - HEB (IPB)</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="footer-cal">
+                <div class="footMenu">
+                    <a href="#" class="active">Ống thép đúc</a>
+                    <a href="#">Ống thép mạ kẽm</a>
+                    <a href="#">Ống thép cỡ lớn</a>
+                    <a href="#">Tháp tấm</a>
+                    <a href="#">Thép tấm hình U I V H</a>
+                    <a href="#">Ống thép Hòa Phát</a>
+                    <a href="#">Phụ kiên thép</a>
+                    <a href="#">Van</a>
+                </div>
+                <div class="footContent">
+                    <div class="floatR">
+                        <a href="tel:0932059176" clas="goMobile">Hotline: 0932 059 176</a>
+                        | <a class="webDesign" href="#" target="_blank" title="Web design DualM studio">Calculator for steel by <span>thepbaotin.com</span></a>
+                    </div>
+                    <div class="footLink">
+                        Liên hệ Kinh doanh: <a href="tel:0903332176">Mr Hương</a> | <a href="tel:0906909176">Mr Dũng</a> | <a href="tel:0909500176">Ms Thanh Hằng</a> | <a href="tel:0909323176">Mrs Dung</a></div>
+                    <div class="fbMenu">
+                        <div class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

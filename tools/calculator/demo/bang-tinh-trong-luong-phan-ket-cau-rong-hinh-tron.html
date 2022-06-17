@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Tools by Langtuhodo</title>
-   
     <link rel="stylesheet" href="css/css_layout.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
@@ -18,64 +17,63 @@
     <div class="site">
         <div class="content-cal">
             <div class="path">
-                
                 <a href="#" class="" title="Calculators">Calculators</a>&nbsp;&nbsp;&nbsp;
-                <a href="#" class="active" title="Bảng tính trọng lượng thép tấm">Bảng tính trọng lượng thép tấm</a>&nbsp;&nbsp;&nbsp;
+                <a href="#" class="active" title="Bảng tính trọng lượng ống thép đúc">Phần kết cấu rỗng - hình tròn</a>&nbsp;&nbsp;&nbsp;
             </div>
             <div class="info-cal">
                 <div class="infoText2">
                     <div class="contentHeader calc">
                         <div class="icon"></div>
-                        <h1 class="title">Bảng tính trọng lượng thép tấm</h1>
+                        <h1 class="title">Bảng tính trọng lượng phần kết cấu rỗng - hình tròn</h1>
                     </div>
-                    <div class="calculator fs14" data-calculator="calculator_1">
+                    <div class="calculator fs14" data-calculator="calculator_2">
                         <p>Nhập các giá trị của bạn vào các trường bên dưới:</p>
                         <div class="input_parameters">
+                            <div id="calcError" style="display: none;">
+                                Độ dày không được lớn hơn một nửa đường kính.
+                            </div>
                             <table>
-                                <tr>
-                                    <td>Độ dày, <span class="accent">t</span>:</td>
-                                    <td><input data-param="t" data-min="0.5" data-float="true" type="text" class="field calc" value="1"></td>
-                                    <td>mm</td>
-                                </tr>
-                                <tr>
-                                    <td>Bề rộng, <span class="accent">W</span>:</td>
-                                    <td><input data-param="w" data-min="1" type="text" class="field calc" value="1000"></td>
-                                    <td>mm</td>
-                                </tr>
-                                <tr>
-                                    <td>Chiều dài, <span class="accent">L</span>:</td>
-                                    <td><input data-param="l" data-min="1" type="text" class="field calc" value="2000"></td>
-                                    <td>mm</td>
-                                </tr>
-                                <tr>
-                                    <td>Số lượng các mảnh:</td>
-                                    <td><input data-param="n" data-min="1" type="text" class="field calc" value="1"></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3">
-                                        <div class="resultLabel">
-                                            Kết quả
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Trọng lượng đơn:</td>
-                                    <td align="center"><input class="field result" type="text" name="result_single" id="result_single" value="0" readonly></td>
-                                    <td>kg</td>
-                                </tr>
-                                <tr>
-                                    <td>Tổng khối lượng:</td>
-                                    <td align="center"><input class="field result" type="text" name="result_total" id="result_total" value="0" readonly></td>
-                                    <td>kg</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>Đường kính, <span class="accent">D</span>:</td>
+                                        <td><input data-param="d" data-min="0" data-float="true" type="text" class="field calc" value="21.3"></td>
+                                        <td>mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Độ dày, <span class="accent">t</span>:</td>
+                                        <td><input data-param="t" data-min="0" data-float="true" type="text" class="field calc" value="2"></td>
+                                        <td>mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chiều dài, <span class="accent">L</span>:</td>
+                                        <td><input data-param="l" data-min="1" data-float="true" type="text" class="field calc" value="1"></td>
+                                        <td>m</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <div class="resultLabel">
+                                                Kết quả
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trọng lượng mỗi mét:</td>
+                                        <td align="center"><input class="field result" type="text" name="result_single" id="result_single" value="0" readonly=""></td>
+                                        <td>kg/m</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tổng khối lượng:</td>
+                                        <td align="center"><input class="field result" type="text" name="result_total" id="result_total" value="0" readonly=""></td>
+                                        <td>kg</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </div>
-                        <div class="scheme-img">
-                            <img src="img/theptam.png">
+                        <div class="scheme">
+                            <img src="img/ongthepductron.png">
     </div>
                         </div>
                         <p class="fs14-note">
@@ -87,9 +85,9 @@
                             <h1 class="title">Calculators</h1>
                         </div>
                         <p></p>
-                        <a href="bang-tinh-trong-luong-thep-tam.html" title="Bảng tính trọng lượng thép tấm" class="active">Bảng tính trọng lượng thép tấm</a>
+                        <a href="bang-tinh-trong-luong-thep-tam.html" title="Bảng tính trọng lượng thép tấm" class="">Bảng tính trọng lượng thép tấm</a>
                         <a href="bang-tinh-trong-luong-ong-thep-duc.html" title="Bảng tính trọng lượng ống thép đúc" class="">Bảng tính trọng lượng ống thép đúc</a>
-                        <a href="#" title="Hollow structural sections - circular" class="">Hollow structural sections - circular</a>
+                        <a href="#" title="Bảng tính trọng lượng phần kết cấu rỗng - hình tròn" class="active">Bảng tính trọng lượng phần kết cấu rỗng - hình tròn</a>
                         <a href="#" title="Hollow structural sections - square" class="">Hollow structural sections - square</a>
                         <a href="#" title="Hollow structural sections - rectangular" class="">Hollow structural sections - rectangular</a>
                         <a href="#" title="Round steel bars" class="">Round steel bars</a>
@@ -117,7 +115,6 @@
                     <a href="#">Ống thép Hòa Phát</a>
                     <a href="#">Phụ kiên thép</a>
                     <a href="#">Van</a>
-                    
                 </div>
                 <div class="footContent">
                     <div class="floatR">
@@ -125,7 +122,7 @@
                         | <a class="webDesign" href="#" target="_blank" title="Web design DualM studio">Calculator for steel by <span>thepbaotin.com</span></a>
                     </div>
                     <div class="footLink">
-                    Liên hệ Kinh doanh: <a href="tel:0903332176">Mr Hương</a> | <a href="tel:0906909176">Mr Dũng</a> | <a href="tel:0909500176">Ms Thanh Hằng</a> | <a href="tel:0909323176">Mrs Dung</a></div>
+                        Liên hệ Kinh doanh: <a href="tel:0903332176">Mr Hương</a> | <a href="tel:0906909176">Mr Dũng</a> | <a href="tel:0909500176">Ms Thanh Hằng</a> | <a href="tel:0909323176">Mrs Dung</a></div>
                     <div class="fbMenu">
                         <div class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
                     </div>
