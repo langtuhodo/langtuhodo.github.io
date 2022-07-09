@@ -353,7 +353,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="html-formatter" id="html-formatter_input" autofocus="" placeholder="HTML to format" style="display: none;"></textarea>
+                                    <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="javascript-formatter" id="javascript-formatter_input" autofocus="" placeholder="Javascript to format" style="display: none;"></textarea>
                                     <div class="CodeMirror cm-s-base16-light">
                                         <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div>
                                         <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
@@ -373,7 +373,7 @@
                                                             </div>
                                                             <div class="CodeMirror-measure"></div>
                                                             <div style="position: relative; z-index: 1;"></div>
-                                                            <div class="CodeMirror-cursors" style="">
+                                                            <div class="CodeMirror-cursors">
                                                                 <div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20px;">&nbsp;</div>
                                                             </div>
                                                             <div class="CodeMirror-code" role="presentation">
@@ -428,8 +428,8 @@
                             <div class="row mt-3">
                                 <div class="col"></div>
                                 <div class="col-md-6 form-group text-center">
-                                    <button type="button" class="btn btn-primary w-100" id="html-formatter_submit" onclick="dev_tool_submit(this)">
-                                        <i class="fas fa-tasks" aria-hidden="true"></i> &nbsp;&nbsp;Format HTML</button>
+                                    <button type="button" class="btn btn-primary w-100" id="javascript-formatter_submit" onclick="dev_tool_submit(this)">
+                                        <i class="fas fa-tasks" aria-hidden="true"></i> &nbsp;&nbsp;Format JS</button>
                                 </div>
                                 <div class="col"></div>
                             </div>
@@ -442,7 +442,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="html-formatter_output" placeholder="" style="display: none;"></textarea>
+                                    <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="javascript-formatter_output" placeholder="" style="display: none;"></textarea>
                                     <div class="CodeMirror cm-s-base16-light">
                                         <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div>
                                         <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
@@ -485,11 +485,11 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col">
-                                        <input type="hidden" name="code_language" id="code_language" value="xml">
-                                        <button type="button" class="btn btn-success share" data-target="#html-formatter_output" title="Share"><i class="fas fa-share" aria-hidden="true"></i>&nbsp; Share Output</button>
+                                        <input type="hidden" name="code_language" id="code_language" value="javascript">
+                                        <button type="button" class="btn btn-success share" data-target="#javascript-formatter_output" title="Share"><i class="fas fa-share" aria-hidden="true"></i>&nbsp; Share Output</button>
                                     </div>
                                     <div class="col-md-6 form-group text-center">
-                                        <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="html-formatter_copy" data-clipboard-target="#html-formatter_output" onclick="codemirror_copy(this)">
+                                        <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="javascript-formatter_copy" data-clipboard-target="#javascript-formatter_output" onclick="codemirror_copy(this)">
                                             <i class="fas fa-copy" aria-hidden="true"></i>&nbsp; &nbsp; Copy</button>
                                     </div>
                                     <div class="col">
@@ -508,39 +508,41 @@
                     </div>
                     <div class="card mt-5">
                         <div class="card-header">
-                            <h3 class="card-title">About Online HTML Beautifier/formatter Tool</h3>
+                            <h3 class="card-title">About Online Javascript Beautifier/formatter Tool</h3>
                         </div>
                         <div class="card-body">
-                            <h2>How can we use this HTML Beautifier/formatter Tool?</h2>
-                            <p>Steps for online formatting of HTML</p>
+                            <h2>How can we use this Javascript Beautifier/formatter Tool?</h2>
+                            <p>Steps for online formatting of javascript</p>
                             <ol>
-                                <li><b>Enter the HTML</b> in the editor.</li>
+                                <li><b>Enter the javascript Code</b> in the editor.</li>
                                 <li><b>Select Indentation </b>with space or tabs. For space you can select the number of spaces for indentation.</li>
                                 <li><b>Select Warp Lines </b> characters, like wrap after 40/70/80 or more characters. Select do not wrap to avoid automatic wrapping</li>
-                                <li><b>Click Format HTML </b>button and it will format the HTML code and show in output.</li>
+                                <li><b>Click Format JS </b>button and it will format the javascript code and show in output.</li>
                             </ol>
-                            <h2>What is HTML Beautifier/formatter Tool?</h2>
-                            <p>HTML Beautifier/formatter is an online Tool to easily beautify your HTML code. Paste any minified codes or unindented codes and you'll get the beautified or formatted output.
+                            <h2>What is Javascript Beautifier/formatter Tool?</h2>
+                            <p>Javascript Beautifier/formatter is an online Tool to easily beautify your Javascript code. Paste any minified codes or unindented codes and you'll get the beautified or formatted output.
                             </p>
-                            <h2>Why to beautify HTML code?</h2>
+                            <h2>Why to beautify javascript code?</h2>
                             <p>Beautifying minified code or unindented code helps developers to easily read, understand and debug it. It also makes it easier for developers to read other developers codes as well.
                             </p>
-                            <h2>How does this HTML formatter tool works?</h2>
-                            <p>This online formatter tools uses Javascript formatting library which makes it easier to format the code. The library works by using regular expressions on the source code. Regular expression matches the codes and add appropiate indentations, wrap lines and remove extra lines.
+                            <h2>How does this javascript formatter tool works?</h2>
+                            <p>This online formatter tools uses javascript formatting library which makes it easier to format the code. The library works by using regular expressions on the source code. Regular expression matches the codes and add appropiate indentations, wrap lines and remove extra lines.
                             </p>
-                            <h2>Example of Online HTML formatting</h2>
+                            <h2>Example of Online Javascript formatting</h2>
                             <p>Check below for the simple example:</p>
                             <p>
-                                Input HTML code:
-                                <code>&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Test title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code>
+                                Input javascript code:
+                                <code>$(document).ready(function(){alert("This is demo alert")})</code>
                             </p>
                             <p>
-                                Output Formatted HTML code: <a target="_blank" href="https://smalldev.tools/share-bin/4IT9ve7D">check here</a>
+                                Output Formatted javascript code, <a target="_blank" href="https://smalldev.tools/share-bin/UTVULh57">check here</a>
                             </p>
                             <p>Check that the input one line of code is formatted to multiple lines with appropiate indentations and makes it really easy to read and debug for developers. Also, the formatted output will have syntax highlight.</p>
                             <br>
-                            <h2>Is this HTML formatter tool safe &amp; secure?</h2>
-                            <p>Yes, this HTML formatter tool is safe &amp; secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
+                            <h2>Is this javascript formatter tool safe &amp; secure?</h2>
+                            <p>Yes, this javascript formatter tool is safe &amp; secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
+                            <h2>How can I minify the javascript code?</h2>
+                            <p>To minify or compress javascript code use this, <a href="https://smalldev.tools/compress-javascript-online">smalldev.tools online javascript minifier</a></p>
                         </div>
                     </div>
                 </div>
