@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport">
+    <title>Minify CSS code or Compress CSS code - SmallDev.tools</title>
+    <meta name="title" content="Minify CSS code or Compress CSS code">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=13" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css?v=13">
+    <script src="https://kit.fontawesome.com/289f6be895.js?v=13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="fsha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta property="og:title" content="Minify CSS code or Compress CSS code" />
+    <meta name="twitter:title" content="Minify CSS code or Compress CSS code" />
+    <meta name="description" content="⚡ 95% code compression, Minify or Compress CSS code instantly. [Advance Compressor], Fast, simple &amp; secure. One click to copy.">
+    <meta property="og:description" content="⚡ 95% code compression, Minify or Compress CSS code instantly. [Advance Compressor], Fast, simple &amp; secure. One click to copy." />
+    <meta name="twitter:description" content="⚡ 95% code compression, Minify or Compress CSS code instantly. [Advance Compressor], Fast, simple &amp; secure. One click to copy." />
+</head>
+
+<body>
+    <section class="">
+        <div class="container-fluid bgimage pt-1">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center" style="height: 120px;">
+                    <a href="#">
+                    <img src="img/logo.png" class="img-fluid" alt="" style="height: 100%;">
+                </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 text-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <b>Your top tools:</b>
+                            <a href="#" class="ml-3"><i class="fab fa-css3"></i> CSS Compressor</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal modal-blur fade" id="feedback_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Hey there👋</h5> <button type="button" class="btn-close close_feedback_modal" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">Got 2 minutes? <br /><br />Your feedback helps to improve smallDev tools. <br /> Be the 1st to add feedback.<br /><br /></div>
+                <div class="modal-footer"> <button type="button" class="btn me-auto close_feedback_modal" data-bs-dismiss="modal">Nah!</button> <a href="#" target="_blank" class="btn btn-success" data-bs-dismiss="modal">👉 Add Feedback</a> </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-12 text-center">
+                <h1 class="display-6 font-weight-bold">CSS Compressor</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-md-3 order-2 order-md-1">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Other Tools</h3>
+                    </div>
+                    <div class="card-body" id="tools-list">
+                        
+                        <div class="list">
+                           
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="base64-encoder-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">BASE64 Encode</div>
+                                <div class="text-muted description">Text to base64</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="base64-decoder-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">BASE64 Decode</div>
+                                <div class="text-muted description">base64 to plain text</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="url-encoder-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">URL Encode online</div>
+                                <div class="text-muted description">Encode text to url</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="url-decoder-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-link"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">URL Decode</div>
+                                <div class="text-muted description">Decode url</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="utf8-encoder-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">UTF8 Encode</div>
+                                <div class="text-muted description">Plain text to UTF8</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="utf8-decoder-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">UTF8 Decode</div>
+                                <div class="text-muted description">UTF8 to plain text</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="xml-decoder-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">XML Decode</div>
+                                <div class="text-muted description">Decode XML string to array</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="javascript-formatter-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">JS Formatter</div>
+                                <div class="text-muted description">Format/Beautify javascript</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="html-formatter-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">HTML Formatter</div>
+                                <div class="text-muted description">Format/Beautify HTML</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="css-formatter-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">CSS Formatter</div>
+                                <div class="text-muted description">Format/Beautify CSS</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="compress-javascript-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-file-code"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">JS Compressor</div>
+                                <div class="text-muted description">Compress/Minify javascript</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="compress-css-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">CSS Compressor</div>
+                                <div class="text-muted description">Compress/Minify CSS</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="sql-formatter-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">SQL Formatter</div>
+                                <div class="text-muted description">Format/Beautify SQL</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="test-data-generator-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">Test Data Generator</div>
+                                <div class="text-muted description">Generate Test Data/Fake Data</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="lorem-ipsum-generator-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">Lorem Ipsum Generator</div>
+                                <div class="text-muted description">Generate Lorem Ipsum Test data</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="credit-card-generator-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">Credit Card Generator</div>
+                                <div class="text-muted description">Generate Credit Card Test data</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="placeholder-image-generator-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fas fa-images"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">Placeholder Image Generator</div>
+                                <div class="text-muted description">Generate placeholder images</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <a class="card card-link" href="html-to-markdown-converter-online">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-auto">
+                                <i class="fab fa-markdown"></i>
+                            </div>
+                            <div class="col">
+                                <div class="font-weight-medium name">HTML to Markdown Converter</div>
+                                <div class="text-muted description">Converts HTML to Markdown</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 order-1 order-md-2 mb-4" id="fs_div">
+                <div class="dev_tool_container">
+                    <div class="card mb-4">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h3 class="card-title">Input</h3>
+                            <button type="button" class="btn btn-light toggle_fullscreen" title="Fullscreen" data-target="#fs_div"><i class="fas fa-expand-alt"></i></button>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="compress-css" id="compress-css_input" autofocus></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col"></div>
+                                <div class="col-md-6 form-group text-center">
+                                    <button type="button" class="btn btn-primary w-100" id="compress-css_submit" onclick="dev_tool_submit(this)">
+                                        <i class="fas fa-tasks"></i> &nbsp;&nbsp;Compress CSS</button>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card output_card">
+                        <div class="card-header">
+                            <h3 class="card-title">Output</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="compress-css_output"></textarea>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <input type="hidden" name="code_language" id="code_language" value="css">
+                                        <button type="button" class="btn btn-success share" data-target="#compress-css_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
+                                    </div>
+                                    <div class="col-md-6 form-group text-center">
+                                        <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="compress-css_copy" data-clipboard-target="#compress-css_output" onclick="codemirror_copy(this)">
+                                            <i class="fas fa-copy"></i>&nbsp; &nbsp; Copy</button>
+                                    </div>
+                                    <div class="col">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="share-link-div" style="display:none">
+                                <div class="col-md-12 mt-5">
+                                    <div class="input-group mb-2">
+                                        <input type="text" class="form-control form-control-sm" id="share-link">
+                                        <button class="btn" type="button" id="copy-share-link" data-clipboard-target="#share-link"><i class="fas fa-copy"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-5">
+                        <div class="card-header">
+                            <h3 class="card-title">About CSS compressor or CSS minifier Tool</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2>How can we use this CSS minifier Tool?</h2>
+                            <p>Steps for online CSS minification or compression</p>
+                            <ol>
+                                <li><b>Enter the CSS</b> in the editor.</li>
+                                <li><b>Click Compress JS </b>button and it will compress js, and show in the output.</li>
+                                <li><b>Click copy </b>button to copy the minified CSS code.</li>
+                            </ol>
+                            <h2>What is CSS minifier Tool?</h2>
+                            <p>CSS minifier compresses or minifies the CSS code to reduce the file size.
+                            </p>
+                            <h2>How does CSS minifier Tool works?</h2>
+                            <p>CSS minifier tool parser the code & removes unnecessary whitespace and semicolons, comments, blank lines, new lines and does various others logics to compress the CSS code.
+                            </p>
+                            <h2>Why should developers compress CSS?</h2>
+                            <p>Minifying CSS is very important factor in improving page loading speed and Search engine optimisation. More CSS file size will increase page loading time and consequently makes website slow. Compressing CSS will reduce the file size and increase the website loading time. Faster page loading means better user experience and better ranking in google search result.
+                            </p>
+                            <h2>How much percentage will the code size gets reduced?</h2>
+                            <p>Percentage reduction depends on the input css code. But experimentally we have seen a reduction in almost 95% of the size reduction in minified code for most CSS
+                            </p>
+                            <h2>Is this CSS code compression tool safe & secure?</h2>
+                            <p>Yes, this CSS code compression tool is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 order-3 order-md-3 text-center subscribe_div">
+            </div>
+        </div>
+    </div>
+    <footer class="footer footer-transparent d-print-none">
+        <div class="container">
+            <div class="row text-center align-items-center flex-row-reverse">
+                <div class="col-lg-auto ms-lg-auto">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item">
+                            <a href="about-us" class="link-secondary"><i class="fas fa-business-time"></i> About Us</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank" class="link-secondary"><i class="fas fa-bug"></i> Report Issue or Improvement</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=310381&theme=light" alt=" Handy developer tools with a delightful interface | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                    <ul class="list-inline list-inline-dots mb-0">
+                        <li class="list-inline-item">
+                            Copyright © 2022 Dev.tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js?v=13"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.dev_tool_text').attr('placeholder', "CSS to compress");
+        $('.dev_tool_result').attr('placeholder', "");
+
+        $('.example_input').click(function(e) {
+            e.preventDefault();
+            $('.dev_tool_text').val("");
+        })
+    });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css" integrity="sha512-xIf9AdJauwKIVtrVRZ0i4nHP61Ogx9fSRAkCLecmE2dL/U8ioWpDvFCAy4dcfecN72HHB9+7FfQj3aiO68aaaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/theme/base16-light.min.css" integrity="sha512-UCcyAfcA/pJ4lD8YMo+fhwFdJeGNN5QrBlHvTQ1BopVjHWh35HD2JRV3tbwxtabH5ymri426oTfa1UF9Z63B3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js" integrity="sha512-6Q5cHfb86ZJ3qWx47Pw7P5CN1/pXcBMmz3G0bXLIQ67wOtRF7brCaK5QQLPz2CWLBqjWRNH+/bV5MwwWxFGxww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.css" integrity="sha512-T8xB3MmwpA77VK9lUH3UkdUTnkmpqOxHF8OceOKaHrvpcXMSNX0xtpa9FoLTDAVO1JnB2UiMdVeI2V0HTHjTWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.js" integrity="sha512-W1hGUpWU/hlAuQjKnoWXy29+UUA6zTad0iWfI8OrykZBf2lv35cZ6xlCCCBf/2Bpnez4ik+gY1BuHNk31sabAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js" integrity="sha512-YeNG6eTv+q+p/vvx+E5u05IBRurTlv0jfQuvitZMD+oNe9TfrGw+z4MHHxhPlE3X3csemC5YXlzDLMSZrgb34A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/app.js?v=13"></script>
+</body>
+
+</html>
