@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@tabler/core@latest/dist/css/tabler.min.css?v=13">
     <script src="https://kit.fontawesome.com/289f6be895.js?v=13" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" integrity="fsha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <meta property="og:title" content="Minify CSS code or Compress CSS code" />
     <meta name="twitter:title" content="Minify CSS code or Compress CSS code" />
     <meta name="description" content="⚡ 95% code compression, Minify or Compress CSS code instantly. [Advance Compressor], Fast, simple &amp; secure. One click to copy.">
@@ -68,7 +69,9 @@
                         <h3 class="card-title">Other Tools</h3>
                     </div>
                     <div class="card-body" id="tools-list">
+                        
                         <div class="list">
+                           
                             <div class="col-md-12 mb-3">
                                 <a class="card card-link" href="base64-encoder-online.html">
                     <div class="card-body">
@@ -85,7 +88,7 @@
                 </a>
                             </div>
                             <div class="col-md-12 mb-3">
-                                <a class="card card-link" href="compress-css-online.html">
+                                <a class="card card-link" href="css-formatter-online.html">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-auto">
@@ -190,7 +193,7 @@
                 </a>
                             </div>
                             <div class="col-md-12 mb-3">
-                                <a class="card card-link" href="html-formatter-online">
+                                <a class="card card-link" href="html-formatter-online.html">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-auto">
@@ -339,6 +342,7 @@
                     </div>
                 </a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -348,88 +352,19 @@
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <h3 class="card-title">Input</h3>
-                            <button type="button" class="btn btn-light toggle_fullscreen" title="Fullscreen" data-target="#fs_div"><i class="fas fa-expand-alt" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-light toggle_fullscreen" title="Fullscreen" data-target="#fs_div"><i class="fas fa-expand-alt"></i></button>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="html-formatter" id="html-formatter_input" autofocus="" placeholder="HTML to format" style="display: none;"></textarea>
-                                    <div class="CodeMirror cm-s-base16-light">
-                                        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div>
-                                        <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
-                                            <div style="min-width: 1px; height: 0px;"></div>
-                                        </div>
-                                        <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
-                                            <div style="height: 100%; min-height: 1px; width: 0px;"></div>
-                                        </div>
-                                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
-                                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
-                                        <div class="CodeMirror-scroll" tabindex="-1">
-                                            <div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -6px; border-right-width: 44px; min-height: 28px; min-width: 7px; padding-right: 0px; padding-bottom: 0px;">
-                                                <div style="position: relative; top: 0px;">
-                                                    <div class="CodeMirror-lines" role="presentation">
-                                                        <div role="presentation" style="position: relative; outline: none;">
-                                                            <div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre>
-                                                            </div>
-                                                            <div class="CodeMirror-measure"></div>
-                                                            <div style="position: relative; z-index: 1;"></div>
-                                                            <div class="CodeMirror-cursors" style="">
-                                                                <div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20px;">&nbsp;</div>
-                                                            </div>
-                                                            <div class="CodeMirror-code" role="presentation">
-                                                                <div style="position: relative;">
-                                                                    <div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;">
-                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div>
-                                                                    </div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">&ZeroWidthSpace;</span></span></pre>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div style="position: absolute; height: 44px; width: 1px; border-bottom: 0px solid transparent; top: 28px;"></div>
-                                            <div class="CodeMirror-gutters" style="height: 72px;">
-                                                <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="tabsize" class="tabsize form-control">
-                                        <option value="1">Indent with a tab character</option>
-                                        <option value="2">Indent with 2 spaces</option>
-                                        <option value="3">Indent with 3 spaces</option>
-                                        <option value="4" selected="">Indent with 4 spaces</option>
-                                        <option value="8">Indent with 8 spaces</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="wrap-line-length" class="wrap-line-length form-control">
-                                        <option value="0" selected="">Do not wrap lines</option>
-                                        <option value="40">Wrap lines near 40 characters</option>
-                                        <option value="70">Wrap lines near 70 characters</option>
-                                        <option value="80">Wrap lines near 80 characters</option>
-                                        <option value="110">Wrap lines near 110 characters</option>
-                                        <option value="120">Wrap lines near 120 characters</option>
-                                        <option value="160">Wrap lines near 160 characters</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="max-preserve-newlines" class="max-preserve-newlines form-control">
-                                        <option value="-1" selected="">Remove all extra newlines</option>
-                                        <option value="1">Allow 1 newline between tokens</option>
-                                        <option value="2">Allow 2 newlines between tokens</option>
-                                        <option value="5">Allow 5 newlines between tokens</option>
-                                        <option value="10">Allow 10 newlines between tokens</option>
-                                        <option value="0">Allow unlimited newlines between tokens</option>
-                                    </select>
+                                    <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="compress-css" id="compress-css_input" autofocus></textarea>
                                 </div>
                             </div>
                             <div class="row mt-3">
                                 <div class="col"></div>
                                 <div class="col-md-6 form-group text-center">
-                                    <button type="button" class="btn btn-primary w-100" id="html-formatter_submit" onclick="dev_tool_submit(this)">
-                                        <i class="fas fa-tasks" aria-hidden="true"></i> &nbsp;&nbsp;Format HTML</button>
+                                    <button type="button" class="btn btn-primary w-100" id="compress-css_submit" onclick="dev_tool_submit(this)">
+                                        <i class="fas fa-tasks"></i> &nbsp;&nbsp;Compress CSS</button>
                                 </div>
                                 <div class="col"></div>
                             </div>
@@ -442,55 +377,16 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="html-formatter_output" placeholder="" style="display: none;"></textarea>
-                                    <div class="CodeMirror cm-s-base16-light">
-                                        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div>
-                                        <div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true">
-                                            <div style="min-width: 1px; height: 0px;"></div>
-                                        </div>
-                                        <div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true">
-                                            <div style="height: 100%; min-height: 1px; width: 0px;"></div>
-                                        </div>
-                                        <div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div>
-                                        <div class="CodeMirror-gutter-filler" cm-not-content="true"></div>
-                                        <div class="CodeMirror-scroll" tabindex="-1">
-                                            <div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -6px; border-right-width: 44px; min-height: 28px; min-width: 7px; padding-right: 0px; padding-bottom: 0px;">
-                                                <div style="position: relative; top: 0px;">
-                                                    <div class="CodeMirror-lines" role="presentation">
-                                                        <div role="presentation" style="position: relative; outline: none;">
-                                                            <div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre>
-                                                            </div>
-                                                            <div class="CodeMirror-measure"></div>
-                                                            <div style="position: relative; z-index: 1;"></div>
-                                                            <div class="CodeMirror-cursors">
-                                                                <div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20px;">&nbsp;</div>
-                                                            </div>
-                                                            <div class="CodeMirror-code" role="presentation">
-                                                                <div style="position: relative;">
-                                                                    <div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;">
-                                                                        <div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div>
-                                                                    </div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">&ZeroWidthSpace;</span></span></pre>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div style="position: absolute; height: 44px; width: 1px; border-bottom: 0px solid transparent; top: 28px;"></div>
-                                            <div class="CodeMirror-gutters" style="height: 72px;">
-                                                <div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="compress-css_output"></textarea>
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col">
-                                        <input type="hidden" name="code_language" id="code_language" value="xml">
-                                        <button type="button" class="btn btn-success share" data-target="#html-formatter_output" title="Share"><i class="fas fa-share" aria-hidden="true"></i>&nbsp; Share Output</button>
+                                        <input type="hidden" name="code_language" id="code_language" value="css">
+                                        <button type="button" class="btn btn-success share" data-target="#compress-css_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
                                     </div>
                                     <div class="col-md-6 form-group text-center">
-                                        <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="html-formatter_copy" data-clipboard-target="#html-formatter_output" onclick="codemirror_copy(this)">
-                                            <i class="fas fa-copy" aria-hidden="true"></i>&nbsp; &nbsp; Copy</button>
+                                        <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="compress-css_copy" data-clipboard-target="#compress-css_output" onclick="codemirror_copy(this)">
+                                            <i class="fas fa-copy"></i>&nbsp; &nbsp; Copy</button>
                                     </div>
                                     <div class="col">
                                     </div>
@@ -500,7 +396,7 @@
                                 <div class="col-md-12 mt-5">
                                     <div class="input-group mb-2">
                                         <input type="text" class="form-control form-control-sm" id="share-link">
-                                        <button class="btn" type="button" id="copy-share-link" data-clipboard-target="#share-link"><i class="fas fa-copy" aria-hidden="true"></i></button>
+                                        <button class="btn" type="button" id="copy-share-link" data-clipboard-target="#share-link"><i class="fas fa-copy"></i></button>
                                     </div>
                                 </div>
                             </div>
@@ -508,39 +404,30 @@
                     </div>
                     <div class="card mt-5">
                         <div class="card-header">
-                            <h3 class="card-title">About Online HTML Beautifier/formatter Tool</h3>
+                            <h3 class="card-title">About CSS compressor or CSS minifier Tool</h3>
                         </div>
                         <div class="card-body">
-                            <h2>How can we use this HTML Beautifier/formatter Tool?</h2>
-                            <p>Steps for online formatting of HTML</p>
+                            <h2>How can we use this CSS minifier Tool?</h2>
+                            <p>Steps for online CSS minification or compression</p>
                             <ol>
-                                <li><b>Enter the HTML</b> in the editor.</li>
-                                <li><b>Select Indentation </b>with space or tabs. For space you can select the number of spaces for indentation.</li>
-                                <li><b>Select Warp Lines </b> characters, like wrap after 40/70/80 or more characters. Select do not wrap to avoid automatic wrapping</li>
-                                <li><b>Click Format HTML </b>button and it will format the HTML code and show in output.</li>
+                                <li><b>Enter the CSS</b> in the editor.</li>
+                                <li><b>Click Compress JS </b>button and it will compress js, and show in the output.</li>
+                                <li><b>Click copy </b>button to copy the minified CSS code.</li>
                             </ol>
-                            <h2>What is HTML Beautifier/formatter Tool?</h2>
-                            <p>HTML Beautifier/formatter is an online Tool to easily beautify your HTML code. Paste any minified codes or unindented codes and you'll get the beautified or formatted output.
+                            <h2>What is CSS minifier Tool?</h2>
+                            <p>CSS minifier compresses or minifies the CSS code to reduce the file size.
                             </p>
-                            <h2>Why to beautify HTML code?</h2>
-                            <p>Beautifying minified code or unindented code helps developers to easily read, understand and debug it. It also makes it easier for developers to read other developers codes as well.
+                            <h2>How does CSS minifier Tool works?</h2>
+                            <p>CSS minifier tool parser the code & removes unnecessary whitespace and semicolons, comments, blank lines, new lines and does various others logics to compress the CSS code.
                             </p>
-                            <h2>How does this HTML formatter tool works?</h2>
-                            <p>This online formatter tools uses Javascript formatting library which makes it easier to format the code. The library works by using regular expressions on the source code. Regular expression matches the codes and add appropiate indentations, wrap lines and remove extra lines.
+                            <h2>Why should developers compress CSS?</h2>
+                            <p>Minifying CSS is very important factor in improving page loading speed and Search engine optimisation. More CSS file size will increase page loading time and consequently makes website slow. Compressing CSS will reduce the file size and increase the website loading time. Faster page loading means better user experience and better ranking in google search result.
                             </p>
-                            <h2>Example of Online HTML formatting</h2>
-                            <p>Check below for the simple example:</p>
-                            <p>
-                                Input HTML code:
-                                <code>&lt;html&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Test title&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code>
+                            <h2>How much percentage will the code size gets reduced?</h2>
+                            <p>Percentage reduction depends on the input css code. But experimentally we have seen a reduction in almost 95% of the size reduction in minified code for most CSS
                             </p>
-                            <p>
-                                Output Formatted HTML code: <a target="_blank" href="https://smalldev.tools/share-bin/4IT9ve7D">check here</a>
-                            </p>
-                            <p>Check that the input one line of code is formatted to multiple lines with appropiate indentations and makes it really easy to read and debug for developers. Also, the formatted output will have syntax highlight.</p>
-                            <br>
-                            <h2>Is this HTML formatter tool safe &amp; secure?</h2>
-                            <p>Yes, this HTML formatter tool is safe &amp; secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
+                            <h2>Is this CSS code compression tool safe & secure?</h2>
+                            <p>Yes, this CSS code compression tool is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
                         </div>
                     </div>
                 </div>
@@ -560,6 +447,7 @@
                         <li class="list-inline-item">
                             <a href="#" target="_blank" class="link-secondary"><i class="fas fa-bug"></i> Report Issue or Improvement</a>
                         </li>
+                        
                     </ul>
                 </div>
                 <div class="col-12 col-lg-auto mt-3 mt-lg-0">
