@@ -7,10 +7,10 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport">
 
-        <title>Online CSS formatter, CSS beautifier </title>
-        <meta name="title" content="Online CSS formatter, CSS beautifier">
+        <title>Format JSON string online, beautify JSON string </title>
+        <meta name="title" content="Format JSON string online, beautify JSON string">
 
-     
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=13" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -24,11 +24,11 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.1.1/dist/select2-bootstrap-5-theme.min.css">
 
 
-                    <meta property="og:title" content="Online CSS formatter, CSS beautifier" />
+                    <meta property="og:title" content="Format JSON string online, beautify JSON string" />
+            <meta name="twitter:title" content="Format JSON string online, beautify JSON string" />
         
-                    <meta name="description" content="🎨 Format or Beautify your CSS code instantly. With Indentation, line wrap Options, and remove extra lines. Fast, simple &amp; secure. One click to copy.">
-        
-
+                    <meta name="description" content="👍 Online JSON formatter or beautifier tool to format JSON string to pretty output. Fast, simple &amp; secure. One click to copy &amp; share JSON formatted data.">
+         
     </head>
 
     <body>
@@ -37,7 +37,7 @@
             <div class="row justify-content-center">
               <div class="col-12 text-center" style="height: 120px;">
                 <a href="index.html">
-                    <img src="/img/logo.png" class="img-fluid" alt="SmallDev.tools logo" style="height: 100%;">
+                    <img src="/img/logo.png" class="img-fluid" alt=" logo" style="height: 100%;">
                 </a>
               </div>
               
@@ -51,7 +51,6 @@
             
                                                 <a href="/html-to-markdown-converter-online.html" class="ml-3"><i class="fab fa-markdown"></i> HTML to Markdown Converter</a>
                                                                 <a href="/html-to-pdf-converter-online.html" class="ml-3"><i class="fab fa-html5"></i> HTML to PDF Converter</a>
-                                                                <a href="/javascript-formatter-online.html" class="ml-3"><i class="fas fa-file-code"></i> JS Formatter</a>
                                                                 <a href="/json-decoder-online.html" class="ml-3"><i class="fas fa-file-code"></i> JSON Decoder</a>
                                                                 <a href="/json-formatter-online.html" class="ml-3"><i class="fas fa-file-code"></i> JSON Formatter</a>
                                     </div>
@@ -65,10 +64,11 @@
         </section>
 
         
+
         <div class="container-fluid">
     <div class="row mt-3">
         <div class="col-md-12 text-center">
-            <h1 class="display-6 font-weight-bold">CSS Formatter</h1>
+            <h1 class="display-6 font-weight-bold">JSON Formatter</h1>
         </div>
     </div>
 </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="list">
             <div class="col-md-12 mb-3">
-                <a class="card card-link" href="/share-bin.html">
+                <a class="card card-link" href="/share-bin">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-auto">
@@ -522,40 +522,19 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="css-formatter" id="css-formatter_input" autofocus></textarea>
+                                <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="json-formatter" id="json-formatter_input" autofocus></textarea>
                                                             </div>
 
+                            
                                                             <div class="col-md-6 form-group mt-2 mb-2">
                                     <select name="tabsize" class="tabsize form-control">
-                                        <option value="1">Indent with a tab character</option>
+                                        <option value="0">Indent with a tab character</option>
                                         <option value="2">Indent with 2 spaces</option>
                                         <option value="3">Indent with 3 spaces</option>
                                         <option value="4" selected>Indent with 4 spaces</option>
                                         <option value="8">Indent with 8 spaces</option>
                                     </select>
                                 </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="wrap-line-length" class="wrap-line-length form-control">
-                                        <option value="0" selected>Do not wrap lines</option>
-                                        <option value="40">Wrap lines near 40 characters</option>
-                                        <option value="70">Wrap lines near 70 characters</option>
-                                        <option value="80">Wrap lines near 80 characters</option>
-                                        <option value="110">Wrap lines near 110 characters</option>
-                                        <option value="120">Wrap lines near 120 characters</option>
-                                        <option value="160">Wrap lines near 160 characters</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="max-preserve-newlines" class="max-preserve-newlines form-control">
-                                        <option value="-1" selected>Remove all extra newlines</option>
-                                        <option value="1">Allow 1 newline between tokens</option>
-                                        <option value="2">Allow 2 newlines between tokens</option>
-                                        <option value="5">Allow 5 newlines between tokens</option>
-                                        <option value="10">Allow 10 newlines between tokens</option>
-                                        <option value="0">Allow unlimited newlines between tokens</option>
-                                    </select>
-                                </div>
-                            
                                                         
                             
                              
@@ -565,8 +544,8 @@
                             <div class="col"></div>
                             <div class="col-md-6 form-group text-center">
                                 <button type="button" class="btn btn-primary w-100" 
-                                id="css-formatter_submit" onclick="dev_tool_submit(this)">
-                                 <i class="fas fa-tasks"></i> &nbsp;&nbsp;Format CSS</button>
+                                id="json-formatter_submit" onclick="dev_tool_submit(this)">
+                                 <i class="fas fa-tasks"></i> &nbsp;&nbsp;Format JSON</button>
                             </div>
                             <div class="col"></div>
                         </div>
@@ -579,15 +558,15 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="css-formatter_output"></textarea>
+                                <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="json-formatter_output"></textarea>
                             </div>
                             <div class="row mt-3">
                                 <div class="col">
-                                    <input type="hidden" name="code_language" id="code_language" value="css">
-                                    <button type="button" class="btn btn-success share" data-target="#css-formatter_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
+                                    <input type="hidden" name="code_language" id="code_language" value="javascript">
+                                    <button type="button" class="btn btn-success share" data-target="#json-formatter_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
                                 </div>
                                 <div class="col-md-6 form-group text-center">
-                                    <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="css-formatter_copy" data-clipboard-target="#css-formatter_output"  onclick="codemirror_copy(this)" > 
+                                    <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="json-formatter_copy" data-clipboard-target="#json-formatter_output"  onclick="codemirror_copy(this)" > 
                                     <i class="fas fa-copy"></i>&nbsp; &nbsp; Copy</button>
                                 </div>
                                 <div class="col">
@@ -605,7 +584,28 @@
                     </div>
                 </div>
 
-                
+                                    <div class="card mt-5">
+    <div class="card-header">
+        <h3 class="card-title">About JSON Formatter</h3>
+    </div>
+    <div class="card-body">
+
+        <h2>What is JSON formatter?</h2>
+        <p>JSON formatter parses JSON string & display in a pretty format which is easy to readable & understand.</p>
+
+        <h2>Will this JSON formatter work in all browsers?</h2>
+        <p>Yes, this JSON formatter online tool will work in all browsers like doing JSON formatter in chrome, JSON formatter in firefox and all modern browsers.</p>
+
+        <h2>How does JSON Decoder online helps?</h2>
+        <p>This JSON Decoder online doesn't require you to install any browser addons for chrome, firefox</p>
+
+        <h2>How does JSON formatter online tool works?</h2>
+        <p>This JSON formatter uses javascript functions to beautify JSON data, you can also select the indentation spaces & tab.</p>
+
+        <h2>Is this JSON formatter safe & secure?</h2>
+        <p>Yes, this JSON formatter is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
+    </div>
+</div>                
             </div>
         </div>
 
@@ -625,7 +625,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank" class="link-secondary"><i class="fas fa-bug"></i> Report Issue or Improvement</a>
           </li>
-         
+          
         </ul>
       </div>
       <div class="col-12 col-lg-auto mt-3 mt-lg-0">
@@ -650,7 +650,7 @@
         
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.dev_tool_text').attr('placeholder', "CSS to format");
+            $('.dev_tool_text').attr('placeholder', "json to format");
             $('.dev_tool_result').attr('placeholder', "");
 
             $('.example_input').click(function(e){
@@ -670,9 +670,6 @@
     
     
     
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-css.min.js" integrity="sha512-EFdcYRd/EaEibOxLZ2bTgQvRta9t8smlnoXhxDaZLL6zRU0RVUSL7e4ohVcxaQFUKfZNWAxIOYDSybxJ2xIgWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js" integrity="sha512-YeNG6eTv+q+p/vvx+E5u05IBRurTlv0jfQuvitZMD+oNe9TfrGw+z4MHHxhPlE3X3csemC5YXlzDLMSZrgb34A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     
     
@@ -688,7 +685,5 @@
         </script>
         <script type="text/javascript" src="/js/app.js?v=13"></script>
 
-                   
-        
     </body>
 </html>

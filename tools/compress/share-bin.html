@@ -7,10 +7,10 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport">
 
-        <title>Online CSS formatter, CSS beautifier </title>
-        <meta name="title" content="Online CSS formatter, CSS beautifier">
+        <title>Dev.tools</title>
+        <meta name="title" content="Dev.tools">
 
-     
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=13" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -23,11 +23,7 @@
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.1.1/dist/select2-bootstrap-5-theme.min.css">
 
-
-                    <meta property="og:title" content="Online CSS formatter, CSS beautifier" />
-        
-                    <meta name="description" content="🎨 Format or Beautify your CSS code instantly. With Indentation, line wrap Options, and remove extra lines. Fast, simple &amp; secure. One click to copy.">
-        
+     
 
     </head>
 
@@ -64,11 +60,12 @@
           </div>
         </section>
 
-        
+       
+
         <div class="container-fluid">
     <div class="row mt-3">
         <div class="col-md-12 text-center">
-            <h1 class="display-6 font-weight-bold">CSS Formatter</h1>
+            <h1 class="display-6 font-weight-bold">Share Bin</h1>
         </div>
     </div>
 </div>
@@ -516,84 +513,184 @@
             <div class="dev_tool_container">
                 <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center"> 
-                        <h3 class="card-title">Input</h3>
+                        <div></div>
                         <button type="button" class="btn btn-light toggle_fullscreen" title="Fullscreen" data-target="#fs_div"><i class="fas fa-expand-alt"></i></button>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body dev_tool_container">
                         <div class="row">
+                            
                             <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="css-formatter" id="css-formatter_input" autofocus></textarea>
-                                                            </div>
+                                <textarea name="shared_content" class="form-control" rows="5"  id="shared_content"></textarea>
+                                <small class="text-muted">Press F11 when cursor is in the editor to toggle full screen editing/ Esc to exit full screen</small>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                                                                                <label for="title" class="form-label">Editor language mode:</label>
+                                <div class="form-group">
+                                    <select class="form-control" name="code_language" id="code_language">
+                                        <option value="" >== Select ==</option>
 
-                                                            <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="tabsize" class="tabsize form-control">
-                                        <option value="1">Indent with a tab character</option>
-                                        <option value="2">Indent with 2 spaces</option>
-                                        <option value="3">Indent with 3 spaces</option>
-                                        <option value="4" selected>Indent with 4 spaces</option>
-                                        <option value="8">Indent with 8 spaces</option>
-                                    </select>
+                                                                                    <option value="xml"  >XML/HTML</option>
+                                                                                    <option value="javascript"  >Javascript/JSON</option>
+                                                                                    <option value="css"  >CSS</option>
+                                                                                    <option value="sql"  >Sql</option>
+                                                                                    <option value="application/x-httpd-php"  >PHP</option>
+                                                                                    <option value="text/x-csrc"  >C</option>
+                                                                                    <option value="text/x-csharp"  >C#</option>
+                                                                                    <option value="text/x-c++src"  >C++</option>
+                                                                                    <option value="text/x-objectivec"  >Objective-C</option>
+                                                                                    <option value="text/x-kotlin"  >Kotlin</option>
+                                                                                    <option value="text/x-scala"  >Scala</option>
+                                                                                    <option value="text/x-java"  >Java</option>
+                                                                                    <option value="text/x-ceylon"  >Ceylon</option>
+                                                                                    <option value="application/x-cypher-query"  >Cypher</option>
+                                                                                    <option value="application/dart"  >Dart</option>
+                                                                                    <option value="text/x-django"  >Django</option>
+                                                                                    <option value="text/x-dockerfile"  >Dockerfile</option>
+                                                                                    <option value="text/x-fortran"  >Fortran</option>
+                                                                                    <option value="text/x-gas"  >Gas</option>
+                                                                                    <option value="text/x-handlebars-template"  >Handlebars</option>
+                                                                                    <option value="text/x-lua"  >Lua</option>
+                                                                                    <option value="application/x-aspx"  >ASP.NET</option>
+                                                                                    <option value="application/x-ejs"  >Embedded JavaScript</option>
+                                                                                    <option value="application/x-jsp"  >JSP</option>
+                                                                                    <option value="apl"  >APL</option>
+                                                                                    <option value="asn.1"  >ASN.1</option>
+                                                                                    <option value="asterisk dialplan"  >Asterisk dialplan</option>
+                                                                                    <option value="clojure"  >Clojure</option>
+                                                                                    <option value="closure_stylesheets"  >Closure Stylesheets (GSS)</option>
+                                                                                    <option value="cmake"  >CMake</option>
+                                                                                    <option value="cobol"  >COBOL</option>
+                                                                                    <option value="coffeescript"  >CoffeeScript</option>
+                                                                                    <option value="common lisp"  >Common Lisp</option>
+                                                                                    <option value="coq"  >Coq</option>
+                                                                                    <option value="crystal"  >Crystal</option>
+                                                                                    <option value="text/x-cython"  >Cython</option>
+                                                                                    <option value="d"  >D</option>
+                                                                                    <option value="diff"  >diff</option>
+                                                                                    <option value="dtd"  >DTD</option>
+                                                                                    <option value="dylan"  >Dylan</option>
+                                                                                    <option value="ebnf"  >EBNF</option>
+                                                                                    <option value="ecl"  >ECL</option>
+                                                                                    <option value="eiffel"  >Eiffel</option>
+                                                                                    <option value="elm"  >Elm</option>
+                                                                                    <option value="erlang"  >Erlang</option>
+                                                                                    <option value="factor"  >Factor</option>
+                                                                                    <option value="fcl"  >FCL</option>
+                                                                                    <option value="forth"  >Forth</option>
+                                                                                    <option value="f#"  >F#</option>
+                                                                                    <option value="gherkin"  >Gherkin</option>
+                                                                                    <option value="go"  >Go</option>
+                                                                                    <option value="groovy"  >Groovy</option>
+                                                                                    <option value="haml"  >HAML</option>
+                                                                                    <option value="haskell (literate)"  >Haskell (Literate)</option>
+                                                                                    <option value="haxe"  >Haxe</option>
+                                                                                    <option value="http"  >HTTP</option>
+                                                                                    <option value="idl"  >IDL</option>
+                                                                                    <option value="jade"  >Jade</option>
+                                                                                    <option value="javascript (jsx)"  >JavaScript (JSX)</option>
+                                                                                    <option value="jinja2"  >Jinja2</option>
+                                                                                    <option value="julia"  >Julia</option>
+                                                                                    <option value="kotlin"  >Kotlin</option>
+                                                                                    <option value="text/x-less"  >LESS</option>
+                                                                                    <option value="livescript"  >LiveScript</option>
+                                                                                    <option value="text/x-markdown"  >Markdown</option>
+                                                                                    <option value="mathematica"  >Mathematica</option>
+                                                                                    <option value="mbox"  >mbox</option>
+                                                                                    <option value="mirc"  >mIRC</option>
+                                                                                    <option value="modelica"  >Modelica</option>
+                                                                                    <option value="mscgen"  >MscGen</option>
+                                                                                    <option value="mumps"  >MUMPS</option>
+                                                                                    <option value="text/x-nginx-conf"  >Nginx</option>
+                                                                                    <option value="nsis"  >NSIS</option>
+                                                                                    <option value="ntriples"  >NTriples</option>
+                                                                                    <option value="ocaml"  >OCaml</option>
+                                                                                    <option value="text/x-octave"  >Octave (MATLAB)</option>
+                                                                                    <option value="oz"  >Oz</option>
+                                                                                    <option value="pascal"  >Pascal</option>
+                                                                                    <option value="peg.js"  >PEG.js</option>
+                                                                                    <option value="text/x-perl"  >Perl</option>
+                                                                                    <option value="pgp"  >PGP (ASCII armor)</option>
+                                                                                    <option value="pig"  >Pig Latin</option>
+                                                                                    <option value="powershell"  >PowerShell</option>
+                                                                                    <option value="properties"  >Properties files</option>
+                                                                                    <option value="protobuf"  >ProtoBuf</option>
+                                                                                    <option value="puppet"  >Puppet</option>
+                                                                                    <option value="text/x-python"  >Python</option>
+                                                                                    <option value="q"  >Q</option>
+                                                                                    <option value="text/x-rsrc"  >R</option>
+                                                                                    <option value="rpm"  >RPM</option>
+                                                                                    <option value="restructuredtext"  >reStructuredText</option>
+                                                                                    <option value="text/x-ruby"  >Ruby</option>
+                                                                                    <option value="rust"  >Rust</option>
+                                                                                    <option value="sas"  >SAS</option>
+                                                                                    <option value="text/x-sass"  >Sass</option>
+                                                                                    <option value="spreadsheet"  >Spreadsheet</option>
+                                                                                    <option value="scheme"  >Scheme</option>
+                                                                                    <option value="scss"  >SCSS</option>
+                                                                                    <option value="shell"  >Shell</option>
+                                                                                    <option value="sieve"  >Sieve</option>
+                                                                                    <option value="application/x-slim"  >Slim</option>
+                                                                                    <option value="smalltalk"  >Smalltalk</option>
+                                                                                    <option value="smarty"  >Smarty</option>
+                                                                                    <option value="solr"  >Solr</option>
+                                                                                    <option value="soy"  >Soy</option>
+                                                                                    <option value="stylus"  >Stylus</option>
+                                                                                    <option value="sql (several dialects)"  >SQL (several dialects)</option>
+                                                                                    <option value="sparql"  >SPARQL</option>
+                                                                                    <option value="squirrel"  >Squirrel</option>
+                                                                                    <option value="swift"  >Swift</option>
+                                                                                    <option value="&quot;stex"  >&quot;sTeX</option>
+                                                                                    <option value="latex&quot;"  >LaTeX&quot;</option>
+                                                                                    <option value="tcl"  >Tcl</option>
+                                                                                    <option value="textile"  >Textile</option>
+                                                                                    <option value="tiddlywiki"  >Tiddlywiki</option>
+                                                                                    <option value="tiki wiki"  >Tiki wiki</option>
+                                                                                    <option value="toml"  >TOML</option>
+                                                                                    <option value="tornado (templating language)"  >Tornado (templating language)</option>
+                                                                                    <option value="troff (for manpages)"  >troff (for manpages)</option>
+                                                                                    <option value="ttcn"  >TTCN</option>
+                                                                                    <option value="ttcn configuration"  >TTCN Configuration</option>
+                                                                                    <option value="turtle"  >Turtle</option>
+                                                                                    <option value="twig"  >Twig</option>
+                                                                                    <option value="vb.net"  >VB.NET</option>
+                                                                                    <option value="vbscript"  >VBScript</option>
+                                                                                    <option value="velocity"  >Velocity</option>
+                                                                                    <option value="verilog/systemverilog"  >Verilog/SystemVerilog</option>
+                                                                                    <option value="vhdl"  >VHDL</option>
+                                                                                    <option value="text/x-vue"  >Vue JS</option>
+                                                                                    <option value="web idl"  >Web IDL</option>
+                                                                                    <option value="xquery"  >XQuery</option>
+                                                                                    <option value="yacas"  >Yacas</option>
+                                                                                    <option value="yaml"  >YAML</option>
+                                                                                    <option value="yaml-frontmatter"  >YAML frontmatter</option>
+                                                                                    <option value="z80"  >Z80</option>
+                                                                            </select>
                                 </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="wrap-line-length" class="wrap-line-length form-control">
-                                        <option value="0" selected>Do not wrap lines</option>
-                                        <option value="40">Wrap lines near 40 characters</option>
-                                        <option value="70">Wrap lines near 70 characters</option>
-                                        <option value="80">Wrap lines near 80 characters</option>
-                                        <option value="110">Wrap lines near 110 characters</option>
-                                        <option value="120">Wrap lines near 120 characters</option>
-                                        <option value="160">Wrap lines near 160 characters</option>
-                                    </select>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                                <label for="title" class="form-label">Title/Heading:</label>
+                                <input type="text" id="title" class="form-control" maxlength="255">
+                            </div>
+
+                                                    </div>
+
+                        <div class="row text-center mt-2">
+                                                            <div class="col-md-12">
+                                    <button type="button" class="btn btn-success share" data-target="#shared_content" title="Share" data-formatter=""><i class="fas fa-share"></i>&nbsp; Share Code</button>
+
+                                    <button type="button" class="btn btn-info" title="Take Code Snapshot from Carbon Editor" id="code_snapshot"><i class="fas fa-file-image"></i>&nbsp; Code Snapshot</button>
+                                    
                                 </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="max-preserve-newlines" class="max-preserve-newlines form-control">
-                                        <option value="-1" selected>Remove all extra newlines</option>
-                                        <option value="1">Allow 1 newline between tokens</option>
-                                        <option value="2">Allow 2 newlines between tokens</option>
-                                        <option value="5">Allow 5 newlines between tokens</option>
-                                        <option value="10">Allow 10 newlines between tokens</option>
-                                        <option value="0">Allow unlimited newlines between tokens</option>
-                                    </select>
-                                </div>
-                            
+                                
                                                         
-                            
-                             
-                            
+
+                                                        
                         </div>
-                        <div class="row mt-3">
-                            <div class="col"></div>
-                            <div class="col-md-6 form-group text-center">
-                                <button type="button" class="btn btn-primary w-100" 
-                                id="css-formatter_submit" onclick="dev_tool_submit(this)">
-                                 <i class="fas fa-tasks"></i> &nbsp;&nbsp;Format CSS</button>
-                            </div>
-                            <div class="col"></div>
+
+                        <div class="col-md-12 text-center mt-5">
+                            <a href="/share-bin.html" class="btn btn-warning"><i class="fas fa-plus"></i> &nbsp;Add New</a>
                         </div>
-                    </div>
-                </div>
-                <div class="card output_card">
-                    <div class="card-header">
-                        <h3 class="card-title">Output</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="css-formatter_output"></textarea>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <input type="hidden" name="code_language" id="code_language" value="css">
-                                    <button type="button" class="btn btn-success share" data-target="#css-formatter_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
-                                </div>
-                                <div class="col-md-6 form-group text-center">
-                                    <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="css-formatter_copy" data-clipboard-target="#css-formatter_output"  onclick="codemirror_copy(this)" > 
-                                    <i class="fas fa-copy"></i>&nbsp; &nbsp; Copy</button>
-                                </div>
-                                <div class="col">
-                                </div>
-                            </div>
-                        </div>
+
                         <div class="row" id="share-link-div" style="display:none">
                             <div class="col-md-12 mt-5">
                                 <div class="input-group mb-2">
@@ -604,13 +701,48 @@
                         </div>
                     </div>
                 </div>
-
-                
             </div>
-        </div>
 
-        <div class="col-md-2 order-3 order-md-3 text-center subscribe_div">
-                    </div>
+            <div class="card mt-5">
+    <div class="card-header">
+        <h3 class="card-title">About Share Bin, Online code sharing tool</h3>
+    </div>
+    <div class="card-body">
+
+        <h2>How can we use this Share Bin tool?</h2>
+        <p>Steps for online sharing code using share bin tool</p>
+        <ol>
+            <li><b>Enter the Code or Raw Text</b> Enter or paste Raw text or Code in the editor.</li>
+            <li><b>Select editor language mode </b>that will be used for highlighting the code.</li>
+            <li><b>Enter title/heading</b></li>
+            <li><b>Click Share Code button </b>and it will generate a URL that you can copy and share it in forums or emails or add in website</li>
+            <li><b>Click on Code Snapshot button </b>and it will open the code in <b>Carbon</b> editor in a new tab, from where you can take Snapshot of the code</li>
+        </ol>
+
+        <h2>What is Share Bin?</h2>
+        <p>Share Bin is an online code sharing tool. It allows you to share source code of an application or library with just one click, and have other people see it by sharing the generated URL.
+        </p>
+
+        <h2>What is the use of Share Bin?</h2>
+        <p>This code sharing tool can be useful for easily sharing small code snippets between teams members, or sharing code snippets to clients or including code snippets in website easily with one click.
+        </p>
+
+        <h2>How is it different from gist or similar tools?</h2>
+        <p>Share Bin doesn't requires any signup/registration and removes all other frictions for saving code to make the process of sharing code very easy & less time consuming. If you want something simple, Share Bin is perfect.
+        </p>
+        
+        <h2>What different features are present in Share Bin?</h2>
+        <p>Share Bin makes the process of sharing code easy by keep the features very simply, simply paste the code or raw text you want to share, select the language mode, add a title and share it. The result? A clean URL which can be shared anywhere without any extra effort. You also get some basic features such as syntax highlighting.</p>
+
+        <h2>Is this share bin tool safe & secure?</h2>
+        <p>Yes, this share bin tool is safe & secure. Share bin data gets saved in our server, anyone having the url can only access it. We don't sell data to any 3rd party.</p>
+
+        <h2>How can I share my code online with others?</h2>
+        <p>Using this Share Bin you can share your code online with others. Also you can share a snippet code using sharebin</p>
+    </div>
+</div>            
+        </div>
+        <div class="col-md-2 order-3 order-md-3"></div>
     </div> 
 </div>
 
@@ -625,7 +757,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank" class="link-secondary"><i class="fas fa-bug"></i> Report Issue or Improvement</a>
           </li>
-         
+          
         </ul>
       </div>
       <div class="col-12 col-lg-auto mt-3 mt-lg-0">
@@ -647,37 +779,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-        
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.dev_tool_text').attr('placeholder', "CSS to format");
-            $('.dev_tool_result').attr('placeholder', "");
-
-            $('.example_input').click(function(e){
-                e.preventDefault();
-                $('.dev_tool_text').val("");
-            })
-        });
-    </script>
-
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css" integrity="sha512-xIf9AdJauwKIVtrVRZ0i4nHP61Ogx9fSRAkCLecmE2dL/U8ioWpDvFCAy4dcfecN72HHB9+7FfQj3aiO68aaaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/theme/base16-light.min.css" integrity="sha512-UCcyAfcA/pJ4lD8YMo+fhwFdJeGNN5QrBlHvTQ1BopVjHWh35HD2JRV3tbwxtabH5ymri426oTfa1UF9Z63B3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js" integrity="sha512-6Q5cHfb86ZJ3qWx47Pw7P5CN1/pXcBMmz3G0bXLIQ67wOtRF7brCaK5QQLPz2CWLBqjWRNH+/bV5MwwWxFGxww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/theme/base16-light.min.css" integrity="sha512-UCcyAfcA/pJ4lD8YMo+fhwFdJeGNN5QrBlHvTQ1BopVjHWh35HD2JRV3tbwxtabH5ymri426oTfa1UF9Z63B3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js" integrity="sha512-6Q5cHfb86ZJ3qWx47Pw7P5CN1/pXcBMmz3G0bXLIQ67wOtRF7brCaK5QQLPz2CWLBqjWRNH+/bV5MwwWxFGxww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.css" integrity="sha512-T8xB3MmwpA77VK9lUH3UkdUTnkmpqOxHF8OceOKaHrvpcXMSNX0xtpa9FoLTDAVO1JnB2UiMdVeI2V0HTHjTWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.css" integrity="sha512-T8xB3MmwpA77VK9lUH3UkdUTnkmpqOxHF8OceOKaHrvpcXMSNX0xtpa9FoLTDAVO1JnB2UiMdVeI2V0HTHjTWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.js" integrity="sha512-W1hGUpWU/hlAuQjKnoWXy29+UUA6zTad0iWfI8OrykZBf2lv35cZ6xlCCCBf/2Bpnez4ik+gY1BuHNk31sabAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-css.min.js" integrity="sha512-EFdcYRd/EaEibOxLZ2bTgQvRta9t8smlnoXhxDaZLL6zRU0RVUSL7e4ohVcxaQFUKfZNWAxIOYDSybxJ2xIgWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.js" integrity="sha512-W1hGUpWU/hlAuQjKnoWXy29+UUA6zTad0iWfI8OrykZBf2lv35cZ6xlCCCBf/2Bpnez4ik+gY1BuHNk31sabAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js" integrity="sha512-YeNG6eTv+q+p/vvx+E5u05IBRurTlv0jfQuvitZMD+oNe9TfrGw+z4MHHxhPlE3X3csemC5YXlzDLMSZrgb34A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/htmlmixed/htmlmixed.min.js" integrity="sha512-IC+qg9ITjo2CLFOTQcO6fBbvisTeJmiT5D5FnXsCptqY8t7/UxWhOorn2X+GHkoD1FNkyfnMJujt5PcB7qutyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     
-    
-    
-    
-            <script type="text/javascript">
+        <script type="text/javascript">
             $(document).ready(function(){
                 $.ajaxSetup({
                     headers: {
@@ -688,7 +801,7 @@
         </script>
         <script type="text/javascript" src="/js/app.js?v=13"></script>
 
-                   
+                    
         
     </body>
 </html>

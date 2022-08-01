@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,11 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport">
-
-        <title>Online CSS formatter, CSS beautifier </title>
-        <meta name="title" content="Online CSS formatter, CSS beautifier">
-
-     
+        <title>Convert HTML to PDF file online | Generate PDF from HTML</title>
+        <meta name="title" content="Convert HTML to PDF file online | Generate PDF from HTML">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=13" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -23,11 +19,13 @@
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.1.1/dist/select2-bootstrap-5-theme.min.css">
 
+        <link rel="stylesheet" type="text/css" href="/css/custom.css?v=13">
 
-                    <meta property="og:title" content="Online CSS formatter, CSS beautifier" />
+                    <meta property="og:title" content="Convert HTML to PDF file online | Generate PDF from HTML" />
+            <meta name="twitter:title" content="Convert HTML to PDF file online | Generate PDF from HTML" />
         
-                    <meta name="description" content="🎨 Format or Beautify your CSS code instantly. With Indentation, line wrap Options, and remove extra lines. Fast, simple &amp; secure. One click to copy.">
-        
+                    <meta name="description" content="Make HTML document using editor or Paste HTML source code and download PDF. Fast, simple &amp; secure. One click to download. ⚡">
+            <meta property="og:description" content="Make HTML document using editor or Paste HTML source code and download PDF. Fast, simple &amp; secure. One click to download. ⚡" />
 
     </head>
 
@@ -37,7 +35,7 @@
             <div class="row justify-content-center">
               <div class="col-12 text-center" style="height: 120px;">
                 <a href="index.html">
-                    <img src="/img/logo.png" class="img-fluid" alt="SmallDev.tools logo" style="height: 100%;">
+                    <img src="/img/logo.png" class="img-fluid" alt="logo" style="height: 100%;">
                 </a>
               </div>
               
@@ -51,9 +49,6 @@
             
                                                 <a href="/html-to-markdown-converter-online.html" class="ml-3"><i class="fab fa-markdown"></i> HTML to Markdown Converter</a>
                                                                 <a href="/html-to-pdf-converter-online.html" class="ml-3"><i class="fab fa-html5"></i> HTML to PDF Converter</a>
-                                                                <a href="/javascript-formatter-online.html" class="ml-3"><i class="fas fa-file-code"></i> JS Formatter</a>
-                                                                <a href="/json-decoder-online.html" class="ml-3"><i class="fas fa-file-code"></i> JSON Decoder</a>
-                                                                <a href="/json-formatter-online.html" class="ml-3"><i class="fas fa-file-code"></i> JSON Formatter</a>
                                     </div>
         
     </div>
@@ -65,10 +60,11 @@
         </section>
 
         
+
         <div class="container-fluid">
     <div class="row mt-3">
         <div class="col-md-12 text-center">
-            <h1 class="display-6 font-weight-bold">CSS Formatter</h1>
+            <h1 class="display-6 font-weight-bold">HTML to PDF Converter</h1>
         </div>
     </div>
 </div>
@@ -522,95 +518,46 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="css-formatter" id="css-formatter_input" autofocus></textarea>
-                                                            </div>
-
-                                                            <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="tabsize" class="tabsize form-control">
-                                        <option value="1">Indent with a tab character</option>
-                                        <option value="2">Indent with 2 spaces</option>
-                                        <option value="3">Indent with 3 spaces</option>
-                                        <option value="4" selected>Indent with 4 spaces</option>
-                                        <option value="8">Indent with 8 spaces</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="wrap-line-length" class="wrap-line-length form-control">
-                                        <option value="0" selected>Do not wrap lines</option>
-                                        <option value="40">Wrap lines near 40 characters</option>
-                                        <option value="70">Wrap lines near 70 characters</option>
-                                        <option value="80">Wrap lines near 80 characters</option>
-                                        <option value="110">Wrap lines near 110 characters</option>
-                                        <option value="120">Wrap lines near 120 characters</option>
-                                        <option value="160">Wrap lines near 160 characters</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="max-preserve-newlines" class="max-preserve-newlines form-control">
-                                        <option value="-1" selected>Remove all extra newlines</option>
-                                        <option value="1">Allow 1 newline between tokens</option>
-                                        <option value="2">Allow 2 newlines between tokens</option>
-                                        <option value="5">Allow 5 newlines between tokens</option>
-                                        <option value="10">Allow 10 newlines between tokens</option>
-                                        <option value="0">Allow unlimited newlines between tokens</option>
-                                    </select>
-                                </div>
-                            
-                                                        
-                            
-                             
-                            
+                                <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="15" placeholder="" data-formatter="html-to-pdf-converter" id="html-to-pdf-converter_input" autofocus></textarea>
+                            </div>
                         </div>
                         <div class="row mt-3">
                             <div class="col"></div>
                             <div class="col-md-6 form-group text-center">
                                 <button type="button" class="btn btn-primary w-100" 
-                                id="css-formatter_submit" onclick="dev_tool_submit(this)">
-                                 <i class="fas fa-tasks"></i> &nbsp;&nbsp;Format CSS</button>
+                                id="html-to-pdf-converter_submit" onclick="dev_tool_submit(this)">
+                                 <i class="fas fa-tasks"></i> &nbsp;&nbsp;Convert</button>
                             </div>
                             <div class="col"></div>
                         </div>
                     </div>
                 </div>
-                <div class="card output_card">
-                    <div class="card-header">
-                        <h3 class="card-title">Output</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="css-formatter_output"></textarea>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col">
-                                    <input type="hidden" name="code_language" id="code_language" value="css">
-                                    <button type="button" class="btn btn-success share" data-target="#css-formatter_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
-                                </div>
-                                <div class="col-md-6 form-group text-center">
-                                    <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="css-formatter_copy" data-clipboard-target="#css-formatter_output"  onclick="codemirror_copy(this)" > 
-                                    <i class="fas fa-copy"></i>&nbsp; &nbsp; Copy</button>
-                                </div>
-                                <div class="col">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" id="share-link-div" style="display:none">
-                            <div class="col-md-12 mt-5">
-                                <div class="input-group mb-2">
-                                <input type="text" class="form-control form-control-sm" id="share-link">
-                                <button class="btn" type="button" id="copy-share-link" data-clipboard-target="#share-link"><i class="fas fa-copy"></i></button>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                
+                                    <div class="card mt-5">
+    <div class="card-header">
+        <h3 class="card-title">About HTML to PDF Converter</h3>
+    </div>
+    <div class="card-body">
+
+        <h2>How can we use this HTML to PDF Converter tool?</h2>
+        <p>Steps for generating PDF from HTML</p>
+        <ol>
+            <li>Use the editor to generate your desired html page</li>
+            <li>or you can directly paste the HTML code on clicking <code>Source</code> button on the toolbar</li>
+            <li>Click on <b>Convert</b> to download the desired PDF file</li>
+        </ol>
+
+
+        <h2>Is this HTML to PDF Converter safe & secure?</h2>
+        <p>Yes, this HTML to PDF Converter is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
+    </div>
+</div>                
             </div>
         </div>
 
-        <div class="col-md-2 order-3 order-md-3 text-center subscribe_div">
-                    </div>
+        <div class="col-md-2 order-3 order-md-3">
+            
+        </div>
     </div> 
 </div>
 
@@ -625,7 +572,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank" class="link-secondary"><i class="fas fa-bug"></i> Report Issue or Improvement</a>
           </li>
-         
+          
         </ul>
       </div>
       <div class="col-12 col-lg-auto mt-3 mt-lg-0">
@@ -647,48 +594,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-        
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.dev_tool_text').attr('placeholder', "CSS to format");
-            $('.dev_tool_result').attr('placeholder', "");
+            <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 
-            $('.example_input').click(function(e){
-                e.preventDefault();
-                $('.dev_tool_text').val("");
-            })
-        });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js" integrity="sha512-tVYBzEItJit9HXaWTPo8vveXlkK62LbA+wez9IgzjTmFNLMBO1BEYladBw2wnM3YURZSMUyhayPCoLtjGh84NQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js" integrity="sha512-gtcrasYnyeB27+IejClswFlb/eggt+khRr+lLAeNcgg5x2ijlWaiBOPXZkwivNj15LaE6s9CzV57hsoTPrQ5xg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <script type="text/javascript">
+        CKEDITOR.replace( "html-to-pdf-converter_input" );
     </script>
 
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css" integrity="sha512-xIf9AdJauwKIVtrVRZ0i4nHP61Ogx9fSRAkCLecmE2dL/U8ioWpDvFCAy4dcfecN72HHB9+7FfQj3aiO68aaaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/theme/base16-light.min.css" integrity="sha512-UCcyAfcA/pJ4lD8YMo+fhwFdJeGNN5QrBlHvTQ1BopVjHWh35HD2JRV3tbwxtabH5ymri426oTfa1UF9Z63B3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js" integrity="sha512-6Q5cHfb86ZJ3qWx47Pw7P5CN1/pXcBMmz3G0bXLIQ67wOtRF7brCaK5QQLPz2CWLBqjWRNH+/bV5MwwWxFGxww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.css" integrity="sha512-T8xB3MmwpA77VK9lUH3UkdUTnkmpqOxHF8OceOKaHrvpcXMSNX0xtpa9FoLTDAVO1JnB2UiMdVeI2V0HTHjTWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.js" integrity="sha512-W1hGUpWU/hlAuQjKnoWXy29+UUA6zTad0iWfI8OrykZBf2lv35cZ6xlCCCBf/2Bpnez4ik+gY1BuHNk31sabAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-css.min.js" integrity="sha512-EFdcYRd/EaEibOxLZ2bTgQvRta9t8smlnoXhxDaZLL6zRU0RVUSL7e4ohVcxaQFUKfZNWAxIOYDSybxJ2xIgWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js" integrity="sha512-YeNG6eTv+q+p/vvx+E5u05IBRurTlv0jfQuvitZMD+oNe9TfrGw+z4MHHxhPlE3X3csemC5YXlzDLMSZrgb34A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    
-    
-            <script type="text/javascript">
-            $(document).ready(function(){
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-            });
-        </script>
         <script type="text/javascript" src="/js/app.js?v=13"></script>
 
-                   
-        
+                  
     </body>
 </html>

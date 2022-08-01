@@ -7,10 +7,10 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport">
 
-        <title>Online CSS formatter, CSS beautifier </title>
-        <meta name="title" content="Online CSS formatter, CSS beautifier">
+        <title>Minify Javascript code or Compress Javascript code</title>
+        <meta name="title" content="Minify Javascript code or Compress Javascript code">
 
-     
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=13" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -23,11 +23,13 @@
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.1.1/dist/select2-bootstrap-5-theme.min.css">
 
+        <link rel="stylesheet" type="text/css" href="/css/custom.css?v=13">
 
-                    <meta property="og:title" content="Online CSS formatter, CSS beautifier" />
+                    <meta property="og:title" content="Minify Javascript code or Compress Javascript code" />
         
-                    <meta name="description" content="🎨 Format or Beautify your CSS code instantly. With Indentation, line wrap Options, and remove extra lines. Fast, simple &amp; secure. One click to copy.">
-        
+                    <meta name="description" content="⚡ 95% code compression. Minify or Compress javascript code instantly. [Advance Compressor], Fast, simple &amp; secure. One click to copy.">
+            <meta property="og:description" content="⚡ 95% code compression. Minify or Compress javascript code instantly. [Advance Compressor], Fast, simple &amp; secure. One click to copy." />
+         
 
     </head>
 
@@ -64,11 +66,12 @@
           </div>
         </section>
 
-        
+       
+
         <div class="container-fluid">
     <div class="row mt-3">
         <div class="col-md-12 text-center">
-            <h1 class="display-6 font-weight-bold">CSS Formatter</h1>
+            <h1 class="display-6 font-weight-bold">JS Compressor</h1>
         </div>
     </div>
 </div>
@@ -89,7 +92,7 @@
         </div>
         <div class="list">
             <div class="col-md-12 mb-3">
-                <a class="card card-link" href="/share-bin.html">
+                <a class="card card-link" href="/share-bin">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-auto">
@@ -522,39 +525,9 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="css-formatter" id="css-formatter_input" autofocus></textarea>
+                                <textarea name="dev_tool_text" class="form-control dev_tool_text" rows="10" data-formatter="compress-javascript" id="compress-javascript_input" autofocus></textarea>
                                                             </div>
 
-                                                            <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="tabsize" class="tabsize form-control">
-                                        <option value="1">Indent with a tab character</option>
-                                        <option value="2">Indent with 2 spaces</option>
-                                        <option value="3">Indent with 3 spaces</option>
-                                        <option value="4" selected>Indent with 4 spaces</option>
-                                        <option value="8">Indent with 8 spaces</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="wrap-line-length" class="wrap-line-length form-control">
-                                        <option value="0" selected>Do not wrap lines</option>
-                                        <option value="40">Wrap lines near 40 characters</option>
-                                        <option value="70">Wrap lines near 70 characters</option>
-                                        <option value="80">Wrap lines near 80 characters</option>
-                                        <option value="110">Wrap lines near 110 characters</option>
-                                        <option value="120">Wrap lines near 120 characters</option>
-                                        <option value="160">Wrap lines near 160 characters</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 form-group mt-2 mb-2">
-                                    <select name="max-preserve-newlines" class="max-preserve-newlines form-control">
-                                        <option value="-1" selected>Remove all extra newlines</option>
-                                        <option value="1">Allow 1 newline between tokens</option>
-                                        <option value="2">Allow 2 newlines between tokens</option>
-                                        <option value="5">Allow 5 newlines between tokens</option>
-                                        <option value="10">Allow 10 newlines between tokens</option>
-                                        <option value="0">Allow unlimited newlines between tokens</option>
-                                    </select>
-                                </div>
                             
                                                         
                             
@@ -565,8 +538,8 @@
                             <div class="col"></div>
                             <div class="col-md-6 form-group text-center">
                                 <button type="button" class="btn btn-primary w-100" 
-                                id="css-formatter_submit" onclick="dev_tool_submit(this)">
-                                 <i class="fas fa-tasks"></i> &nbsp;&nbsp;Format CSS</button>
+                                id="compress-javascript_submit" onclick="dev_tool_submit(this)">
+                                 <i class="fas fa-tasks"></i> &nbsp;&nbsp;Compress JS</button>
                             </div>
                             <div class="col"></div>
                         </div>
@@ -579,15 +552,15 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="css-formatter_output"></textarea>
+                                <textarea name="dev_tool_text_to_copy" class="form-control dev_tool_result" rows="10" id="compress-javascript_output"></textarea>
                             </div>
                             <div class="row mt-3">
                                 <div class="col">
-                                    <input type="hidden" name="code_language" id="code_language" value="css">
-                                    <button type="button" class="btn btn-success share" data-target="#css-formatter_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
+                                    <input type="hidden" name="code_language" id="code_language" value="javascript">
+                                    <button type="button" class="btn btn-success share" data-target="#compress-javascript_output" title="Share"><i class="fas fa-share"></i>&nbsp; Share Output</button>
                                 </div>
                                 <div class="col-md-6 form-group text-center">
-                                    <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="css-formatter_copy" data-clipboard-target="#css-formatter_output"  onclick="codemirror_copy(this)" > 
+                                    <button type="button" class="btn btn-primary  dev_tool_codemirror_copy  ms-auto" id="compress-javascript_copy" data-clipboard-target="#compress-javascript_output"  onclick="codemirror_copy(this)" > 
                                     <i class="fas fa-copy"></i>&nbsp; &nbsp; Copy</button>
                                 </div>
                                 <div class="col">
@@ -605,7 +578,56 @@
                     </div>
                 </div>
 
-                
+                                    <div class="card mt-5">
+    <div class="card-header">
+        <h3 class="card-title">About Javascript compressor or javascript minifier Tool</h3>
+    </div>
+    <div class="card-body">
+
+        <h2>How can we use this javascript minifier Tool?</h2>
+        <p>Steps for online javascript minification or compression</p>
+        <ol>
+            <li><b>Enter the Javascript</b> in the editor.</li>
+            <li><b>Click Compress JS </b>button and it will compress js, and show in the output.</li>
+            <li><b>Click copy </b>button to copy the minified javascript code.</li>
+        </ol>
+
+        <h2>What is Javascript minifier Tool?</h2>
+        <p>Javascript minifier compresses or minifies the javascript code to reduce the file size.
+        </p>
+
+        <h2>How does Javascript minifier Tool works?</h2>
+        <p>Javascript minifier tool parser the code & removes comments, blank lines, new lines, shortens the variable name, functions names and does various others logics to compress the javascript code.
+        </p>
+
+        <h2>Why should developers compress Javascript?</h2>
+        <p>Minifying javascript is very important these days. More javascript file size will increase page loading time and consequently makes website slow. Compressing javascript will reduce the file size and increase the website loading time. Faster page loading means better user experience and better ranking in google search result.
+        </p>
+
+        <h2>How much percent will the code size gets reduced?</h2>
+        <p>Percentage reduction depends on the input code. But experimentally we have seen a reduction in almost 95% of the size reduction in minified code for most JavaScript
+        </p>
+
+        <h2>Example of Javascript code compression</h2>
+        <p>Check below example for javascript minification:</p>
+
+        <p>
+            Input Javascript code:<br/>
+            Check input code <a href="/share-bin.html" target="_blank">Here</a>
+        </p>
+
+        <p>
+            Output Javascript code:<br/>
+            Check output code <a href="/share-bin.html" target="_blank">Here</a>
+        </p>
+
+        <p>Check all comments, blank lines and whitespaces are remove to make it very much smaller.</p> 
+        <br/>
+
+        <h2>Is this Javascript code compression tool safe & secure?</h2>
+        <p>Yes, this Javascript code compression tool is safe & secure. We do not save any of your data in server. Neither the data is visible to any 3rd party.</p>
+    </div>
+</div>                
             </div>
         </div>
 
@@ -625,7 +647,7 @@
           <li class="list-inline-item">
             <a href="#" target="_blank" class="link-secondary"><i class="fas fa-bug"></i> Report Issue or Improvement</a>
           </li>
-         
+          
         </ul>
       </div>
       <div class="col-12 col-lg-auto mt-3 mt-lg-0">
@@ -650,7 +672,7 @@
         
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.dev_tool_text').attr('placeholder', "CSS to format");
+            $('.dev_tool_text').attr('placeholder', "Javascript to compress");
             $('.dev_tool_result').attr('placeholder', "");
 
             $('.example_input').click(function(e){
@@ -670,11 +692,12 @@
     
     
     
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-css.min.js" integrity="sha512-EFdcYRd/EaEibOxLZ2bTgQvRta9t8smlnoXhxDaZLL6zRU0RVUSL7e4ohVcxaQFUKfZNWAxIOYDSybxJ2xIgWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+            <script src="https://cdn.jsdelivr.net/npm/source-map@0.7.3/dist/source-map.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/terser/dist/bundle.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js" integrity="sha512-YeNG6eTv+q+p/vvx+E5u05IBRurTlv0jfQuvitZMD+oNe9TfrGw+z4MHHxhPlE3X3csemC5YXlzDLMSZrgb34A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/javascript/javascript.min.js" integrity="sha512-9mEZ3vO6zMj0ub2Wypnt8owrHeoJCH22MkzeJ9eD3hca8/Wlqo5pEopI6HloA0F53f/RkRkHs8TyZMxbwVmnFw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     
             <script type="text/javascript">
@@ -688,7 +711,5 @@
         </script>
         <script type="text/javascript" src="/js/app.js?v=13"></script>
 
-                   
-        
     </body>
 </html>
