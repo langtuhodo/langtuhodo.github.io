@@ -10,7 +10,6 @@
         <title>Online HTML formatter, HTML beautifier </title>
         <meta name="title" content="Online HTML formatter, HTML beautifier ">
 
-
         <script src="https://code.jquery.com/jquery-3.6.0.min.js?v=13" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
         <!-- Bootstrap CSS -->
@@ -685,55 +684,31 @@
     </div>
   </div>
 </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js?v=13"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
-        
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@tabler/core@latest/dist/js/tabler.min.js?v=13"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.dev_tool_text').attr('placeholder', "HTML to format");
-            $('.dev_tool_result').attr('placeholder', "");
+    $(document).ready(function() {
+        $('.dev_tool_text').attr('placeholder', "CSS to compress");
+        $('.dev_tool_result').attr('placeholder', "");
 
-            $('.example_input').click(function(e){
-                e.preventDefault();
-                $('.dev_tool_text').val("");
-            })
-        });
+        $('.example_input').click(function(e) {
+            e.preventDefault();
+            $('.dev_tool_text').val("");
+        })
+    });
     </script>
-
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css" integrity="sha512-xIf9AdJauwKIVtrVRZ0i4nHP61Ogx9fSRAkCLecmE2dL/U8ioWpDvFCAy4dcfecN72HHB9+7FfQj3aiO68aaaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/theme/base16-light.min.css" integrity="sha512-UCcyAfcA/pJ4lD8YMo+fhwFdJeGNN5QrBlHvTQ1BopVjHWh35HD2JRV3tbwxtabH5ymri426oTfa1UF9Z63B3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js" integrity="sha512-6Q5cHfb86ZJ3qWx47Pw7P5CN1/pXcBMmz3G0bXLIQ67wOtRF7brCaK5QQLPz2CWLBqjWRNH+/bV5MwwWxFGxww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.css" integrity="sha512-T8xB3MmwpA77VK9lUH3UkdUTnkmpqOxHF8OceOKaHrvpcXMSNX0xtpa9FoLTDAVO1JnB2UiMdVeI2V0HTHjTWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.js" integrity="sha512-W1hGUpWU/hlAuQjKnoWXy29+UUA6zTad0iWfI8OrykZBf2lv35cZ6xlCCCBf/2Bpnez4ik+gY1BuHNk31sabAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.0/beautify-html.min.js" integrity="sha512-RPSoY+8b4qjG6CEAMt6kvXPDPBylWT6OlRNwZR4sUPS2OOg386pYO00BcjF8pQq1saVLIoZ/j7bSm3/vvDOa5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/xml/xml.min.js" integrity="sha512-XPih7uxiYsO+igRn/NA2A56REKF3igCp5t0W1yYhddwHsk70rN1bbbMzYkxrvjQ6uk+W3m+qExHIJlFzE6m5eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    
-    
-    
-    
-            <script type="text/javascript">
-            $(document).ready(function(){
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-            });
-        </script>
-        <script type="text/javascript" src="/js/app.js?v=13"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css" integrity="sha512-xIf9AdJauwKIVtrVRZ0i4nHP61Ogx9fSRAkCLecmE2dL/U8ioWpDvFCAy4dcfecN72HHB9+7FfQj3aiO68aaaw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/theme/base16-light.min.css" integrity="sha512-UCcyAfcA/pJ4lD8YMo+fhwFdJeGNN5QrBlHvTQ1BopVjHWh35HD2JRV3tbwxtabH5ymri426oTfa1UF9Z63B3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js" integrity="sha512-6Q5cHfb86ZJ3qWx47Pw7P5CN1/pXcBMmz3G0bXLIQ67wOtRF7brCaK5QQLPz2CWLBqjWRNH+/bV5MwwWxFGxww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.css" integrity="sha512-T8xB3MmwpA77VK9lUH3UkdUTnkmpqOxHF8OceOKaHrvpcXMSNX0xtpa9FoLTDAVO1JnB2UiMdVeI2V0HTHjTWA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/addon/display/fullscreen.min.js" integrity="sha512-W1hGUpWU/hlAuQjKnoWXy29+UUA6zTad0iWfI8OrykZBf2lv35cZ6xlCCCBf/2Bpnez4ik+gY1BuHNk31sabAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js" integrity="sha512-YeNG6eTv+q+p/vvx+E5u05IBRurTlv0jfQuvitZMD+oNe9TfrGw+z4MHHxhPlE3X3csemC5YXlzDLMSZrgb34A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/app.js?v=13"></script>
 
                     
     </body>
