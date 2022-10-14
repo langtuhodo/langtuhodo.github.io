@@ -514,157 +514,157 @@
                 <div class="card mb-4">
                     <div class="card-header d-flex justify-content-between align-items-center"> 
                         <div></div>
-                        <button type="button" class="btn btn-light toggle_fullscreen" title="Fullscreen" data-target="#fs_div"><i class="fas fa-expand-alt"></i></button>
+                        <button type="button" class="btn btn-light toggle_fullscreen" title="Fullscreen" data-target="#fs_div"><i class="fas fa-expand-alt" aria-hidden="true"></i></button>
                     </div>
                     <div class="card-body dev_tool_container">
                         <div class="row">
                             
                             <div class="col-md-12 form-group">
-                                <textarea name="shared_content" class="form-control" rows="5"  id="shared_content"></textarea>
+                                <textarea name="shared_content" class="form-control" rows="5" id="shared_content" style="display: none;"></textarea><div class="CodeMirror cm-s-base16-light"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: -6px; border-right-width: 44px; min-height: 28px; min-width: 7px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 20px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">&ZeroWidthSpace;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 44px; width: 1px; border-bottom: 0px solid transparent; top: 28px;"></div><div class="CodeMirror-gutters" style="height: 72px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div>
                                 <small class="text-muted">Press F11 when cursor is in the editor to toggle full screen editing/ Esc to exit full screen</small>
                             </div>
                             <div class="col-md-6 mt-3">
                                                                                                 <label for="title" class="form-label">Editor language mode:</label>
                                 <div class="form-group">
-                                    <select class="form-control" name="code_language" id="code_language">
-                                        <option value="" >== Select ==</option>
+                                    <select class="form-control select2-hidden-accessible" name="code_language" id="code_language" data-select2-id="select2-data-code_language" tabindex="-1" aria-hidden="true">
+                                        <option value="" data-select2-id="select2-data-2-jsl3">== Select ==</option>
 
-                                                                                    <option value="xml"  >XML/HTML</option>
-                                                                                    <option value="javascript"  >Javascript/JSON</option>
-                                                                                    <option value="css"  >CSS</option>
-                                                                                    <option value="sql"  >Sql</option>
-                                                                                    <option value="application/x-httpd-php"  >PHP</option>
-                                                                                    <option value="text/x-csrc"  >C</option>
-                                                                                    <option value="text/x-csharp"  >C#</option>
-                                                                                    <option value="text/x-c++src"  >C++</option>
-                                                                                    <option value="text/x-objectivec"  >Objective-C</option>
-                                                                                    <option value="text/x-kotlin"  >Kotlin</option>
-                                                                                    <option value="text/x-scala"  >Scala</option>
-                                                                                    <option value="text/x-java"  >Java</option>
-                                                                                    <option value="text/x-ceylon"  >Ceylon</option>
-                                                                                    <option value="application/x-cypher-query"  >Cypher</option>
-                                                                                    <option value="application/dart"  >Dart</option>
-                                                                                    <option value="text/x-django"  >Django</option>
-                                                                                    <option value="text/x-dockerfile"  >Dockerfile</option>
-                                                                                    <option value="text/x-fortran"  >Fortran</option>
-                                                                                    <option value="text/x-gas"  >Gas</option>
-                                                                                    <option value="text/x-handlebars-template"  >Handlebars</option>
-                                                                                    <option value="text/x-lua"  >Lua</option>
-                                                                                    <option value="application/x-aspx"  >ASP.NET</option>
-                                                                                    <option value="application/x-ejs"  >Embedded JavaScript</option>
-                                                                                    <option value="application/x-jsp"  >JSP</option>
-                                                                                    <option value="apl"  >APL</option>
-                                                                                    <option value="asn.1"  >ASN.1</option>
-                                                                                    <option value="asterisk dialplan"  >Asterisk dialplan</option>
-                                                                                    <option value="clojure"  >Clojure</option>
-                                                                                    <option value="closure_stylesheets"  >Closure Stylesheets (GSS)</option>
-                                                                                    <option value="cmake"  >CMake</option>
-                                                                                    <option value="cobol"  >COBOL</option>
-                                                                                    <option value="coffeescript"  >CoffeeScript</option>
-                                                                                    <option value="common lisp"  >Common Lisp</option>
-                                                                                    <option value="coq"  >Coq</option>
-                                                                                    <option value="crystal"  >Crystal</option>
-                                                                                    <option value="text/x-cython"  >Cython</option>
-                                                                                    <option value="d"  >D</option>
-                                                                                    <option value="diff"  >diff</option>
-                                                                                    <option value="dtd"  >DTD</option>
-                                                                                    <option value="dylan"  >Dylan</option>
-                                                                                    <option value="ebnf"  >EBNF</option>
-                                                                                    <option value="ecl"  >ECL</option>
-                                                                                    <option value="eiffel"  >Eiffel</option>
-                                                                                    <option value="elm"  >Elm</option>
-                                                                                    <option value="erlang"  >Erlang</option>
-                                                                                    <option value="factor"  >Factor</option>
-                                                                                    <option value="fcl"  >FCL</option>
-                                                                                    <option value="forth"  >Forth</option>
-                                                                                    <option value="f#"  >F#</option>
-                                                                                    <option value="gherkin"  >Gherkin</option>
-                                                                                    <option value="go"  >Go</option>
-                                                                                    <option value="groovy"  >Groovy</option>
-                                                                                    <option value="haml"  >HAML</option>
-                                                                                    <option value="haskell (literate)"  >Haskell (Literate)</option>
-                                                                                    <option value="haxe"  >Haxe</option>
-                                                                                    <option value="http"  >HTTP</option>
-                                                                                    <option value="idl"  >IDL</option>
-                                                                                    <option value="jade"  >Jade</option>
-                                                                                    <option value="javascript (jsx)"  >JavaScript (JSX)</option>
-                                                                                    <option value="jinja2"  >Jinja2</option>
-                                                                                    <option value="julia"  >Julia</option>
-                                                                                    <option value="kotlin"  >Kotlin</option>
-                                                                                    <option value="text/x-less"  >LESS</option>
-                                                                                    <option value="livescript"  >LiveScript</option>
-                                                                                    <option value="text/x-markdown"  >Markdown</option>
-                                                                                    <option value="mathematica"  >Mathematica</option>
-                                                                                    <option value="mbox"  >mbox</option>
-                                                                                    <option value="mirc"  >mIRC</option>
-                                                                                    <option value="modelica"  >Modelica</option>
-                                                                                    <option value="mscgen"  >MscGen</option>
-                                                                                    <option value="mumps"  >MUMPS</option>
-                                                                                    <option value="text/x-nginx-conf"  >Nginx</option>
-                                                                                    <option value="nsis"  >NSIS</option>
-                                                                                    <option value="ntriples"  >NTriples</option>
-                                                                                    <option value="ocaml"  >OCaml</option>
-                                                                                    <option value="text/x-octave"  >Octave (MATLAB)</option>
-                                                                                    <option value="oz"  >Oz</option>
-                                                                                    <option value="pascal"  >Pascal</option>
-                                                                                    <option value="peg.js"  >PEG.js</option>
-                                                                                    <option value="text/x-perl"  >Perl</option>
-                                                                                    <option value="pgp"  >PGP (ASCII armor)</option>
-                                                                                    <option value="pig"  >Pig Latin</option>
-                                                                                    <option value="powershell"  >PowerShell</option>
-                                                                                    <option value="properties"  >Properties files</option>
-                                                                                    <option value="protobuf"  >ProtoBuf</option>
-                                                                                    <option value="puppet"  >Puppet</option>
-                                                                                    <option value="text/x-python"  >Python</option>
-                                                                                    <option value="q"  >Q</option>
-                                                                                    <option value="text/x-rsrc"  >R</option>
-                                                                                    <option value="rpm"  >RPM</option>
-                                                                                    <option value="restructuredtext"  >reStructuredText</option>
-                                                                                    <option value="text/x-ruby"  >Ruby</option>
-                                                                                    <option value="rust"  >Rust</option>
-                                                                                    <option value="sas"  >SAS</option>
-                                                                                    <option value="text/x-sass"  >Sass</option>
-                                                                                    <option value="spreadsheet"  >Spreadsheet</option>
-                                                                                    <option value="scheme"  >Scheme</option>
-                                                                                    <option value="scss"  >SCSS</option>
-                                                                                    <option value="shell"  >Shell</option>
-                                                                                    <option value="sieve"  >Sieve</option>
-                                                                                    <option value="application/x-slim"  >Slim</option>
-                                                                                    <option value="smalltalk"  >Smalltalk</option>
-                                                                                    <option value="smarty"  >Smarty</option>
-                                                                                    <option value="solr"  >Solr</option>
-                                                                                    <option value="soy"  >Soy</option>
-                                                                                    <option value="stylus"  >Stylus</option>
-                                                                                    <option value="sql (several dialects)"  >SQL (several dialects)</option>
-                                                                                    <option value="sparql"  >SPARQL</option>
-                                                                                    <option value="squirrel"  >Squirrel</option>
-                                                                                    <option value="swift"  >Swift</option>
-                                                                                    <option value="&quot;stex"  >&quot;sTeX</option>
-                                                                                    <option value="latex&quot;"  >LaTeX&quot;</option>
-                                                                                    <option value="tcl"  >Tcl</option>
-                                                                                    <option value="textile"  >Textile</option>
-                                                                                    <option value="tiddlywiki"  >Tiddlywiki</option>
-                                                                                    <option value="tiki wiki"  >Tiki wiki</option>
-                                                                                    <option value="toml"  >TOML</option>
-                                                                                    <option value="tornado (templating language)"  >Tornado (templating language)</option>
-                                                                                    <option value="troff (for manpages)"  >troff (for manpages)</option>
-                                                                                    <option value="ttcn"  >TTCN</option>
-                                                                                    <option value="ttcn configuration"  >TTCN Configuration</option>
-                                                                                    <option value="turtle"  >Turtle</option>
-                                                                                    <option value="twig"  >Twig</option>
-                                                                                    <option value="vb.net"  >VB.NET</option>
-                                                                                    <option value="vbscript"  >VBScript</option>
-                                                                                    <option value="velocity"  >Velocity</option>
-                                                                                    <option value="verilog/systemverilog"  >Verilog/SystemVerilog</option>
-                                                                                    <option value="vhdl"  >VHDL</option>
-                                                                                    <option value="text/x-vue"  >Vue JS</option>
-                                                                                    <option value="web idl"  >Web IDL</option>
-                                                                                    <option value="xquery"  >XQuery</option>
-                                                                                    <option value="yacas"  >Yacas</option>
-                                                                                    <option value="yaml"  >YAML</option>
-                                                                                    <option value="yaml-frontmatter"  >YAML frontmatter</option>
-                                                                                    <option value="z80"  >Z80</option>
-                                                                            </select>
+                                                                                    <option value="xml">XML/HTML</option>
+                                                                                    <option value="javascript">Javascript/JSON</option>
+                                                                                    <option value="css">CSS</option>
+                                                                                    <option value="sql">Sql</option>
+                                                                                    <option value="application/x-httpd-php">PHP</option>
+                                                                                    <option value="text/x-csrc">C</option>
+                                                                                    <option value="text/x-csharp">C#</option>
+                                                                                    <option value="text/x-c++src">C++</option>
+                                                                                    <option value="text/x-objectivec">Objective-C</option>
+                                                                                    <option value="text/x-kotlin">Kotlin</option>
+                                                                                    <option value="text/x-scala">Scala</option>
+                                                                                    <option value="text/x-java">Java</option>
+                                                                                    <option value="text/x-ceylon">Ceylon</option>
+                                                                                    <option value="application/x-cypher-query">Cypher</option>
+                                                                                    <option value="application/dart">Dart</option>
+                                                                                    <option value="text/x-django">Django</option>
+                                                                                    <option value="text/x-dockerfile">Dockerfile</option>
+                                                                                    <option value="text/x-fortran">Fortran</option>
+                                                                                    <option value="text/x-gas">Gas</option>
+                                                                                    <option value="text/x-handlebars-template">Handlebars</option>
+                                                                                    <option value="text/x-lua">Lua</option>
+                                                                                    <option value="application/x-aspx">ASP.NET</option>
+                                                                                    <option value="application/x-ejs">Embedded JavaScript</option>
+                                                                                    <option value="application/x-jsp">JSP</option>
+                                                                                    <option value="apl">APL</option>
+                                                                                    <option value="asn.1">ASN.1</option>
+                                                                                    <option value="asterisk dialplan">Asterisk dialplan</option>
+                                                                                    <option value="clojure">Clojure</option>
+                                                                                    <option value="closure_stylesheets">Closure Stylesheets (GSS)</option>
+                                                                                    <option value="cmake">CMake</option>
+                                                                                    <option value="cobol">COBOL</option>
+                                                                                    <option value="coffeescript">CoffeeScript</option>
+                                                                                    <option value="common lisp">Common Lisp</option>
+                                                                                    <option value="coq">Coq</option>
+                                                                                    <option value="crystal">Crystal</option>
+                                                                                    <option value="text/x-cython">Cython</option>
+                                                                                    <option value="d">D</option>
+                                                                                    <option value="diff">diff</option>
+                                                                                    <option value="dtd">DTD</option>
+                                                                                    <option value="dylan">Dylan</option>
+                                                                                    <option value="ebnf">EBNF</option>
+                                                                                    <option value="ecl">ECL</option>
+                                                                                    <option value="eiffel">Eiffel</option>
+                                                                                    <option value="elm">Elm</option>
+                                                                                    <option value="erlang">Erlang</option>
+                                                                                    <option value="factor">Factor</option>
+                                                                                    <option value="fcl">FCL</option>
+                                                                                    <option value="forth">Forth</option>
+                                                                                    <option value="f#">F#</option>
+                                                                                    <option value="gherkin">Gherkin</option>
+                                                                                    <option value="go">Go</option>
+                                                                                    <option value="groovy">Groovy</option>
+                                                                                    <option value="haml">HAML</option>
+                                                                                    <option value="haskell (literate)">Haskell (Literate)</option>
+                                                                                    <option value="haxe">Haxe</option>
+                                                                                    <option value="http">HTTP</option>
+                                                                                    <option value="idl">IDL</option>
+                                                                                    <option value="jade">Jade</option>
+                                                                                    <option value="javascript (jsx)">JavaScript (JSX)</option>
+                                                                                    <option value="jinja2">Jinja2</option>
+                                                                                    <option value="julia">Julia</option>
+                                                                                    <option value="kotlin">Kotlin</option>
+                                                                                    <option value="text/x-less">LESS</option>
+                                                                                    <option value="livescript">LiveScript</option>
+                                                                                    <option value="text/x-markdown">Markdown</option>
+                                                                                    <option value="mathematica">Mathematica</option>
+                                                                                    <option value="mbox">mbox</option>
+                                                                                    <option value="mirc">mIRC</option>
+                                                                                    <option value="modelica">Modelica</option>
+                                                                                    <option value="mscgen">MscGen</option>
+                                                                                    <option value="mumps">MUMPS</option>
+                                                                                    <option value="text/x-nginx-conf">Nginx</option>
+                                                                                    <option value="nsis">NSIS</option>
+                                                                                    <option value="ntriples">NTriples</option>
+                                                                                    <option value="ocaml">OCaml</option>
+                                                                                    <option value="text/x-octave">Octave (MATLAB)</option>
+                                                                                    <option value="oz">Oz</option>
+                                                                                    <option value="pascal">Pascal</option>
+                                                                                    <option value="peg.js">PEG.js</option>
+                                                                                    <option value="text/x-perl">Perl</option>
+                                                                                    <option value="pgp">PGP (ASCII armor)</option>
+                                                                                    <option value="pig">Pig Latin</option>
+                                                                                    <option value="powershell">PowerShell</option>
+                                                                                    <option value="properties">Properties files</option>
+                                                                                    <option value="protobuf">ProtoBuf</option>
+                                                                                    <option value="puppet">Puppet</option>
+                                                                                    <option value="text/x-python">Python</option>
+                                                                                    <option value="q">Q</option>
+                                                                                    <option value="text/x-rsrc">R</option>
+                                                                                    <option value="rpm">RPM</option>
+                                                                                    <option value="restructuredtext">reStructuredText</option>
+                                                                                    <option value="text/x-ruby">Ruby</option>
+                                                                                    <option value="rust">Rust</option>
+                                                                                    <option value="sas">SAS</option>
+                                                                                    <option value="text/x-sass">Sass</option>
+                                                                                    <option value="spreadsheet">Spreadsheet</option>
+                                                                                    <option value="scheme">Scheme</option>
+                                                                                    <option value="scss">SCSS</option>
+                                                                                    <option value="shell">Shell</option>
+                                                                                    <option value="sieve">Sieve</option>
+                                                                                    <option value="application/x-slim">Slim</option>
+                                                                                    <option value="smalltalk">Smalltalk</option>
+                                                                                    <option value="smarty">Smarty</option>
+                                                                                    <option value="solr">Solr</option>
+                                                                                    <option value="soy">Soy</option>
+                                                                                    <option value="stylus">Stylus</option>
+                                                                                    <option value="sql (several dialects)">SQL (several dialects)</option>
+                                                                                    <option value="sparql">SPARQL</option>
+                                                                                    <option value="squirrel">Squirrel</option>
+                                                                                    <option value="swift">Swift</option>
+                                                                                    <option value="&quot;stex">"sTeX</option>
+                                                                                    <option value="latex&quot;">LaTeX"</option>
+                                                                                    <option value="tcl">Tcl</option>
+                                                                                    <option value="textile">Textile</option>
+                                                                                    <option value="tiddlywiki">Tiddlywiki</option>
+                                                                                    <option value="tiki wiki">Tiki wiki</option>
+                                                                                    <option value="toml">TOML</option>
+                                                                                    <option value="tornado (templating language)">Tornado (templating language)</option>
+                                                                                    <option value="troff (for manpages)">troff (for manpages)</option>
+                                                                                    <option value="ttcn">TTCN</option>
+                                                                                    <option value="ttcn configuration">TTCN Configuration</option>
+                                                                                    <option value="turtle">Turtle</option>
+                                                                                    <option value="twig">Twig</option>
+                                                                                    <option value="vb.net">VB.NET</option>
+                                                                                    <option value="vbscript">VBScript</option>
+                                                                                    <option value="velocity">Velocity</option>
+                                                                                    <option value="verilog/systemverilog">Verilog/SystemVerilog</option>
+                                                                                    <option value="vhdl">VHDL</option>
+                                                                                    <option value="text/x-vue">Vue JS</option>
+                                                                                    <option value="web idl">Web IDL</option>
+                                                                                    <option value="xquery">XQuery</option>
+                                                                                    <option value="yacas">Yacas</option>
+                                                                                    <option value="yaml">YAML</option>
+                                                                                    <option value="yaml-frontmatter">YAML frontmatter</option>
+                                                                                    <option value="z80">Z80</option>
+                                                                            </select><span class="select2 select2-container select2-container--bootstrap-5" dir="ltr" data-select2-id="select2-data-1-yc4z" style="width: 514.906px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-code_language-container" aria-controls="select2-code_language-container"><span class="select2-selection__rendered" id="select2-code_language-container" role="textbox" aria-readonly="true" title="== Select ==">== Select ==</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
                                 </div>
                             </div>
                             <div class="col-md-6 mt-3">
@@ -676,9 +676,9 @@
 
                         <div class="row text-center mt-2">
                                                             <div class="col-md-12">
-                                    <button type="button" class="btn btn-success share" data-target="#shared_content" title="Share" data-formatter=""><i class="fas fa-share"></i>&nbsp; Share Code</button>
+                                    <button type="button" class="btn btn-success share" data-target="#shared_content" title="Share" data-formatter=""><i class="fas fa-share" aria-hidden="true"></i>&nbsp; Share Code</button>
 
-                                    <button type="button" class="btn btn-info" title="Take Code Snapshot from Carbon Editor" id="code_snapshot"><i class="fas fa-file-image"></i>&nbsp; Code Snapshot</button>
+                                    <button type="button" class="btn btn-info" title="Take Code Snapshot from Carbon Editor" id="code_snapshot"><i class="fas fa-file-image" aria-hidden="true"></i>&nbsp; Code Snapshot</button>
                                     
                                 </div>
                                 
@@ -688,14 +688,14 @@
                         </div>
 
                         <div class="col-md-12 text-center mt-5">
-                            <a href="/share-bin.html" class="btn btn-warning"><i class="fas fa-plus"></i> &nbsp;Add New</a>
+                            <a href="https://langtuhodo.github.io/tools/compress/share-bin.html" class="btn btn-warning"><i class="fas fa-plus" aria-hidden="true"></i> &nbsp;Add New</a>
                         </div>
 
                         <div class="row" id="share-link-div" style="display:none">
                             <div class="col-md-12 mt-5">
                                 <div class="input-group mb-2">
                                 <input type="text" class="form-control form-control-sm" id="share-link">
-                                <button class="btn" type="button" id="copy-share-link" data-clipboard-target="#share-link"><i class="fas fa-copy"></i></button>
+                                <button class="btn" type="button" id="copy-share-link" data-clipboard-target="#share-link"><i class="fas fa-copy" aria-hidden="true"></i></button>
                               </div>
                             </div>
                         </div>
