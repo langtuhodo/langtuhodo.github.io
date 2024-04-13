@@ -147,6 +147,20 @@
                            <code>apt install optipng</code>
                            <li>Navigate to your WordPress uploads folder:</li>
                            <pre><code>cd /var/www/example.com/wp-content/uploads/</code></pre>
+                           <li>Compress all PNG images recursively:</li>
+                           <pre><code>find . -name "*.png" | xargs optipng --strip all</code></pre>
+                           <h2>Optimizing JPEG with jpegoptim:</h2>
+                              <p>The magic doesn't stop with PNG files. You can achieve the same level of optimization for JPEG images using jpegoptim:</p>
+                             <li>Install jpegoptim:</li>
+                             <pre><code>apt install jpegoptim</code></pre>
+                             <li>Navigate to your WordPress uploads folder:</li>
+                             <pre><code>cd /var/www/example.com/wp-content/uploads/</code></pre>
+                             <li>Compress all JPEG images recursively:</li>
+                             <pre><code>find . -name "*.jpg" | xargs jpegoptim --strip-all -t</code></pre>
+                             <h2>Bonus Tip: Regenerate Image Sizes</h2>
+                             <p>After optimizing your images, ensure WordPress is aware of the changes. Use WP-CLI to regenerate all thumbnails effortlessly:</p>
+                             <pre><code>wp media regenerate --yes</code></pre>
+                             <p>By embracing command line image optimization, you not only enhance your site's loading speed but also gain full control over the process. Plus, you can declutter your server by removing unnecessary image sizes. It's a win-win for your WordPress performance and storage efficiency.</p>
                         </div>
                       </div>
                     </div>
@@ -157,11 +171,11 @@
                     <div class="date-author">
                       <span class="entry-date">
                         <a href="#" rel="bookmark">
-                          <i class="far fa-clock"></i> <span class="entry-date"> March 16, 2020</span>
+                          <i class="far fa-clock"></i> <span class="entry-date"> April 13, 2024</span>
                         </a>
                       </span>
                       <span class="author vcard">
-                        <a class="url fn n" href="#" rel="author"> <i class="fas fa-user"></i> LMPixels</a>
+                        <a class="url fn n" href="#" rel="author"> <i class="fas fa-user"></i> Langtuhodo</a>
                       </span>
                     </div>
       
@@ -184,11 +198,11 @@
 
                   <div class="post-tags">
                     <div class="tags">
-                      <a href="#" rel="tag">animate</a>
-                      <a href="#" rel="tag">bar</a>
-                      <a href="#" rel="tag">design</a>
-                      <a href="#" rel="tag">progress</a>
-                      <a href="#" rel="tag">ui</a>
+                      <a href="#" rel="tag">Wordpress</a>
+                      <a href="#" rel="tag">Website</a>
+                      <a href="#" rel="tag">Compress images</a>
+                      <a href="#" rel="tag">Tutorials</a>
+                      <a href="#" rel="tag">CLI</a>
                     </div>
                   </div>
                 </div>
