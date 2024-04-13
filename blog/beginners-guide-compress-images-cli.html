@@ -110,7 +110,7 @@
               <article class="post">
 
                 <div class="post-thumbnail">
-                  <img src="../img/blog/blog_post_1_full.jpg" alt="image">
+                  <img src="../img/blog/beginners-guide-compress-images-cli.jpg" alt="image">
                 </div>
 
                 <div class="post-content">
@@ -118,7 +118,7 @@
                   <header class="entry-header">
                     <!-- Entry meta -->
                     <div class="entry-meta entry-meta-top">
-                      <span><a href="#" rel="category tag">UI</a></span>        
+                      <span><a href="#" rel="category tag">Tips</a></span>        
                     </div>
                     <!-- /Entry meta -->
 
@@ -140,26 +140,24 @@
                             <h2>Optimizing PNG with optipng:</h2>
                             <p>Forget about complicated setups. With a simple command, you can compress all your PNG images effortlessly. Just follow these steps:</p>
 
-                          <p>Etiam interdum vulputate risus, vitae elementum neque consectetur sed. Donec at risus dui. Ut in suscipit neque. Vestibulum sit amet lobortis magna, commodo venenatis ante. Cras molestie, ex a auctor lacinia, risus est aliquam risus, sit amet semper purus tortor id ante. Donec lacus ipsum, porttitor et libero a, fringilla auctor quam. Sed in nisl id libero tincidunt aliquet. Aenean dui ipsum, auctor ut leo ut, semper dignissim lacus. Suspendisse faucibus viverra consequat. Maecenas efficitur massa vel eros sagittis dapibus. Nam lobortis mi in turpis hendrerit eleifend. Nulla non massa felis.</p>
-
-                          <p>Donec sit amet dolor ante. Vivamus vel massa accumsan, faucibus quam quis, convallis velit. Aliquam erat volutpat. Integer imperdiet diam quis arcu venenatis, quis sagittis nibh rhoncus. Donec non nisi scelerisque, sodales metus quis, accumsan mauris. Curabitur volutpat risus rutrum erat condimentum tristique. Nullam at felis diam. Quisque dictum felis non ante pretium mollis. Aliquam turpis neque, varius nec diam a, aliquam pulvinar diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ipsum libero, aliquet sed bibendum faucibus, semper a dui.</p>
+                      
                            <li>Install optipng:</li>
-                           <code>apt install optipng</code>
+                           <pre class='code'><label>👉</label><code>apt install optipng</code></pre>
                            <li>Navigate to your WordPress uploads folder:</li>
-                           <pre><code>cd /var/www/example.com/wp-content/uploads/</code></pre>
+                           <pre class='code'><label>👉</label><code>cd /var/www/example.com/wp-content/uploads/</code></pre>
                            <li>Compress all PNG images recursively:</li>
-                           <pre><code>find . -name "*.png" | xargs optipng --strip all</code></pre>
+                           <pre class='code'><label>👉</label><code>find . -name "*.png" | xargs optipng --strip all</code></pre>
                            <h2>Optimizing JPEG with jpegoptim:</h2>
                               <p>The magic doesn't stop with PNG files. You can achieve the same level of optimization for JPEG images using jpegoptim:</p>
                              <li>Install jpegoptim:</li>
-                             <pre><code>apt install jpegoptim</code></pre>
+                             <pre class='code'><label>👉</label><code>apt install jpegoptim</code></pre>
                              <li>Navigate to your WordPress uploads folder:</li>
-                             <pre><code>cd /var/www/example.com/wp-content/uploads/</code></pre>
+                             <pre class='code'><label>👉</label><code>cd /var/www/example.com/wp-content/uploads/</code></pre>
                              <li>Compress all JPEG images recursively:</li>
-                             <pre><code>find . -name "*.jpg" | xargs jpegoptim --strip-all -t</code></pre>
+                             <pre class='code'><label>👉</label><code>find . -name "*.jpg" | xargs jpegoptim --strip-all -t</code></pre>
                              <h2>Bonus Tip: Regenerate Image Sizes</h2>
                              <p>After optimizing your images, ensure WordPress is aware of the changes. Use WP-CLI to regenerate all thumbnails effortlessly:</p>
-                             <pre><code>wp media regenerate --yes</code></pre>
+                             <pre class='code'><label>👉</label><code>wp media regenerate --yes</code></pre>
                              <p>By embracing command line image optimization, you not only enhance your site's loading speed but also gain full control over the process. Plus, you can declutter your server by removing unnecessary image sizes. It's a win-win for your WordPress performance and storage efficiency.</p>
                         </div>
                       </div>
@@ -213,7 +211,98 @@
 
       </div>
     </div>
-
+<style>/* CSS Simple Pre Code */
+  pre {
+      background: #333;
+      white-space: pre;
+      word-wrap: break-word;
+      overflow: auto;
+  }
+  
+  pre.code {
+      margin: 20px 25px;
+      border-radius: 4px;
+      border: 1px solid #292929;
+      position: relative;
+  }
+  
+  pre.code label {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 13px;
+      color: #ddd;
+      position: absolute;
+      left: 1px;
+      top: 15px;
+      text-align: center;
+      width: 60px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      pointer-events: none;
+  }
+  
+  pre.code code {
+      font-family: "Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",Courier,monospace;
+      display: block;
+      margin: 0 0 0 60px;
+      padding: 15px 16px 14px;
+      border-left: 1px solid #555;
+      overflow-x: auto;
+      font-size: 13px;
+      line-height: 19px;
+      color: #ddd;
+  }
+  
+  pre::after {
+      
+      padding: 0;
+      width: auto;
+      height: auto;
+      position: absolute;
+      right: 18px;
+      top: 14px;
+      font-size: 12px;
+      color: #ddd;
+      line-height: 20px;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      transition: all 0.3s ease;
+  }
+  
+  pre:hover::after {
+      opacity: 0;
+      visibility: visible;
+  }
+  
+  pre.code-css code {
+      color: #91a7ff;
+  }
+  
+  pre.code-html code {
+      color: #aed581;
+  }
+  
+  pre.code-javascript code {
+      color: #ffa726;
+  }
+  
+  pre.code-jquery code {
+      color: #4dd0e1;
+  }</style>
+  <script>$('i[rel="pre"]').replaceWith(function() {
+    return $('<pre><code>' + $(this).html() + '</code></pre>');
+});
+var pres = document.querySelectorAll('pre,kbd,blockquote');
+for (var i = 0; i < pres.length; i++) {
+  pres[i].addEventListener("dblclick", function () {
+    var selection = getSelection();
+    var range = document.createRange();
+    range.selectNodeContents(this);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }, false);
+}</script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/modernizr.custom.js"></script>
     <script src="../js/animating.js"></script>
